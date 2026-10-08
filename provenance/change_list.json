@@ -1,0 +1,37 @@
+{
+  "modified": [
+    "README.md",
+    "day4_env.py",
+    "day8_env.py",
+    "generated/camera_baseline/day3_v5_robot.sdf",
+    "generated/camera_baseline/day3_v5_robot.urdf",
+    "generated/day3_v5_robot.sdf",
+    "generated/day3_v5_robot.urdf",
+    "residual_env.py",
+    "session_env.sh"
+  ],
+  "added": [
+    "CORRECTNESS.md",
+    "REPORT.md",
+    "analyze_day9.py",
+    "configs/candidate.yaml",
+    "configs/dds_udp.xml",
+    "configs/diagnostic_scenes.json",
+    "configs/optimization_decisions.json",
+    "configs/validation_scenes.json",
+    "day9_env.py",
+    "day9_training.py",
+    "io_probe.py",
+    "manage_day9.py",
+    "run_day9.py",
+    "test_day9_contract.py",
+    "write_review.py"
+  ],
+  "output_directories": [
+    "runtime",
+    "results",
+    "models/diagnostic",
+    "provenance"
+  ],
+  "source_model_unchanged": true
+}

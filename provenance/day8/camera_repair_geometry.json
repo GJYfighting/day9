@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "hand_to_optical": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      -0.101
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.045
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "link4_to_camera": [
+    [
+      1.0947644252537633e-47,
+      2.2204460492503126e-16,
+      -1.0,
+      -0.04500000000000002
+    ],
+    [
+      0.0,
+      1.0,
+      2.220446049250313e-16,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      -4.930380657631324e-32,
+      0.07045583202000001
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "calibration_hand_reference_z_m": 0.17145583202,
+  "grasp_tcp_unchanged": true,
+  "actuated_joints_unchanged": true,
+  "sensor_urdf_sdf_consistent": true,
+  "all_sdf_collisions_joints_plugins_preserved": true,
+  "source_commit": "70502c8",
+  "interpretation": "Source hand-eye prior transferred via CAD axes; not a new real-camera calibration."
+}

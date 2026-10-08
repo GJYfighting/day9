@@ -1,0 +1,15 @@
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+test_B_no_base_or_fusion (test_day9_contract.ContractTests) ... ok
+test_F_uses_external_action_no_predict (test_day9_contract.ContractTests) ... ok
+test_changed_descriptive_P1_cannot_silently_run_fixed_code (test_day9_contract.ContractTests) ... ok
+test_failed_safe_close_propagates_and_does_not_resume_commands (test_day9_contract.ContractTests) ... ok
+test_interrupt_during_reset_is_not_retried_as_scene_failure (test_day9_contract.ContractTests) ... ok
+test_invalid_nan_rejected_before_backend (test_day9_contract.ContractTests) ... ok
+test_replay_stores_policy_not_fused_action_and_timeout_mask (test_day9_contract.ContractTests) ... ok
+test_task_failure_advances_curriculum_technical_does_not (test_day9_contract.ContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.226s
+
+OK

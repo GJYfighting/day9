@@ -1,0 +1,629 @@
+{
+  "status": "FAIL",
+  "formal_sac_training": false,
+  "revision": "camera_handeye_repair",
+  "checks": {
+    "white_area": {
+      "status": "PASS",
+      "sampling": "continuous_uniform",
+      "frame": "base_link",
+      "center_base_m": [
+        0.18459222659243593,
+        -0.012438901168749173,
+        0.0
+      ],
+      "rectangle_size_xy_m": [
+        0.135,
+        0.175
+      ],
+      "corners_base_xy_m": [
+        [
+          0.117524750890889,
+          -0.10027086404686325
+        ],
+        [
+          0.25252310780618636,
+          -0.09960480836602056
+        ],
+        [
+          0.2516597022939829,
+          0.07539306170936491
+        ],
+        [
+          0.1166613453786855,
+          0.07472700602852222
+        ]
+      ],
+      "initial_pose_rad": [
+        0.0,
+        0.16755160819145562,
+        -1.1728612573401895,
+        -1.8849555921538759,
+        0.0
+      ],
+      "initial_pose_deg": [
+        0.0,
+        9.6,
+        -67.2,
+        -108.0,
+        0.0
+      ],
+      "nominal_block_center_base_m": [
+        0.18459222659243593,
+        -0.012438901168749173,
+        0.015
+      ],
+      "levels": {
+        "L0": {
+          "samples": 1000,
+          "normalized_min": [
+            -0.9992752364383017,
+            -0.9988873375853247
+          ],
+          "normalized_max": [
+            0.9970477103496475,
+            0.9984417410156068
+          ]
+        },
+        "L1": {
+          "samples": 1000,
+          "normalized_min": [
+            -0.9992752364383016,
+            -0.9988873375853251
+          ],
+          "normalized_max": [
+            0.9970477103496473,
+            0.998441741015607
+          ]
+        },
+        "L2": {
+          "samples": 1000,
+          "normalized_min": [
+            -0.9992752364383019,
+            -0.9988873375853248
+          ],
+          "normalized_max": [
+            0.9970477103496475,
+            0.9984417410156069
+          ]
+        },
+        "L3": {
+          "samples": 1000,
+          "normalized_min": [
+            -0.9992752364383017,
+            -0.9988873375853249
+          ],
+          "normalized_max": [
+            0.9970477103496471,
+            0.9984417410156069
+          ]
+        }
+      },
+      "full_footprint_containment": true,
+      "visual_outline_no_collision": true,
+      "does_not_claim_entire_area_visible_or_graspable": true
+    },
+    "offline": {
+      "status": "PASS",
+      "samples_per_level": 100,
+      "total": 400,
+      "seed_reproducible": true,
+      "all_sdf_valid": true,
+      "size_visual_collision_equal": true,
+      "inertia_correct": true,
+      "bottom_matches_table": true,
+      "gain_fixed": 0.8,
+      "delay_uses_simulation_clock": true,
+      "paused_clock_does_not_release": true,
+      "clock_initialization_gate_checked": true,
+      "deterministic_rgbd": true,
+      "rgb_depth_noise_units_empirically_checked": true,
+      "unchanged_observation_action_shapes": [
+        10,
+        4
+      ],
+      "curriculum_transition_checked": true
+    },
+    "isolation": {
+      "status": "PASS",
+      "files": 9783,
+      "modified": [],
+      "added": []
+    },
+    "base_sampler": {
+      "status": "PASS",
+      "samples": 100,
+      "full_footprint_containment": true
+    },
+    "syntax": {
+      "status": "PASS"
+    },
+    "camera_mount": {
+      "status": "PASS",
+      "hand_to_optical": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.101
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.045
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "link4_to_camera": [
+        [
+          1.0947644252537633e-47,
+          2.2204460492503126e-16,
+          -1.0,
+          -0.04500000000000002
+        ],
+        [
+          0.0,
+          1.0,
+          2.220446049250313e-16,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          -4.930380657631324e-32,
+          0.07045583202000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "calibration_hand_reference_z_m": 0.17145583202,
+      "grasp_tcp_unchanged": true,
+      "actuated_joints_unchanged": true,
+      "sensor_urdf_sdf_consistent": true,
+      "all_sdf_collisions_joints_plugins_preserved": true,
+      "source_commit": "70502c8",
+      "interpretation": "Source hand-eye prior transferred via CAD axes; not a new real-camera calibration."
+    },
+    "live_camera_mount": {
+      "status": "PASS",
+      "sensor_count": 1,
+      "sensor_pose_in_link4": [
+        -0.045,
+        0.0,
+        0.0704558,
+        0.0,
+        -1.5708,
+        3.67321e-06
+      ],
+      "collision_names": [
+        "l_out_link_box_collision",
+        "r_out_link_box_collision"
+      ],
+      "actual_model_readback": true
+    },
+    "camera_visual_rays": {
+      "status": "PASS",
+      "tested": 187,
+      "result": "results/self_occlusion_analysis.json",
+      "grasp_pose_only": true
+    },
+    "camera_reference": {
+      "status": "PASS",
+      "initial_pose": [
+        0.0,
+        0.16755160819145562,
+        -1.1728612573401895,
+        -1.8849555921538759,
+        0.0
+      ],
+      "finite_depth_pixels": 64000,
+      "total_pixels": 64000,
+      "object_removed_during_capture": true,
+      "original_tf_chain_preserved": true
+    },
+    "white_area_view": {
+      "status": "FAIL",
+      "clear": 20,
+      "tested": 25,
+      "points": [
+        {
+          "xy": [
+            0.2349154149789597,
+            0.058482729033913244
+          ],
+          "clear": true,
+          "projected_pixels": 1878,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.23508975501690346,
+            0.023146916512685575
+          ],
+          "clear": true,
+          "projected_pixels": 1708,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.23526409505484722,
+            -0.012188896008542081
+          ],
+          "clear": true,
+          "projected_pixels": 1675,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.23543843509279094,
+            -0.04752470852976974
+          ],
+          "clear": true,
+          "projected_pixels": 1820,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.2356127751307347,
+            -0.0828605210509974
+          ],
+          "clear": true,
+          "projected_pixels": 1999,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.20957948074775407,
+            0.0583577264538097
+          ],
+          "clear": true,
+          "projected_pixels": 1904,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.20975382078569782,
+            0.023021913932582034
+          ],
+          "clear": true,
+          "projected_pixels": 1725,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.20992816082364157,
+            -0.012313898588645627
+          ],
+          "clear": true,
+          "projected_pixels": 1652,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.21010250086158533,
+            -0.047649711109873275
+          ],
+          "clear": true,
+          "projected_pixels": 1814,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.21027684089952905,
+            -0.08298552363110094
+          ],
+          "clear": true,
+          "projected_pixels": 2039,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.18424354651654845,
+            0.05823272387370615
+          ],
+          "clear": true,
+          "projected_pixels": 1901,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.18441788655449218,
+            0.022896911352478486
+          ],
+          "clear": true,
+          "projected_pixels": 1707,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.18459222659243593,
+            -0.012438901168749173
+          ],
+          "clear": true,
+          "projected_pixels": 1666,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.18476656663037969,
+            -0.04777471368997682
+          ],
+          "clear": true,
+          "projected_pixels": 1841,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.1849409066683234,
+            -0.08311052621120449
+          ],
+          "clear": true,
+          "projected_pixels": 2041,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.15890761228534278,
+            0.0581077212936026
+          ],
+          "clear": true,
+          "projected_pixels": 1973,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.15908195232328654,
+            0.02277190877237494
+          ],
+          "clear": true,
+          "projected_pixels": 1759,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.1592562923612303,
+            -0.012563903748852719
+          ],
+          "clear": true,
+          "projected_pixels": 1683,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.15943063239917404,
+            -0.04789971627008037
+          ],
+          "clear": true,
+          "projected_pixels": 1871,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.15960497243711777,
+            -0.08323552879130804
+          ],
+          "clear": true,
+          "projected_pixels": 2130,
+          "invalid_pixels": 0,
+          "occluded_pixels": 0,
+          "reason": "rendered_depth_visibility"
+        },
+        {
+          "xy": [
+            0.13357167805413717,
+            0.057982718713499054
+          ],
+          "clear": false,
+          "reason": "projection_outside_image"
+        },
+        {
+          "xy": [
+            0.13374601809208092,
+            0.022646906192271398
+          ],
+          "clear": false,
+          "reason": "projection_outside_image"
+        },
+        {
+          "xy": [
+            0.13392035813002465,
+            -0.012688906328956265
+          ],
+          "clear": false,
+          "reason": "projection_outside_image"
+        },
+        {
+          "xy": [
+            0.1340946981679684,
+            -0.04802471885018392
+          ],
+          "clear": false,
+          "reason": "projection_outside_image"
+        },
+        {
+          "xy": [
+            0.13426903820591216,
+            -0.08336053137141158
+          ],
+          "clear": false,
+          "reason": "projection_outside_image"
+        }
+      ],
+      "interpretation": "Diagnostic samples only; no failed position is removed from the sampler."
+    },
+    "noncamera_configuration": {
+      "status": "PASS",
+      "all_config_except_camera_mount_identical": true
+    },
+    "nominal": {
+      "status": "PASS",
+      "execution_status": "PASS",
+      "grasp_status": "PASS",
+      "requested": 1,
+      "attempts": 1,
+      "completed": 1,
+      "successes": 1,
+      "detected": 1,
+      "resets": 1,
+      "returned": 1,
+      "records": "results/nominal.json"
+    },
+    "smoke_L0": {
+      "status": "FAIL",
+      "execution_status": "FAIL",
+      "grasp_status": "FAIL",
+      "requested": 5,
+      "attempts": 6,
+      "completed": 3,
+      "successes": 3,
+      "detected": 4,
+      "resets": 3,
+      "returned": 5,
+      "successful_indices": [
+        0,
+        3,
+        4
+      ],
+      "failed_indices": [
+        1,
+        2
+      ],
+      "records": "results/smoke_L0.json",
+      "technical_replay_same_point_seed": true
+    },
+    "github_camera_sources": {
+      "status": "REVIEWED",
+      "repositories": [
+        "source-code",
+        "simulations",
+        "ros2_ws",
+        "day7"
+      ],
+      "verified_gemini_intrinsics_found": false,
+      "source": "README.md",
+      "limitation": "CameraInfo is read from hardware; usb_cam calibration does not identify GEMINI. Existing simulated intrinsics retained."
+    },
+    "final_restore": {
+      "status": "PASS",
+      "arm_q": [
+        -3.915527504966157e-17,
+        0.16755160817458054,
+        -1.1728612573985422,
+        -1.884955592163405,
+        -1.6932383497199459e-12
+      ],
+      "target_q": [
+        0.0,
+        0.16755160819145562,
+        -1.1728612573401895,
+        -1.8849555921538759,
+        0.0
+      ],
+      "block_world_m": [
+        -0.01540777340756408,
+        -0.012438901168749173,
+        0.7649991344675141
+      ],
+      "target_world_m": [
+        -0.01540777340756408,
+        -0.012438901168749173,
+        0.765
+      ]
+    }
+  },
+  "unpassed": [
+    "white_area_view",
+    "smoke_L0"
+  ],
+  "freeze": {
+    "fully_accepted": false,
+    "manifest": "results/frozen_manifest.json",
+    "files": 957
+  },
+  "scope": "Camera repair, white-area visibility, nominal and L0 center/edge smoke; previous multi-level results are historical.",
+  "camera_repair_status": "PASS",
+  "cleanup": {
+    "status": "PASS",
+    "obsolete_history_removed": true,
+    "current_nominal_and_all_L0_attempts_preserved": true,
+    "manifest": "results/cleanup_manifest.json",
+    "checks": {
+      "essential_assets_unchanged": true,
+      "absolute_model_asset_references": 106,
+      "missing_model_assets": [],
+      "model_rebuild": "PASS",
+      "white_area_samples": 4000,
+      "offline_parameters": "PASS",
+      "live_camera_model": "PASS",
+      "syntax": "PASS",
+      "policy_load": "PASS",
+      "observation_shape": [
+        10
+      ],
+      "action_shape": [
+        4
+      ],
+      "numpy": "1.26.4",
+      "opencv": "4.8.1",
+      "fresh_nominal_grasp": "PASS",
+      "fresh_nominal_return": "PASS"
+    },
+    "before_files": 11609,
+    "after_files": 1027,
+    "removed_percent": 73.08
+  }
+}

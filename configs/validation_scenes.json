@@ -1,0 +1,802 @@
+[
+  {
+    "id": "validation_00",
+    "seed": 3442894840,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 3442894840,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.019303847655449263,
+        -0.08113221056246213,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 2997111002
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_01",
+    "seed": 2968160041,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 2968160041,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        0.014356258622353374,
+        0.036892493698142556,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        -0.0,
+        -0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 3301436041
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_02",
+    "seed": 4103126623,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 4103126623,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.03513478321265759,
+        -0.06692068779134927,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 517162105
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_03",
+    "seed": 550692504,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 550692504,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.004285153474655828,
+        -0.054480555398560296,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        0.0,
+        -0.0,
+        -0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 2317269907
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_04",
+    "seed": 207166450,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 207166450,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.0008340442142023841,
+        0.006784826650982002,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        -0.0,
+        0.0,
+        -0.0
+      ],
+      "rotation_rad": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 3983084309
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_05",
+    "seed": 4045685648,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 4045685648,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        0.030772841944359114,
+        -0.027384711268192027,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        0.0,
+        -0.0,
+        -0.0
+      ],
+      "rotation_rad": [
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 515161592
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_06",
+    "seed": 1998952257,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 1998952257,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        0.0109048195209967,
+        0.05393547952331937,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 3333522096
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_07",
+    "seed": 2746817368,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 2746817368,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.06358753647953524,
+        0.012513848774854282,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        -0.0,
+        0.0,
+        -0.0
+      ],
+      "rotation_rad": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 2504973556
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_08",
+    "seed": 871478865,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 871478865,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.03453120940815477,
+        -0.039369394288053194,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        0.0,
+        -0.0,
+        -0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 3380529577
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_09",
+    "seed": 355118205,
+    "level": "L0",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 355118205,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.02141340178358392,
+        0.055475080073560126,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 1811831045
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_10",
+    "seed": 1211976602,
+    "level": "L1",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 1211976602,
+      "level": "L1",
+      "enabled": true,
+      "position_world_m": [
+        0.03331373962514739,
+        -0.02697642829061263,
+        0.7649065264580271
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.02981305291605427,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.02778238120472769,
+      "mu": 6.564533699413846,
+      "mu2": 5.4253786212761375,
+      "brightness": 1.074667721289618,
+      "contrast": 1.083951142612345,
+      "pixel_std": 2.0,
+      "depth_std_m": 0.0001,
+      "invalid_fraction": 0.01,
+      "translation_m": [
+        -0.0003536844834403416,
+        -3.5155571630071706e-05,
+        6.536048167987331e-05
+      ],
+      "rotation_rad": [
+        -0.003095440326090259,
+        -0.00012473450013985405,
+        -0.0009395564621086107
+      ],
+      "delay_sec": 0.008496547063265114,
+      "noise_seed": 3362986731
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_11",
+    "seed": 3738231425,
+    "level": "L1",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 3738231425,
+      "level": "L1",
+      "enabled": true,
+      "position_world_m": [
+        -0.027561348270100122,
+        -0.02933961620579344,
+        0.7649021564327428
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.02980431286548574,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.028184824265936978,
+      "mu": 5.899745714912336,
+      "mu2": 6.498995914636167,
+      "brightness": 0.93055613529187,
+      "contrast": 0.9299467362724159,
+      "pixel_std": 2.0,
+      "depth_std_m": 0.0001,
+      "invalid_fraction": 0.01,
+      "translation_m": [
+        0.0006696710529442318,
+        0.00022454508302260456,
+        0.0016696949311139652
+      ],
+      "rotation_rad": [
+        0.002771855149981859,
+        -0.0014607248631806813,
+        -0.0008675295629024082
+      ],
+      "delay_sec": 0.011037945309165294,
+      "noise_seed": 1135597563
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_12",
+    "seed": 4278111132,
+    "level": "L1",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 4278111132,
+      "level": "L1",
+      "enabled": true,
+      "position_world_m": [
+        0.013407152185127696,
+        0.025512673390990528,
+        0.7649326104843726
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.029865220968745144,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.029077116473094928,
+      "mu": 5.634624818612794,
+      "mu2": 5.747861777353492,
+      "brightness": 1.0129242278307435,
+      "contrast": 1.0739871640867673,
+      "pixel_std": 2.0,
+      "depth_std_m": 0.0001,
+      "invalid_fraction": 0.01,
+      "translation_m": [
+        -0.00047992453492802555,
+        0.000152022476642713,
+        0.00020751479196086755
+      ],
+      "rotation_rad": [
+        0.0014106519481951883,
+        0.0016082082422462305,
+        0.0034215314373886203
+      ],
+      "delay_sec": 0.006957358277775851,
+      "noise_seed": 164051515
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_13",
+    "seed": 3996890981,
+    "level": "L1",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 3996890981,
+      "level": "L1",
+      "enabled": true,
+      "position_world_m": [
+        -0.053244213808357976,
+        0.044766122129742555,
+        0.764999177251968
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.029998354503935874,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.030549286375518084,
+      "mu": 6.1725818434621775,
+      "mu2": 6.293122998135313,
+      "brightness": 0.9960957875947806,
+      "contrast": 1.0576381846023752,
+      "pixel_std": 2.0,
+      "depth_std_m": 0.0001,
+      "invalid_fraction": 0.01,
+      "translation_m": [
+        0.001723811783631225,
+        -0.0008115336642814593,
+        3.3148472911054866e-07
+      ],
+      "rotation_rad": [
+        0.002777730667638497,
+        -0.007850120697611174,
+        0.001855228630982473
+      ],
+      "delay_sec": 0.015857747487010656,
+      "noise_seed": 1329264451
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_14",
+    "seed": 925259739,
+    "level": "L2",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 925259739,
+      "level": "L2",
+      "enabled": true,
+      "position_world_m": [
+        -0.009735502440273436,
+        0.023918308227913066,
+        0.765340998228541
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.030681996457081924,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.027352959399273624,
+      "mu": 5.367933363759577,
+      "mu2": 7.0742555606384,
+      "brightness": 1.1502224338398166,
+      "contrast": 1.0627534626234971,
+      "pixel_std": 5.0,
+      "depth_std_m": 0.0002,
+      "invalid_fraction": 0.03,
+      "translation_m": [
+        -9.30271936465947e-05,
+        0.00034679924165751573,
+        5.0681034110147085e-05
+      ],
+      "rotation_rad": [
+        -0.000990727677422634,
+        -0.009631713431331144,
+        0.007202279069877428
+      ],
+      "delay_sec": 0.04728538747161038,
+      "noise_seed": 1311119837
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_15",
+    "seed": 1804260918,
+    "level": "L2",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 1804260918,
+      "level": "L2",
+      "enabled": true,
+      "position_world_m": [
+        0.0347918869345909,
+        -0.07407341259700144,
+        0.764801126812864
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.02960225362572818,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.025791620421556815,
+      "mu": 6.875996082834266,
+      "mu2": 5.331072931840805,
+      "brightness": 0.8778092841436934,
+      "contrast": 0.8912990471735126,
+      "pixel_std": 5.0,
+      "depth_std_m": 0.0002,
+      "invalid_fraction": 0.03,
+      "translation_m": [
+        -0.0007251564481974971,
+        -0.0017693679235576939,
+        0.0041100937082014545
+      ],
+      "rotation_rad": [
+        -0.012240167419558553,
+        -0.005323257236713454,
+        -0.0012380703178965754
+      ],
+      "delay_sec": 0.009014793877539324,
+      "noise_seed": 2897503994
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_16",
+    "seed": 1975975286,
+    "level": "L2",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 1975975286,
+      "level": "L2",
+      "enabled": true,
+      "position_world_m": [
+        -0.06638506136983474,
+        -0.053983111775488535,
+        0.7646301989427995
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.029260397885599056,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03508639773223889,
+      "mu": 6.827810657787014,
+      "mu2": 7.099644433573268,
+      "brightness": 0.9171836864380896,
+      "contrast": 0.860039605011221,
+      "pixel_std": 5.0,
+      "depth_std_m": 0.0002,
+      "invalid_fraction": 0.03,
+      "translation_m": [
+        -0.0023560670615114724,
+        -0.0016350955461969523,
+        0.0002894287523765201
+      ],
+      "rotation_rad": [
+        0.009098337863140672,
+        -0.0002988166290417463,
+        -0.006022376431408019
+      ],
+      "delay_sec": 0.024908077742205235,
+      "noise_seed": 904787776
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_17",
+    "seed": 1880441250,
+    "level": "L3",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 1880441250,
+      "level": "L3",
+      "enabled": true,
+      "position_world_m": [
+        0.014270436597203201,
+        -0.04688586245897859,
+        0.7655789114595242
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03115782291904843,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03046495733604695,
+      "mu": 7.2712200295928815,
+      "mu2": 5.220411063296211,
+      "brightness": 0.9837686157303219,
+      "contrast": 0.8827342860038832,
+      "pixel_std": 8.0,
+      "depth_std_m": 0.0003,
+      "invalid_fraction": 0.05,
+      "translation_m": [
+        6.2984884524315116e-06,
+        1.2822887634158487e-05,
+        -7.380474500043135e-05
+      ],
+      "rotation_rad": [
+        -0.0037081044563054785,
+        0.02328143382809549,
+        0.004413809318784041
+      ],
+      "delay_sec": 0.0016307665197616728,
+      "noise_seed": 1908773028
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_18",
+    "seed": 2070358640,
+    "level": "L3",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 2070358640,
+      "level": "L3",
+      "enabled": true,
+      "position_world_m": [
+        -0.010859628442125652,
+        -0.025347834133462713,
+        0.764997141112061
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.029994282224121944,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.024199474906148447,
+      "mu": 4.493724982756245,
+      "mu2": 4.4855632447917655,
+      "brightness": 1.2597342274229428,
+      "contrast": 1.2543411218935467,
+      "pixel_std": 8.0,
+      "depth_std_m": 0.0003,
+      "invalid_fraction": 0.05,
+      "translation_m": [
+        0.0034821783201522158,
+        -0.002594323090080517,
+        -0.00036007842694070165
+      ],
+      "rotation_rad": [
+        0.014728539862927386,
+        0.009078547468848437,
+        0.011323031220374008
+      ],
+      "delay_sec": 0.027551972427166435,
+      "noise_seed": 632683772
+    },
+    "source": "new fixed Day9 validation; not final test"
+  },
+  {
+    "id": "validation_19",
+    "seed": 2411741904,
+    "level": "L3",
+    "mode": "fixed",
+    "parameters": {
+      "seed": 2411741904,
+      "level": "L3",
+      "enabled": true,
+      "position_world_m": [
+        0.009068044260150815,
+        -0.010173841314685643,
+        0.7642825693354185
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.02856513867083705,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03709944657447035,
+      "mu": 7.784314758297665,
+      "mu2": 5.2618962609393725,
+      "brightness": 0.776346449346166,
+      "contrast": 1.0652447097934006,
+      "pixel_std": 8.0,
+      "depth_std_m": 0.0003,
+      "invalid_fraction": 0.05,
+      "translation_m": [
+        -0.002076446125704578,
+        0.001771798436162886,
+        -0.003909972986094529
+      ],
+      "rotation_rad": [
+        0.00964543997315983,
+        -0.012825164349594407,
+        0.005439477456876422
+      ],
+      "delay_sec": 0.02022139831200015,
+      "noise_seed": 2783387533
+    },
+    "source": "new fixed Day9 validation; not final test"
+  }
+]

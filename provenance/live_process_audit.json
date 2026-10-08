@@ -1,0 +1,346 @@
+{
+  "captured_monotonic": 185906.562600037,
+  "processes": [
+    {
+      "pid": 112203,
+      "command": "timeout --signal=INT --kill-after=15s 6900s python3 -u manage_day9.py serve ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": []
+    },
+    {
+      "pid": 112231,
+      "command": "python3 -u manage_day9.py serve ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": []
+    },
+    {
+      "pid": 112232,
+      "command": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch /home/ubuntu/ros2_ws/day9/world.launch.py gui:=false ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/20260923T020320_1790129000636534426_world.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/20260923T020320_1790129000636534426_world.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/2026-09-23-10-03-21-196111-ubuntu-virtual-machine-112232/launch.log"
+      ]
+    },
+    {
+      "pid": 112233,
+      "command": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch /home/ubuntu/ros2_ws/day9/moveit.launch.py ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/20260923T020320_1790129000636534426_moveit.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/20260923T020320_1790129000636534426_moveit.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/2026-09-23-10-03-21-194424-ubuntu-virtual-machine-112233/launch.log"
+      ]
+    },
+    {
+      "pid": 112234,
+      "command": "/usr/bin/python3 /home/ubuntu/ros2_ws/day9/perception_v5.py --ros-args --params-file /home/ubuntu/ros2_ws/day9/perception_v5.yaml ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/20260923T020320_1790129000636534426_perception.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/20260923T020320_1790129000636534426_perception.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/python3_112234_1790129002226.log"
+      ]
+    },
+    {
+      "pid": 112241,
+      "command": "/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /home/ubuntu/ros2_ws/day9/runtime/tmp/launch_params_41vplipa --params-file /home/ubuntu/ros2_ws/day9/runtime/tmp/launch_params_elr0oc8h ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/move_group_112241_1790129001739.log"
+      ]
+    },
+    {
+      "pid": 112243,
+      "command": "/bin/sh -c ruby /home/ubuntu/ros2_ws/day9/runtime/bin/ign gazebo -r -s /home/ubuntu/ros2_ws/day9/simulations/robot_gazebo/worlds/grasp_table.sdf --force-version 6 ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu/ros2_ws/day9/runtime/home",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": []
+    },
+    {
+      "pid": 112245,
+      "command": "/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args -r __node:=robot_state_publisher --params-file /home/ubuntu/ros2_ws/day9/runtime/tmp/launch_params_krgsf9sz ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu/ros2_ws/day9/runtime/home",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/robot_state_publisher_112245_1790129001743.log"
+      ]
+    },
+    {
+      "pid": 112247,
+      "command": "/opt/ros/humble/lib/ros_gz_bridge/parameter_bridge /clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock /depth_cam/rgbd/image@sensor_msgs/msg/Image[ignition.msgs.Image /depth_cam/rgbd/depth_image@sensor_msgs/msg/Image[ignition.msgs.Image /depth_cam/rgbd/camera_info@sensor_msgs/msg/CameraInfo[ignition.msgs.CameraInfo /world/robot_world/model/robot/link/l_out_link/sensor/day3_v5_left_contact/contact@ros_gz_interfaces/msg/Contacts[ignition.msgs.Contacts /world/robot_world/model/robot/link/r_out_link/sensor/day3_v5_right_contact/contact@ros_gz_interfaces/msg/Contacts[ignition.msgs.Contacts /world/robot_world/model/wood_block/link/block_link/sensor/day3_v5_block_contact/contact@ros_gz_interfaces/msg/Contacts[ignition.msgs.Contacts /day3_v5/block/odometry@nav_msgs/msg/Odometry[ignition.msgs.Odometry --ros-args -r __node:=day3_v5_bridge --params-file /home/ubuntu/ros2_ws/day9/runtime/tmp/launch_params_86himywa -r /world/robot_world/model/robot/link/l_out_link/sensor/day3_v5_left_contact/contact:=/day3_v5/left_finger/contacts -r /world/robot_world/model/robot/link/r_out_link/sensor/day3_v5_right_contact/contact:=/day3_v5/right_finger/contacts -r /world/robot_world/model/wood_block/link/block_link/sensor/day3_v5_block_contact/contact:=/day3_v5/block/contacts ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu/ros2_ws/day9/runtime/home",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/parameter_bridge_112247_1790129002434.log"
+      ]
+    },
+    {
+      "pid": 112248,
+      "command": "ign gazebo -r -s /home/ubuntu/ros2_ws/day9/simulations/robot_gazebo/worlds/grasp_table.sdf                                                              ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu/ros2_ws/day9/runtime/home",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/home/.ignition/gazebo/log/2026-09-23T10:03:22.703380961/server_console.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/home/.sdformat/sdformat.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/grasp_table.sdf_112248_1790129004960.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/home/.ignition/rendering/ogre2.log"
+      ]
+    },
+    {
+      "pid": 112250,
+      "command": "/opt/ros/humble/lib/ros_gz_bridge/parameter_bridge /joint_states@sensor_msgs/msg/JointState[ignition.msgs.Model --ros-args -r __node:=day3_v5_gazebo_joint_bridge --params-file /home/ubuntu/ros2_ws/day9/runtime/tmp/launch_params_drbw_ztp -r /joint_states:=/day3_v5/gazebo_joint_states ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu/ros2_ws/day9/runtime/home",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/parameter_bridge_112250_1790129002436.log"
+      ]
+    },
+    {
+      "pid": 112721,
+      "command": "/usr/bin/python3 -c from ros2cli.daemon.daemonize import main; main() --name ros2-daemon --ros-domain-id 91 --rmw-implementation rmw_fastrtps_cpp ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/python3_112721_1790129304304.log"
+      ]
+    },
+    {
+      "pid": 117485,
+      "command": "python3 -u run_day9.py benchmark --method B --profile no_resend --scene-count 3 ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": [
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/no_resend_B_01.log",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/no_resend_B_01.log",
+        "/home/ubuntu/ros2_ws/day9/results/20260923T024509_B_no_resend_paired_1790131509421571671/events.jsonl",
+        "/home/ubuntu/ros2_ws/day9/runtime/logs/ros/python3_117485_1790131509570.log"
+      ]
+    },
+    {
+      "pid": 117632,
+      "command": "python3 - ",
+      "environment": {
+        "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+        "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+        "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros",
+        "IGN_LOG_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/log",
+        "IGN_FUEL_CACHE_PATH": "/home/ubuntu/ros2_ws/day9/runtime/ignition/fuel",
+        "PYTHONPYCACHEPREFIX": "/home/ubuntu/ros2_ws/day9/runtime/pycache",
+        "XDG_CACHE_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/cache",
+        "XDG_CONFIG_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/config",
+        "XDG_DATA_HOME": "/home/ubuntu/ros2_ws/day9/runtime/xdg/data",
+        "TMPDIR": "/home/ubuntu/ros2_ws/day9/runtime/tmp",
+        "HOME": "/home/ubuntu",
+        "PYTHONPATH": "/home/ubuntu/ros2_ws/day9/vendor:/home/ubuntu/ros2_ws/day9:/home/ubuntu/ros2_ws/build/robot_gazebo:/home/ubuntu/ros2_ws/install/robot_gazebo/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/jetarm_6dof_description:/home/ubuntu/ros2_ws/install/jetarm_6dof_description/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/grasp_rl:/home/ubuntu/ros2_ws/install/grasp_rl/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "ROS_DOMAIN_ID": "91",
+        "IGN_PARTITION": "day9_ubuntu",
+        "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/ubuntu/ros2_ws/day9/configs/dds_udp.xml"
+      },
+      "writable_regular_files": []
+    }
+  ],
+  "writable_regular_files_outside_day9": []
+}

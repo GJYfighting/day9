@@ -1,0 +1,89 @@
+{
+  "purpose": "last planned combined paired regression",
+  "profiles": {
+    "open_servo": {
+      "functionality": "PASS_IN_THREE_FIXED_SCENES",
+      "performance": "FAIL_SLOWER",
+      "results": {
+        "B": {
+          "run": "20260923T022928_B_open_servo_paired_1790130568020286283",
+          "window_sec": 206.67011534201447,
+          "percent_change": 35.32615500116252,
+          "successes": 0
+        },
+        "F": {
+          "run": "20260923T023302_F_open_servo_paired_1790130782579660727",
+          "window_sec": 259.8424365259998,
+          "percent_change": 29.07032401441967,
+          "successes": 3
+        }
+      },
+      "selection_reason": "Fix actual opening endpoint and stop continued push to mechanical limit; explicitly accept measured time cost for combined regression, not a speed claim"
+    },
+    "reset_once": {
+      "functionality": "PASS_IN_THREE_FIXED_SCENES",
+      "performance": "INCONCLUSIVE_SMALL_MIXED_CHANGES",
+      "results": {
+        "B": {
+          "run": "20260923T023738_B_reset_once_paired_1790131058417845803",
+          "window_sec": 146.44369303499116,
+          "percent_change": -4.109687703033393,
+          "successes": 0
+        },
+        "F": {
+          "run": "20260923T024012_F_reset_once_paired_1790131212817114727",
+          "window_sec": 203.02069123802357,
+          "percent_change": 0.8455229640720763,
+          "successes": 3
+        }
+      },
+      "selection_reason": "Remove verified duplicate opening only with position/velocity guard; combined benefit not yet measured"
+    },
+    "no_resend": {
+      "functionality": "PASS_IN_THREE_FIXED_SCENES",
+      "performance": "INCONCLUSIVE_SMALL_MIXED_CHANGES",
+      "results": {
+        "B": {
+          "run": "20260923T024509_B_no_resend_paired_1790131509421571671",
+          "window_sec": 157.56618040797184,
+          "percent_change": 3.1732397184933703,
+          "successes": 0
+        },
+        "F": {
+          "run": "20260923T024754_F_no_resend_paired_1790131674965460130",
+          "window_sec": 199.966789055994,
+          "percent_change": -0.6714276518965168,
+          "successes": 3
+        }
+      },
+      "selection_reason": "Single complete trajectory dispatch with unchanged duration and feedback completion; no independent speed claim"
+    }
+  },
+  "accepted_flags": [
+    "open_servo",
+    "reset_once",
+    "no_resend"
+  ],
+  "declared_remaining_episodes": 6,
+  "max_environment_steps": 120,
+  "max_episode_wall_sec": 600,
+  "training_updates": 0,
+  "unchanged_global_budget": {
+    "start_monotonic": 183289.87901728,
+    "deadline_monotonic": 190489.87901728,
+    "stop_measurement_monotonic": 190369.87901728,
+    "max_attempts": 50,
+    "max_env_steps": 1160,
+    "max_probe_updates": 20,
+    "max_technical_retries": 2,
+    "attempts": 30,
+    "step_attempts": 328,
+    "probe_updates": 20
+  },
+  "unresolved": [
+    "closing search actual transient exceeds 0.10 rad/s reference",
+    "contact normals/depths absent"
+  ],
+  "no_additional_candidates": true,
+  "declared_monotonic": 186326.883698159
+}

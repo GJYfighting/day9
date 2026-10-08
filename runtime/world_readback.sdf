@@ -1,0 +1,1242 @@
+<sdf version='1.9'>
+  <world name='robot_world'>
+    <physics name='day3_v5_1ms' type='ignored'>
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>500</real_time_update_rate>
+      <max_contacts>20</max_contacts>
+      <dart>
+        <solver>
+          <solver_type>dantzig</solver_type>
+        </solver>
+        <collision_detector>ode</collision_detector>
+      </dart>
+    </physics>
+    <plugin name='ignition::gazebo::systems::Physics' filename='ignition-gazebo-physics-system'/>
+    <plugin name='ignition::gazebo::systems::UserCommands' filename='ignition-gazebo-user-commands-system'/>
+    <plugin name='ignition::gazebo::systems::SceneBroadcaster' filename='ignition-gazebo-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='ignition-gazebo-contact-system'/>
+    <plugin name='ignition::gazebo::systems::Sensors' filename='ignition-gazebo-sensors-system'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <scene>
+      <ambient>1 1 1 1</ambient>
+      <background>0.8 0.8 0.8 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <gravity>0 0 -9.80665</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.94 0.9 0.81 1</ambient>
+            <diffuse>0.94 0.9 0.81 1</diffuse>
+            <specular>1 1 1 0</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='table'>
+      <static>true</static>
+      <link name='table_link'>
+        <collision name='top_collision'>
+          <pose>0 0 0.735 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.9 0.6 0.03</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='top_visual'>
+          <pose>0 0 0.735 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.9 0.6 0.03</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.36 0.17 0.06 1</ambient>
+            <diffuse>0.64 0.32 0.1 1</diffuse>
+            <specular>0.05 0.03 0.02 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name='pedestal_collision'>
+          <pose>0 0 0.36 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.72</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='pedestal_visual'>
+          <pose>0 0 0.36 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.72</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.18 0.07 0.02 1</ambient>
+            <diffuse>0.34 0.13 0.04 1</diffuse>
+            <specular>0.03 0.02 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='white_recognition_area'>
+      <static>true</static>
+      <pose>-0.015408 -0.012439 0.7501 0 -0 -3.13666</pose>
+      <link name='outline'>
+        <visual name='edge_0'>
+          <pose>0 0.0875 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.135 0.001 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <visual name='edge_1'>
+          <pose>0 -0.0875 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.135 0.001 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <visual name='edge_2'>
+          <pose>0.0675 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.175 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <visual name='edge_3'>
+          <pose>-0.0675 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.175 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='robot'>
+      <joint name='base_joint' type='fixed'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>world</parent>
+        <child>base_link</child>
+      </joint>
+      <link name='base_link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 -1.5708</pose>
+          <mass>0.10000000000000001</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>2</iyy>
+            <iyz>0</iyz>
+            <izz>2</izz>
+          </inertia>
+        </inertial>
+        <visual name='base_link_visual'>
+          <pose>0 0 0 0 0 -1.570796326794896</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/JetArm_6DOF_BASE_GREEN.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.5 1 0.5 1</diffuse>
+            <ambient>0.5 1 0.5 1</ambient>
+          </material>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__base_balck_link_visual_1'>
+          <pose>0 0 0 0 0 -1.570796326794896</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/JetArm_6DOF_BASE_BLACK.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__base_screen_link_visual_2'>
+          <pose>0 0 0 0 0 -1.570796326794896</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/JetArm_6DOF_BASE_SCREEN.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__base_white_link_visual_3'>
+          <pose>0 0 0 0 0 -1.570796326794896</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/JetArm_6DOF_BASE_WHITE.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <ambient>1 1 1 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='joint1' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>base_link</parent>
+        <child>link1</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-2.0899999999999999</lower>
+            <upper>2.0899999999999999</upper>
+            <effort>1000</effort>
+            <velocity>10</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='link1'>
+        <pose>0 0 0.05 0 0 -1e-06</pose>
+        <inertial>
+          <pose>9.6e-05 0.000953 0.018162 0 -0 0</pose>
+          <mass>0.018996300000000001</mass>
+          <inertia>
+            <ixx>3.5240200000000002e-06</ixx>
+            <ixy>-9.5776699999999999e-11</ixy>
+            <ixz>1.77834e-11</ixz>
+            <iyy>2.9247999999999999e-06</iyy>
+            <iyz>2.27264e-08</iyz>
+            <izz>2.4323200000000001e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='link1_visual'>
+          <pose>0 0 0.0535 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/JetArm_6DOF_LINK1_GREEN.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grass</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.5 1 0.5 1</diffuse>
+            <ambient>0.5 1 0.5 1</ambient>
+          </material>
+        </visual>
+        <visual name='link1_visual_1'>
+          <pose>0 0 0.053 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/JetArm_6DOF_LINK1_BLACK.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grass</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='joint2' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>link1</parent>
+        <child>link2</child>
+        <axis>
+          <xyz>0 -1 0</xyz>
+          <limit>
+            <lower>-2.0899999999999999</lower>
+            <upper>2.0899999999999999</upper>
+            <effort>1000</effort>
+            <velocity>10</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='link2'>
+        <pose>0 0 0.104048 -0 -0.16755 -0</pose>
+        <inertial>
+          <pose>0.000156 -0.000455 0.071773 0 -0 0</pose>
+          <mass>0.032925000000000003</mass>
+          <inertia>
+            <ixx>3.9162100000000002e-05</ixx>
+            <ixy>-5.4546199999999999e-11</ixy>
+            <ixz>-1.84994e-07</ixz>
+            <iyy>3.0845400000000001e-05</iyy>
+            <iyz>3.58814e-09</iyz>
+            <izz>1.1508199999999999e-05</izz>
+          </inertia>
+        </inertial>
+        <visual name='link2_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/link2.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grass</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.5 1 0.5 1</diffuse>
+            <ambient>0.5 1 0.5 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='joint3' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>link2</parent>
+        <child>link3</child>
+        <axis>
+          <xyz>0 -1 0</xyz>
+          <limit>
+            <lower>-2.0899999999999999</lower>
+            <upper>2.0899999999999999</upper>
+            <effort>1000</effort>
+            <velocity>10</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='link3'>
+        <pose>-0.022416 0 0.236582 0 1.00531 -0</pose>
+        <inertial>
+          <pose>0.000128 -0.000761 0.071773 0 -0 0</pose>
+          <mass>0.032925000000000003</mass>
+          <inertia>
+            <ixx>3.9162200000000003e-05</ixx>
+            <ixy>-5.4009799999999997e-11</ixy>
+            <ixz>-1.7378699999999999e-07</ixz>
+            <iyy>3.0845200000000001e-05</iyy>
+            <iyz>3.6387400000000002e-09</iyz>
+            <izz>1.15078e-05</izz>
+          </inertia>
+        </inertial>
+        <visual name='link3_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/link3.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grass</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.5 1 0.5 1</diffuse>
+            <ambient>0.5 1 0.5 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='joint4' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>link3</parent>
+        <child>link4</child>
+        <axis>
+          <xyz>0 -1 0</xyz>
+          <limit>
+            <lower>-2.0899999999999999</lower>
+            <upper>2.0899999999999999</upper>
+            <effort>1000</effort>
+            <velocity>10</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='link4'>
+        <pose>0.091099 -0 0.308621 -3.14159 0.251327 3.14159</pose>
+        <inertial>
+          <pose>0.001551 0.00011 0.023889 0 -0 0</pose>
+          <mass>0.032029599999999998</mass>
+          <inertia>
+            <ixx>2.44956e-05</ixx>
+            <ixy>1.7404900000000001e-09</ixy>
+            <ixz>-1.04409e-06</ixz>
+            <iyy>2.2343600000000001e-05</iyy>
+            <iyz>2.2869199999999999e-07</iyz>
+            <izz>8.5882800000000007e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='link4_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/link4.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grass</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.5 1 0.5 1</diffuse>
+            <ambient>0.5 1 0.5 1</ambient>
+          </material>
+        </visual>
+        <visual name='link4_fixed_joint_lump__camera_housing_link_visual_1'>
+          <pose>-1.734723475976807e-18 3.469446951953614e-18 0 1.570796326794897 2.355138688025662e-16 2.355138688025663e-16</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/JetArm_6DOF_LINK4_GEMINI_BLACK.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <visual name='link4_fixed_joint_lump__depth_cam_frame_visual_2'>
+          <pose>-1.734723475976807e-18 3.469446951953614e-18 0 1.570796326794897 2.355138688025662e-16 2.355138688025663e-16</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/JetArm_6DOF_LINK4_GEMINI_WHITE.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <ambient>1 1 1 1</ambient>
+          </material>
+        </visual>
+        <visual name='link4_fixed_joint_lump__servo_link2_visual_3'>
+          <pose>0 0 0.0544833339503674 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/servo_link2.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <sensor name='robot_cam' type='rgbd_camera'>
+          <camera>
+            <horizontal_fov>1.0469999999999999</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>200</height>
+            </image>
+            <clip>
+              <near>0.10000000000000001</near>
+              <far>10</far>
+            </clip>
+          </camera>
+          <always_on>true</always_on>
+          <update_rate>15</update_rate>
+          <visualize>true</visualize>
+          <topic>/depth_cam/rgbd</topic>
+          <enable_metrics>true</enable_metrics>
+          <pose>-0.045 0 0.0704558 0 -1.5708 3.67321e-06</pose>
+        </sensor>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='joint5' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>link4</parent>
+        <child>link5</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-2.0899999999999999</lower>
+            <upper>2.0899999999999999</upper>
+            <effort>1000</effort>
+            <velocity>10</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='link5'>
+        <pose>0.104649 -0 0.255849 -3.14159 0.251327 -3.14159</pose>
+        <inertial>
+          <pose>0.013746 -0.00298 0.029289 0 -0 0</pose>
+          <mass>0.018516600000000001</mass>
+          <inertia>
+            <ixx>4.8746400000000001e-06</ixx>
+            <ixy>1.66478e-08</ixy>
+            <ixz>-3.9064600000000002e-07</ixz>
+            <iyy>2.5142800000000001e-06</iyy>
+            <iyz>1.0504000000000001e-07</iyz>
+            <izz>3.5198199999999999e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='link5_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/link5.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grass</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <visual name='link5_fixed_joint_lump__gripper_servo_link_visual_1'>
+          <pose>0 0 0.0054388 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/jetarm_6dof/gripper_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='l_in_joint' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>link5</parent>
+        <child>l_in_link</child>
+        <axis>
+          <xyz>0.999964 0.004698 -0.007044</xyz>
+          <limit>
+            <lower>-1.5700000000000001</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>1000</effort>
+            <velocity>0.34999999999999998</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0.0050000000000000001</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='l_in_link'>
+        <pose>0.124383 0.00494 0.207789 1.83156 0.25064 3.13098</pose>
+        <inertial>
+          <pose>0.006102 2.9e-05 0.014457 0 -0 0</pose>
+          <mass>0.00077687299999999997</mass>
+          <inertia>
+            <ixx>9.8745599999999995e-08</ixx>
+            <ixy>5.0634099999999997e-12</ixy>
+            <ixz>-6.7968600000000002e-10</ixz>
+            <iyy>9.7663500000000006e-08</iyy>
+            <iyz>-6.1211599999999997e-12</iyz>
+            <izz>2.2569500000000002e-09</izz>
+          </inertia>
+        </inertial>
+        <visual name='l_in_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/gripper/l_in_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='l_out_joint' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>l_in_link</parent>
+        <child>l_out_link</child>
+        <axis>
+          <xyz>0.999964 0.004698 -0.007044</xyz>
+          <limit>
+            <lower>-1.5700000000000001</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>1000</effort>
+            <velocity>0.34999999999999998</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0.0050000000000000001</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='l_out_link'>
+        <pose>0.126336 0.03294 0.200496 -3.14159 0.251327 -3.14159</pose>
+        <inertial>
+          <pose>0.006024 0.001446 0.009612 0 -0 0</pose>
+          <mass>0.0038473600000000002</mass>
+          <inertia>
+            <ixx>8.7733800000000004e-07</ixx>
+            <ixy>1.3675999999999999e-09</ixy>
+            <ixz>-6.9462099999999997e-09</ixz>
+            <iyy>8.1964900000000004e-07</iyy>
+            <iyz>1.5617700000000001e-07</iyz>
+            <izz>7.0687500000000003e-08</izz>
+          </inertia>
+        </inertial>
+        <collision name='l_out_link_box_collision'>
+          <pose>0.006136277 0.003408384 0.006161234 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.00666 0.020723 0.059778</size>
+            </box>
+          </geometry>
+          <max_contacts>20</max_contacts>
+          <surface>
+            <friction>
+              <ode>
+                <mu>6</mu>
+                <mu2>6</mu2>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <collide_without_contact>false</collide_without_contact>
+              <poissons_ratio>0.34999999999999998</poissons_ratio>
+              <elastic_modulus>100000000</elastic_modulus>
+              <ode>
+                <kp>100000</kp>
+                <kd>10</kd>
+                <max_vel>0.02</max_vel>
+                <min_depth>0.0001</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='l_out_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/gripper/l_out_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <sensor name='day3_v5_left_contact' type='contact'>
+          <always_on>true</always_on>
+          <update_rate>125</update_rate>
+          <visualize>false</visualize>
+          <topic>/day3_v5/left_finger/contacts</topic>
+          <contact>
+            <collision>l_out_link_box_collision</collision>
+            <topic>__default_topic__</topic>
+          </contact>
+          <pose>0 0 0 0 -0 0</pose>
+        </sensor>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='l_joint' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>link5</parent>
+        <child>l_link</child>
+        <axis>
+          <xyz>0.999967 0.005581 -0.00584</xyz>
+          <limit>
+            <lower>-1.5700000000000001</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>1000</effort>
+            <velocity>0.34999999999999998</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0.0050000000000000001</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='l_link'>
+        <pose>0.119835 0.013977 0.226199 1.83168 0.252384 3.13151</pose>
+        <inertial>
+          <pose>0.001538 -0.000403 0.005798 0 -0 0</pose>
+          <mass>0.0021892499999999998</mass>
+          <inertia>
+            <ixx>4.05342e-07</ixx>
+            <ixy>3.6007799999999999e-10</ixy>
+            <ixz>-1.99676e-09</ixz>
+            <iyy>3.3122200000000003e-07</iyy>
+            <iyz>-8.7933800000000001e-09</iyz>
+            <izz>7.7432000000000001e-08</izz>
+          </inertia>
+        </inertial>
+        <visual name='l_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/gripper/l_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='r_in_joint' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>link5</parent>
+        <child>r_in_link</child>
+        <axis>
+          <xyz>-0.999964 0.004699 0.007044</xyz>
+          <limit>
+            <lower>-1.5700000000000001</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>1000</effort>
+            <velocity>0.34999999999999998</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0.0050000000000000001</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='r_in_link'>
+        <pose>0.124383 -0.004943 0.207789 -1.83158 0.250641 -3.13098</pose>
+        <inertial>
+          <pose>0.006102 -2.8e-05 0.014457 0 -0 0</pose>
+          <mass>0.00077687299999999997</mass>
+          <inertia>
+            <ixx>9.8746599999999996e-08</ixx>
+            <ixy>-5.1117400000000002e-12</ixy>
+            <ixz>-6.7969199999999997e-10</ixz>
+            <iyy>9.7664299999999997e-08</iyy>
+            <iyz>-5.1401899999999999e-13</iyz>
+            <izz>2.2571799999999999e-09</izz>
+          </inertia>
+        </inertial>
+        <visual name='r_in_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/gripper/r_in_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='r_out_joint' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>r_in_link</parent>
+        <child>r_out_link</child>
+        <axis>
+          <xyz>-0.999964 0.004699 0.007044</xyz>
+          <limit>
+            <lower>-1.5700000000000001</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>1000</effort>
+            <velocity>0.34999999999999998</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0.0050000000000000001</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='r_out_link'>
+        <pose>0.126337 -0.032942 0.200495 -3.14159 0.251327 -3.14159</pose>
+        <inertial>
+          <pose>0.006062 -0.001447 0.009611 0 -0 0</pose>
+          <mass>0.0038474</mass>
+          <inertia>
+            <ixx>8.7733999999999999e-07</ixx>
+            <ixy>-1.2815e-09</ixy>
+            <ixz>-6.7005999999999998e-09</ixz>
+            <iyy>8.1956999999999997e-07</iyy>
+            <iyz>-1.5634999999999999e-07</iyz>
+            <izz>7.0760999999999994e-08</izz>
+          </inertia>
+        </inertial>
+        <collision name='r_out_link_box_collision'>
+          <pose>0.006136277 -0.003408384 0.006161234 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.00666 0.020723 0.059778</size>
+            </box>
+          </geometry>
+          <max_contacts>20</max_contacts>
+          <surface>
+            <friction>
+              <ode>
+                <mu>6</mu>
+                <mu2>6</mu2>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <collide_without_contact>false</collide_without_contact>
+              <poissons_ratio>0.34999999999999998</poissons_ratio>
+              <elastic_modulus>100000000</elastic_modulus>
+              <ode>
+                <kp>100000</kp>
+                <kd>10</kd>
+                <max_vel>0.02</max_vel>
+                <min_depth>0.0001</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='r_out_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/gripper/r_out_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <sensor name='day3_v5_right_contact' type='contact'>
+          <always_on>true</always_on>
+          <update_rate>125</update_rate>
+          <visualize>false</visualize>
+          <topic>/day3_v5/right_finger/contacts</topic>
+          <contact>
+            <collision>r_out_link_box_collision</collision>
+            <topic>__default_topic__</topic>
+          </contact>
+          <pose>0 0 0 0 -0 0</pose>
+        </sensor>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='r_joint' type='revolute'>
+        <pose>0 0 0 0 -0 0</pose>
+        <parent>link5</parent>
+        <child>r_link</child>
+        <axis>
+          <xyz>0.999964 -0.004699 -0.007043</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>1.5</effort>
+            <velocity>0.10000000000000001</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>1</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='r_link'>
+        <pose>0.119817 -0.013992 0.226192 -1.83154 0.250641 -3.13098</pose>
+        <inertial>
+          <pose>0.001547 0.000534 0.00624 0 -0 0</pose>
+          <mass>0.00206266</mass>
+          <inertia>
+            <ixx>3.97216e-07</ixx>
+            <ixy>-2.7569899999999998e-10</ixy>
+            <ixz>-2.1990099999999998e-09</ixz>
+            <iyy>3.2247299999999998e-07</iyy>
+            <iyz>1.0730399999999999e-08</iyz>
+            <izz>7.7870799999999999e-08</izz>
+          </inertia>
+        </inertial>
+        <visual name='r_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/ubuntu/ros2_ws/day9/meshes/gripper/r_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.1875 0.1875 0.1875 1</diffuse>
+            <ambient>0.1875 0.1875 0.1875 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <plugin name='ign_ros2_control::IgnitionROS2ControlPlugin' filename='/opt/ros/humble/share/ign_ros2_control/../../lib/libign_ros2_control-system.so'>
+        <parameters>/home/ubuntu/ros2_ws/day9/simulations/robot_gazebo/config/robot_config.yaml</parameters>
+      </plugin>
+      <plugin name='ignition::gazebo::systems::JointStatePublisher' filename='libignition-gazebo-joint-state-publisher-system.so'>
+        <topic>joint_states</topic>
+      </plugin>
+      <frame name='base_white_joint' attached_to='base_screen_link'>
+        <pose>0 0 0 0 -0 0</pose>
+      </frame>
+      <frame name='base_white_link' attached_to='base_white_joint'/>
+      <frame name='base_screen_joint' attached_to='base_balck_link'>
+        <pose>0 0 0 0 -0 0</pose>
+      </frame>
+      <frame name='base_screen_link' attached_to='base_screen_joint'/>
+      <frame name='base_balck_joint' attached_to='base_link'>
+        <pose>0 0 0 0 -0 0</pose>
+      </frame>
+      <frame name='base_balck_link' attached_to='base_balck_joint'/>
+      <frame name='servo_joint2' attached_to='link4'>
+        <pose>0 0 0.054483 0 -0 0</pose>
+      </frame>
+      <frame name='servo_link2' attached_to='servo_joint2'/>
+      <frame name='end_effector_joint' attached_to='link5'>
+        <pose>0 0 0.08 0 -0 0</pose>
+      </frame>
+      <frame name='end_effector_link' attached_to='end_effector_joint'/>
+      <frame name='gripper_servo_joint' attached_to='link5'>
+        <pose>0 0 0.005439 0 -0 0</pose>
+      </frame>
+      <frame name='gripper_servo_link' attached_to='gripper_servo_joint'/>
+      <frame name='depth_cam_joint' attached_to='depth_cam_optical_frame'>
+        <pose>0 0 0 1.5708 -1.5708 0</pose>
+      </frame>
+      <frame name='depth_cam_link' attached_to='depth_cam_joint'/>
+      <frame name='depth_cam_optical_joint' attached_to='camera_calibration_hand'>
+        <pose>-0.101 0 0.045 -1.5708 -0 -1.5708</pose>
+      </frame>
+      <frame name='depth_cam_optical_frame' attached_to='depth_cam_optical_joint'/>
+      <frame name='camera_calibration_hand_joint' attached_to='link4'>
+        <pose>0 0 0.171456 0 -1.5708 0</pose>
+      </frame>
+      <frame name='camera_calibration_hand' attached_to='camera_calibration_hand_joint'/>
+      <frame name='depth_cam_joint_sim' attached_to='camera_housing_link'>
+        <pose>0 0 0 0 -0 0</pose>
+      </frame>
+      <frame name='depth_cam_frame' attached_to='depth_cam_joint_sim'/>
+      <frame name='camera_housing_joint' attached_to='link4'>
+        <pose>0 0 0.014475 1.5708 -1.5708 0</pose>
+      </frame>
+      <frame name='camera_housing_link' attached_to='camera_housing_joint'/>
+      <pose>-0.2 0 0.75 0 -0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wood_block'>
+      <pose>0.009068 -0.010174 0.764283 0 -0 -0</pose>
+      <link name='block_link'>
+        <inertial>
+          <mass>0.037099399999999998</mass>
+          <inertia>
+            <ixx>5.0453200000000003e-06</ixx>
+            <iyy>5.0453200000000003e-06</iyy>
+            <izz>5.0453200000000003e-06</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='block_collision'>
+          <geometry>
+            <box>
+              <size>0.028565 0.028565 0.028565</size>
+            </box>
+          </geometry>
+          <max_contacts>20</max_contacts>
+          <surface>
+            <friction>
+              <ode>
+                <mu>7.7843147582976648</mu>
+                <mu2>5.2618962609393725</mu2>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <collide_without_contact>false</collide_without_contact>
+              <poissons_ratio>0.34999999999999998</poissons_ratio>
+              <elastic_modulus>100000000</elastic_modulus>
+              <ode>
+                <kp>100000</kp>
+                <kd>10</kd>
+                <max_vel>0.02</max_vel>
+                <min_depth>0.0001</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='block_visual'>
+          <geometry>
+            <box>
+              <size>0.028565 0.028565 0.028565</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.45 0.01 0.01 1</ambient>
+            <diffuse>0.9 0.03 0.03 1</diffuse>
+            <specular>0.06 0.04 0.04 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <sensor name='day3_v5_block_contact' type='contact'>
+          <always_on>true</always_on>
+          <update_rate>125</update_rate>
+          <visualize>false</visualize>
+          <topic>/day3_v5/block/contacts</topic>
+          <contact>
+            <collision>block_collision</collision>
+            <topic>__default_topic__</topic>
+          </contact>
+        </sensor>
+        <pose>0 0 0 0 -0 0</pose>
+        <enable_wind>false</enable_wind>
+      </link>
+      <plugin name='ignition::gazebo::systems::OdometryPublisher' filename='ignition-gazebo-odometry-publisher-system'>
+        <dimensions>3</dimensions>
+        <odom_publish_frequency>50</odom_publish_frequency>
+        <odom_topic>/day3_v5/block/odometry</odom_topic>
+        <odom_frame>world</odom_frame>
+        <robot_base_frame>block_link</robot_base_frame>
+        <tf_topic>/day3_v5/block/odometry_tf</tf_topic>
+      </plugin>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 -0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.1 -0.9</direction>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>

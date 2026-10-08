@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+  <world name="robot_world">
+    <physics name="day3_v5_1ms" type="ignored">
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>500</real_time_update_rate>
+      <max_contacts>20</max_contacts>
+      <dart>
+        <solver>
+          <solver_type>dantzig</solver_type>
+        </solver>
+        <collision_detector>ode</collision_detector>
+      </dart>
+    </physics>
+    <plugin filename="ignition-gazebo-physics-system" name="ignition::gazebo::systems::Physics">
+    </plugin>
+    <plugin filename="ignition-gazebo-user-commands-system" name="ignition::gazebo::systems::UserCommands">
+    </plugin>
+    <plugin filename="ignition-gazebo-scene-broadcaster-system" name="ignition::gazebo::systems::SceneBroadcaster">
+    </plugin>
+    <plugin filename="ignition-gazebo-contact-system" name="gz::sim::systems::Contact">
+    </plugin>
+    <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <scene>
+      <ambient>1.0 1.0 1.0</ambient>
+      <background>0.8 0.8 0.8</background>
+    </scene>
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.94 0.90 0.81 1</ambient>
+            <diffuse>0.94 0.90 0.81 1</diffuse>
+            <specular>1 1 1 0</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="table">
+      <static>true</static>
+      <link name="table_link">
+        <collision name="top_collision">
+          <pose>0 0 0.735 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.90 0.60 0.03</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="top_visual">
+          <pose>0 0 0.735 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.90 0.60 0.03</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.36 0.17 0.06 1</ambient>
+            <diffuse>0.64 0.32 0.10 1</diffuse>
+            <specular>0.05 0.03 0.02 1</specular>
+            <emissive>0.00 0.00 0.00 1</emissive>
+          </material>
+        </visual>
+        <collision name="pedestal_collision">
+          <pose>0 0 0.36 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.10 0.10 0.72</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="pedestal_visual">
+          <pose>0 0 0.36 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.10 0.10 0.72</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.18 0.07 0.02 1</ambient>
+            <diffuse>0.34 0.13 0.04 1</diffuse>
+            <specular>0.03 0.02 0.01 1</specular>
+            <emissive>0.00 0.00 0.00 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wood_block">
+      <pose>-0.01540777340756408 -0.012438901168749173 0.765 0 0 0</pose>
+      <link name="block_link">
+        <inertial>
+          <mass>0.03</mass>
+          <inertia>
+            <ixx>4.5e-6</ixx>
+            <iyy>4.5e-6</iyy>
+            <izz>4.5e-6</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name="block_collision">
+          <geometry>
+            <box>
+              <size>.03 .03 .03</size>
+            </box>
+          </geometry>
+          <max_contacts>20</max_contacts>
+          <surface>
+            <friction>
+              <ode>
+                <mu>6.0</mu>
+                <mu2>6.0</mu2>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <collide_without_contact>false</collide_without_contact>
+              <poissons_ratio>0.35</poissons_ratio>
+              <elastic_modulus>1e8</elastic_modulus>
+              <ode>
+                <kp>100000</kp>
+                <kd>10</kd>
+                <max_vel>0.02</max_vel>
+                <min_depth>0.0001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="block_visual">
+          <geometry>
+            <box>
+              <size>.03 .03 .03</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.45 0.01 0.01 1</ambient>
+            <diffuse>0.90 0.03 0.03 1</diffuse>
+            <specular>0.06 0.04 0.04 1</specular>
+            <emissive>0.00 0.00 0.00 1</emissive>
+          </material>
+        </visual>
+        <sensor name="day3_v5_block_contact" type="contact">
+          <always_on>true</always_on>
+          <update_rate>125</update_rate>
+          <visualize>false</visualize>
+          <topic>/day3_v5/block/contacts</topic>
+          <contact>
+            <collision>block_collision</collision>
+          </contact>
+        </sensor>
+      </link>
+      <plugin filename="ignition-gazebo-odometry-publisher-system" name="ignition::gazebo::systems::OdometryPublisher">
+        <dimensions>3</dimensions>
+        <odom_publish_frequency>50</odom_publish_frequency>
+        <odom_topic>/day3_v5/block/odometry</odom_topic>
+        <odom_frame>world</odom_frame>
+        <robot_base_frame>block_link</robot_base_frame>
+        <tf_topic>/day3_v5/block/odometry_tf</tf_topic>
+      </plugin>
+    </model>
+    <gravity>0 0 -9.80665</gravity>
+    <model name="white_recognition_area">
+      <static>true</static>
+      <pose>-0.01540777340756408 -0.012438901168749173 0.7501 0 0 -3.1366588877894728</pose>
+      <link name="outline">
+        <visual name="edge_0">
+          <pose>0 0.0875 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.135 0.001 .0001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <visual name="edge_1">
+          <pose>0 -0.0875 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.135 0.001 .0001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <visual name="edge_2">
+          <pose>0.0675 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.175 .0001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <visual name="edge_3">
+          <pose>-0.0675 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.175 .0001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

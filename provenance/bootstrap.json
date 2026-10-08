@@ -1,0 +1,10 @@
+{
+  "relocated_files": [
+    "generated/day3_v5_robot.urdf",
+    "generated/day3_v5_robot.sdf",
+    "generated/camera_baseline/day3_v5_robot.urdf",
+    "generated/camera_baseline/day3_v5_robot.sdf"
+  ],
+  "source_file_count": 1027,
+  "source_has_symlinks": false
+}

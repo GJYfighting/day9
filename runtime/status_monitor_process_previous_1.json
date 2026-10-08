@@ -1,0 +1,9 @@
+{
+  "pid": 124596,
+  "command": [
+    "/usr/bin/python3",
+    "runtime/status_monitor.py"
+  ],
+  "log": "/home/ubuntu/ros2_ws/day9/runtime/logs/status_monitor.log",
+  "started_utc": "2026-09-23T06:59:43Z"
+}

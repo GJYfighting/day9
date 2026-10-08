@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-u",
+    "/home/ubuntu/ros2_ws/day9/runtime/live_dashboard.py"
+  ],
+  "started_utc": "2026-09-28T09:25:49Z",
+  "purpose": "single progress bar; parent page never refreshes",
+  "exec_session_id": 94438,
+  "page": "/home/ubuntu/ros2_ws/day9/results/live_dashboard.html",
+  "fragment": "/home/ubuntu/ros2_ws/day9/results/live_progress_fragment.html"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "diagnostic_L0_0",
+    "source": "Day8 smoke_L0 point; new Day9 seed",
+    "position_base": [
+      0.18459222659243593,
+      -0.012438901168749173
+    ],
+    "seed": 20260908,
+    "level": "L0",
+    "mode": "fixed"
+  },
+  {
+    "id": "diagnostic_L0_3",
+    "source": "Day8 smoke_L0 point; new Day9 seed",
+    "position_base": [
+      0.1849409066683234,
+      -0.08311052621120449
+    ],
+    "seed": 20260909,
+    "level": "L0",
+    "mode": "fixed"
+  },
+  {
+    "id": "diagnostic_L0_4",
+    "source": "Day8 smoke_L0 point; new Day9 seed",
+    "position_base": [
+      0.18424354651654845,
+      0.05823272387370615
+    ],
+    "seed": 20260910,
+    "level": "L0",
+    "mode": "fixed"
+  }
+]

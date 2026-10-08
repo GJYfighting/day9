@@ -1,0 +1,15 @@
+{
+  "pid": 63426,
+  "start_ticks": "4002234",
+  "command": [
+    "/usr/bin/python3",
+    "-u",
+    "/home/ubuntu/ros2_ws/day9/runtime/live_dashboard.py"
+  ],
+  "started_utc": "2026-09-28T18:28:00Z",
+  "page": "/home/ubuntu/ros2_ws/day9/results/live_dashboard.html",
+  "fragment": "/home/ubuntu/ros2_ws/day9/results/live_progress_fragment.html",
+  "data": "/home/ubuntu/ros2_ws/day9/results/live_progress_bar.json",
+  "log": "/home/ubuntu/ros2_ws/day9/runtime/logs/live_dashboard_resume5.log",
+  "purpose": "single progress bar; exclude completed runs when computing live steps"
+}

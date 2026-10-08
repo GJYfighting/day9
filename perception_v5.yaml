@@ -1,0 +1,66 @@
+perception:
+  ros__parameters:
+    use_sim_time: true
+    day8_domain: ''
+    rgb_topic: /depth_cam/rgbd/image
+    depth_topic: /depth_cam/rgbd/depth_image
+    camera_info_topic: /depth_cam/rgbd/camera_info
+    base_frame: base_link
+    camera_frame: depth_cam_link
+    camera_frame_is_optical: false
+    optical_to_camera_rotation:
+    - 0.0
+    - 0.0
+    - 1.0
+    - -1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - -1.0
+    - 0.0
+    target_topic: /grasp/target_point
+    surface_topic: /grasp/target_surface
+    footprint_topic: /grasp/target_footprint
+    confidence_topic: /grasp/target_confidence
+    detected_topic: /grasp/detected
+    debug_topic: /grasp/debug_image
+    object_height_m: 0.03
+    min_object_side_m: 0.025
+    max_object_side_m: 0.04
+    red_low_1:
+    - 0
+    - 120
+    - 60
+    red_high_1:
+    - 8
+    - 255
+    - 255
+    red_low_2:
+    - 170
+    - 120
+    - 60
+    red_high_2:
+    - 179
+    - 255
+    - 255
+    morphology_kernel_px: 5
+    min_contour_area_px: 100.0
+    max_contour_area_ratio: 0.2
+    depth_patch_radius_px: 8
+    min_depth_pixels: 20
+    min_depth_m: 0.1
+    max_depth_m: 1.5
+    sync_slop_sec: 0.12
+    tf_timeout_sec: 0.2
+    temporal_scale_m: 0.02
+    publish_debug: false
+    validation_frames: 0
+    report_path: results/perception_validation.txt
+    expected_center_base_m:
+    - 0.18459222659243593
+    - -0.012438901168749173
+    - 0.015
+    center_tolerance_m:
+    - 0.09
+    - 0.11
+    - 0.035

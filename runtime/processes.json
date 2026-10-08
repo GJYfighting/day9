@@ -1,0 +1,38 @@
+[
+  {
+    "name": "world",
+    "pid": 122535,
+    "start_ticks": "7037666",
+    "log": "/home/ubuntu/ros2_ws/day9/runtime/logs/20260929T025353_1790650433860701018_world.log",
+    "args": [
+      "ros2",
+      "launch",
+      "/home/ubuntu/ros2_ws/day9/world.launch.py",
+      "gui:=false"
+    ]
+  },
+  {
+    "name": "moveit",
+    "pid": 122536,
+    "start_ticks": "7037666",
+    "log": "/home/ubuntu/ros2_ws/day9/runtime/logs/20260929T025353_1790650433860701018_moveit.log",
+    "args": [
+      "ros2",
+      "launch",
+      "/home/ubuntu/ros2_ws/day9/moveit.launch.py"
+    ]
+  },
+  {
+    "name": "perception",
+    "pid": 122537,
+    "start_ticks": "7037666",
+    "log": "/home/ubuntu/ros2_ws/day9/runtime/logs/20260929T025353_1790650433860701018_perception.log",
+    "args": [
+      "/usr/bin/python3",
+      "/home/ubuntu/ros2_ws/day9/perception_v5.py",
+      "--ros-args",
+      "--params-file",
+      "/home/ubuntu/ros2_ws/day9/perception_v5.yaml"
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "pid": 32426,
+  "start_ticks": "1709869",
+  "command": [
+    "/bin/bash",
+    "-lc",
+    "source ./session_env.sh >/dev/null && exec /usr/bin/python3 -u automation/run_pipeline.py"
+  ],
+  "log": "/home/ubuntu/ros2_ws/day9/runtime/logs/day9_pipeline_resume4.log",
+  "root": "/home/ubuntu/ros2_ws/day9",
+  "started_utc": "2026-09-28T12:05:55Z",
+  "recovery_record": "results/orphan_controller_recovery_amendment.json"
+}

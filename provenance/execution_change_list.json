@@ -1,0 +1,22 @@
+{
+  "purpose": "Day9-to-Day10 automated execution amendment",
+  "changed_reviewed_code": {
+    "day9_training.py": {
+      "previous_sha256": "8658d1406bddce858523b1cec961a547a9182d77fa6b1b9f940a5c7edb43c2a1",
+      "current_sha256": "51d28abe6cc02e620db77a9c10c93f623d0de6509223dd9de3af8c57497bebf7"
+    }
+  },
+  "new_automation": {
+    "automation/build_day10.py": "d8486bc96ad75f97fc7a18eff19822844f55177dc9123acb9166e663ec26dd32",
+    "automation/run_formal.py": "9c2b927ae608498cbac90c56d96e22ef0710eee1c26dfbc2d59b634cc2010563",
+    "automation/run_pipeline.py": "ff0ac8fd6f0745f33b29cc047236b67450e09efdb719add90536b6768737fc89"
+  },
+  "documentation": [
+    "REPORT.md",
+    "README.md"
+  ],
+  "previous_review": "results/review_drafts/before_pipeline_20260923T064459/review.json",
+  "current_review_sha256": "352257d2896de16191c915bd420d48a3567dfeae18990d656a50761d4e39621f",
+  "physical_task_or_P1_changed": false,
+  "Day8_or_parent_git_modified": false
+}

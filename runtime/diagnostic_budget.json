@@ -1,0 +1,15 @@
+{
+  "start_monotonic": 183289.87901728,
+  "deadline_monotonic": 190489.87901728,
+  "stop_measurement_monotonic": 190369.87901728,
+  "max_attempts": 50,
+  "max_env_steps": 1160,
+  "max_probe_updates": 20,
+  "max_technical_retries": 2,
+  "attempts": 36,
+  "step_attempts": 400,
+  "probe_updates": 20,
+  "measurement_completed_monotonic": 187166.08733948,
+  "elapsed_through_stop_wall_sec": 3876.208322199993,
+  "no_more_physical_diagnostics": true
+}

@@ -1,0 +1,10 @@
+{
+  "monotonic": 187084.725876004,
+  "requests": [
+    {
+      "pid": 112231,
+      "role": "Day9 owned supervisor",
+      "signal": "SIGINT"
+    }
+  ]
+}
