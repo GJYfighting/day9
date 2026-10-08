@@ -1,0 +1,350 @@
+{
+  "run": "20260928T103609_F_pilot_20260909_1790591769630610336",
+  "status": "RECOVERY_FAILED",
+  "error": "TechnicalFailure: reset recovery failed: no advancing clock for recovery",
+  "method": "F",
+  "seed": 20260909,
+  "steps": 278,
+  "updates": 0,
+  "counters": {
+    "complete_episodes": 69,
+    "successes": 69,
+    "grasp_attempts": 69,
+    "reset_failures": 30,
+    "task_reset_failures": 27,
+    "technical_failures": 0
+  },
+  "wall_sec": 2851.6530907590004,
+  "timings": {
+    "randomization_perception": {
+      "wall": 1.6926717050082516,
+      "exclusive": 1.6926717050082516,
+      "sim": 1.0239999999996385,
+      "count": 50
+    },
+    "open_motion": {
+      "wall": 997.3736103744286,
+      "exclusive": 997.3736103744286,
+      "sim": 0.0,
+      "count": 100
+    },
+    "open_settle": {
+      "wall": 21.854573957201865,
+      "exclusive": 21.854573957201865,
+      "sim": 0.0,
+      "count": 100
+    },
+    "open": {
+      "wall": 1023.4203106780005,
+      "exclusive": 4.19212634637006,
+      "sim": 977.6260000000024,
+      "count": 149
+    },
+    "return_observation": {
+      "wall": 145.05201599599968,
+      "exclusive": 145.05201599599968,
+      "sim": 138.46399999999875,
+      "count": 58
+    },
+    "randomization_physics": {
+      "wall": 85.46316560099513,
+      "exclusive": 85.46316560099513,
+      "sim": 15.611999999999323,
+      "count": 50
+    },
+    "vision": {
+      "wall": 97.23199655999997,
+      "exclusive": 97.23199655999997,
+      "sim": 92.58999999999983,
+      "count": 49
+    },
+    "ik_path": {
+      "wall": 103.16883020000932,
+      "exclusive": 103.16883020000932,
+      "sim": 93.42999999999887,
+      "count": 254
+    },
+    "ik": {
+      "wall": 109.26781443800064,
+      "exclusive": 37.28432448198873,
+      "sim": 98.91400000000063,
+      "count": 47
+    },
+    "reset": {
+      "wall": 1053.1687077869974,
+      "exclusive": 59.50886567000998,
+      "sim": 954.2220000000005,
+      "count": 50
+    },
+    "reset_total": {
+      "wall": 1065.1380272500082,
+      "exclusive": 10.276647758002582,
+      "sim": 934.3600000000001,
+      "count": 50
+    },
+    "recovery": {
+      "wall": 79.0872611370014,
+      "exclusive": 0.2951468590035802,
+      "sim": 76.04199999999965,
+      "count": 9
+    },
+    "arm_transfer": {
+      "wall": 112.06245873999433,
+      "exclusive": 112.06245873999433,
+      "sim": 108.43800000000016,
+      "count": 41
+    },
+    "arm_path": {
+      "wall": 69.80879214300148,
+      "exclusive": 69.80879214300148,
+      "sim": 67.29200000000034,
+      "count": 41
+    },
+    "inference": {
+      "wall": 0.017641912007093197,
+      "exclusive": 0.017641912007093197,
+      "sim": 0.0,
+      "count": 166
+    },
+    "ik_step": {
+      "wall": 4.176773809009319,
+      "exclusive": 4.176773809009319,
+      "sim": 3.5920000000003185,
+      "count": 166
+    },
+    "action_execution": {
+      "wall": 208.92485401700105,
+      "exclusive": 208.92485401700105,
+      "sim": 199.34600000000262,
+      "count": 166
+    },
+    "environment_step": {
+      "wall": 1704.7821220159967,
+      "exclusive": 0.678015682979094,
+      "sim": 1590.8480000000002,
+      "count": 166
+    },
+    "closing": {
+      "wall": 252.00874103200658,
+      "exclusive": 252.00874103200658,
+      "sim": 236.39200000000045,
+      "count": 41
+    },
+    "grip_settle": {
+      "wall": 90.19925701899774,
+      "exclusive": 90.19925701899774,
+      "sim": 78.20199999999912,
+      "count": 41
+    },
+    "lift": {
+      "wall": 117.15770674399391,
+      "exclusive": 117.15770674399391,
+      "sim": 108.21200000000115,
+      "count": 41
+    },
+    "hold": {
+      "wall": 229.98332097399907,
+      "exclusive": 229.98332097399907,
+      "sim": 205.072,
+      "count": 41
+    },
+    "place": {
+      "wall": 117.1001737930037,
+      "exclusive": 117.1001737930037,
+      "sim": 111.42199999999966,
+      "count": 41
+    },
+    "retreat": {
+      "wall": 83.51334094000231,
+      "exclusive": 83.51334094000231,
+      "sim": 79.24599999999919,
+      "count": 41
+    },
+    "checkpoint_write": {
+      "wall": 0.02997949400014477,
+      "exclusive": 0.02997949400014477,
+      "sim": 0.0,
+      "count": 1
+    }
+  },
+  "checkpoint": {
+    "status": "INTERRUPTED",
+    "steps": 278,
+    "updates": 0,
+    "method": "F",
+    "seed": 20260909,
+    "config_sha256": "51126d0cec604ab034afc866a74af5735b5fb870a43b18c24eb390ca707b63ee",
+    "code_hashes": {
+      "analyze_day9.py": "732a6277653843666fb63e0edb79d626c5a259e146a24e419812d5d7db2a12f9",
+      "analyze_self_occlusion.py": "021159e7da66f9dde02fc6c62abdf58864cf33a4787a53ce369de707892a46bf",
+      "config.yaml": "e9f60a524e088d1a0fe6572a085eb5a001839e76db71d1244f9a80c90b61e54d",
+      "day4_env.py": "710b07661208fcf8474e14ae853d5d872d3ea04cf3660f6df5350760b3b53522",
+      "day8_check.py": "9393336635604aba50938a0adcf0f3fdee36f97cc935f85d2f1bf6441b5fe08f",
+      "day8_env.py": "c20c8c59cfafb9ecf3d222deb621af64bddcaf8f1a29b3bde434cfa1269fc537",
+      "day9_env.py": "1a66fc310648c9d45eac697b058b2d03438b65975d7b004ae3ed85277ac30257",
+      "day9_training.py": "51d28abe6cc02e620db77a9c10c93f623d0de6509223dd9de3af8c57497bebf7",
+      "generated/camera_baseline/day3_v5_robot.sdf": "7316b273a6d2bed98ddc6853af26c76470b69d0e736d11a79e04e669a76d9595",
+      "generated/camera_baseline/day3_v5_robot.urdf": "479818df56947f89bd0bfa6db6bed642f1b892a423aa4dcbb5571c88ec469fdc",
+      "generated/day3_v5_robot.sdf": "ede63437936c6597baf51f0f42f1d094e63750ae42616768373defc2102086e1",
+      "generated/day3_v5_robot.urdf": "928b1da749265fd660662bb42779c37dd7d4ba5001cbed816e59bdea1a1085ef",
+      "grasp_geometry_v5.py": "fc1815d10cbcfbb64563268a1b2e978d952b76dc85bb4da522dacc6f46a80352",
+      "io_probe.py": "01c5cd5cc8c6817658778fbb20815a75251ec78145065ad405c7bd97f9b212cc",
+      "manage_day8.py": "3790ff7f3621944df43d904721715a1bde15da3216fd74b024bf907bbc4cfa4c",
+      "manage_day9.py": "a149b0fab4e8862c6fef035c894423b528f0eb2c019c1e93d9845d70ecc910e1",
+      "moveit.launch.py": "5f4395e957478022f0bc32acbbcf1f27e565cdf793a46169005a86a1312a01b5",
+      "moveit_v5/jetarm_6dof.srdf": "050e781b46de6e20a8e380889c80fa323864715766db22108718a7ab7a41f358",
+      "moveit_v5/joint_limits.yaml": "34100799bd26830db251e4384988c390fcf6d52da34f7f668b9d1c78b98d4f3f",
+      "moveit_v5/kinematics.yaml": "1501ebb454f62845ae94011e0d7cb9150185b05fbd45cffd8fec181a750182b9",
+      "moveit_v5/launch_defaults.yaml": "9b52d3771161f749276f21709054fbb411ccddd54c479accf797c9e7e36dd4e6",
+      "moveit_v5/moveit_controllers.yaml": "6e81d67a80a63f0db24406a99e8efc8993a3a24482c20e7c523497bce4c5248f",
+      "moveit_v5/pilz_cartesian_limits.yaml": "fed80b213b77f13fb7b913d703609a66caa72ccb0617b41e83d3057e31749047",
+      "moveit_v5/sensors_3d.yaml": "2da018b37e1038d2d868499d8c6cdf56b95ceda2d859eba80744ed2e7ec246c2",
+      "perception_v5.py": "8c0cd48399360b78dd807550332ef132cc397abdb1576bad2eda2020bd322b99",
+      "perception_v5.yaml": "927b371725cc84f6c939ec085161c6037c2ae221c309213e140dd5090ae1afad",
+      "repair_camera.py": "86eb2db1b1236f4b72859ac8327c6c187de73e02768bc612f08c38696e838a10",
+      "residual_env.py": "caee2ca833a1b226216a80d71be626870e055b79d16824fc35d251c8c92afd95",
+      "run_day9.py": "53e818b9a947d6d46ade067ebd735c866541bdc76168390fff49b275bb48e89c",
+      "run_validation.py": "28ac3bea09c5c53475ea9f33098563dcc4075fb9f557bff598cb8740ac41c1b6",
+      "session_env.sh": "5fa52760e00d761c6d62ecbac5faf769e2610749a0242c00f95e4a370e201502",
+      "simulations/robot_gazebo/config/robot_config.yaml": "37ec82d26af5103bd193a50325465c55b993e43c05589fbf2f6fd9a848d6c35d",
+      "simulations/robot_gazebo/worlds/grasp_table.sdf": "c626376a90506a7f4834ec1124ad66fcc4ac8ab067fcba2964cb6508c2873d6f",
+      "test_day9_contract.py": "881124e19ae379729dffa0012363c21944508a001fef38e91860a23caaceda18",
+      "visual_grasp_v5.py": "6c427a085323aba690965df860ac81f7f2e0e53be9458aea3ef44405f857d4c0",
+      "white_area.py": "72fe11ce9de3f9470851f389c908c922f1bbe692b78eddc29adfe76506795069",
+      "white_area_check.py": "a8707b567eaba2687a0748079a2b813dbd4e160cad3b133caffe30b051cff09c",
+      "world.launch.py": "811932079c7c959111b394aedef8eb83227fb48cc2ec911dddf603ea42cd1446",
+      "write_review.py": "1080defad05d80afad9ef4375d011ac45547f6d38e2682281973076d5a06e93f"
+    },
+    "model": "models/pilot/F_20260909/step_000278_1790594620916497267.zip",
+    "replay": "models/pilot/F_20260909/step_000278_1790594620916497267_replay.pkl",
+    "rng": "models/pilot/F_20260909/step_000278_1790594620916497267_rng.pkl",
+    "curriculum": {
+      "mode": "auto",
+      "level": "L0",
+      "window": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "dwell": 96,
+      "valid_total": 96
+    },
+    "next_attempt": 99,
+    "counters": {
+      "complete_episodes": 69,
+      "successes": 69,
+      "grasp_attempts": 69,
+      "reset_failures": 30,
+      "task_reset_failures": 27,
+      "technical_failures": 0
+    },
+    "initial_policy_hash": "cb74c5f1af32aae27ed08933b204c45c7466d249e38ab644413b21a49278e878",
+    "resume_semantics": "continue optimizer/replay/RNG/curriculum at a new safely reset physical episode; not bitwise simulator continuation"
+  },
+  "initial_policy_hash": "cb74c5f1af32aae27ed08933b204c45c7466d249e38ab644413b21a49278e878",
+  "weights_changed": false,
+  "includes": [
+    "startup",
+    "reset",
+    "randomization",
+    "grasp",
+    "network_update",
+    "checkpoint",
+    "safe_close"
+  ],
+  "success_rate_including_task_reset_failures": 0.71875,
+  "success_rate_denominator": 96
+}

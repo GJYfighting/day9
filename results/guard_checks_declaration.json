@@ -1,0 +1,29 @@
+{
+  "purpose": "entry guard checks only; never launch training",
+  "environment_steps": 0,
+  "updates": 0,
+  "max_wall_sec": 60,
+  "retries": 0,
+  "tests": [
+    [
+      "train",
+      "--method",
+      "B",
+      "--seeds",
+      "20260911",
+      "--fresh",
+      "--wall-limit-sec",
+      "300"
+    ],
+    [
+      "pilot",
+      "--report-sha",
+      "unapproved",
+      "--wall-limit-sec",
+      "300"
+    ],
+    [
+      "freeze"
+    ]
+  ]
+}

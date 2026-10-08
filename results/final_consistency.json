@@ -1,0 +1,23 @@
+{
+  "code_hashes": {
+    "passed": true,
+    "count": 39,
+    "mismatches": []
+  },
+  "artifact_hashes": {
+    "passed": true,
+    "count": 883,
+    "mismatches": []
+  },
+  "evidence_hashes": {
+    "passed": true,
+    "count": 71,
+    "mismatches": []
+  },
+  "candidate": true,
+  "report": true,
+  "no_pilot_started": true,
+  "no_formal_started": true,
+  "no_validated_freeze_claim": true,
+  "shutdown": true
+}

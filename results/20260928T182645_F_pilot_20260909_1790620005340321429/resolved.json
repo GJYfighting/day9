@@ -1,0 +1,155 @@
+{
+  "P1": {
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "tau": 0.005,
+    "buffer_size": 100000,
+    "batch_size": 128,
+    "learning_starts": 1000,
+    "train_freq": [
+      1,
+      "step"
+    ],
+    "gradient_steps": 1,
+    "ent_coef": "auto",
+    "target_entropy": "auto",
+    "target_update_interval": 1,
+    "action_noise": null,
+    "use_sde": false,
+    "optimize_memory_usage": false,
+    "device": "cpu"
+  },
+  "policy": "MlpPolicy",
+  "policy_kwargs": {
+    "net_arch": [
+      64,
+      64
+    ],
+    "activation_fn": "torch.nn.ReLU",
+    "n_critics": 2,
+    "optimizer_class": "torch.optim.Adam",
+    "optimizer_kwargs": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0
+    }
+  },
+  "versions": {
+    "sb3": "2.3.2",
+    "gymnasium": "0.29.1",
+    "numpy": "1.26.4",
+    "opencv": "4.8.1",
+    "torch": "2.11.0+cu130",
+    "scipy": "1.8.0"
+  },
+  "imports": {
+    "stable_baselines3": "/home/ubuntu/ros2_ws/day9/vendor/stable_baselines3/__init__.py",
+    "gymnasium": "/home/ubuntu/ros2_ws/day9/vendor/gymnasium/__init__.py",
+    "numpy": "/home/ubuntu/ros2_ws/day9/vendor/numpy/__init__.py",
+    "cv2": "/home/ubuntu/ros2_ws/day9/vendor/cv2/__init__.py",
+    "torch": "/home/ubuntu/.local/lib/python3.10/site-packages/torch/__init__.py",
+    "scipy": "/usr/lib/python3/dist-packages/scipy/__init__.py"
+  },
+  "constructor_defaults": {
+    "learning_rate": "0.0003",
+    "buffer_size": "1000000",
+    "learning_starts": "100",
+    "batch_size": "256",
+    "tau": "0.005",
+    "gamma": "0.99",
+    "train_freq": "1",
+    "gradient_steps": "1",
+    "action_noise": "None",
+    "replay_buffer_class": "None",
+    "replay_buffer_kwargs": "None",
+    "optimize_memory_usage": "False",
+    "ent_coef": "auto",
+    "target_update_interval": "1",
+    "target_entropy": "auto",
+    "use_sde": "False",
+    "sde_sample_freq": "-1",
+    "use_sde_at_warmup": "False",
+    "stats_window_size": "100",
+    "tensorboard_log": "None",
+    "policy_kwargs": "None",
+    "verbose": "0",
+    "seed": "None",
+    "device": "auto",
+    "_init_setup_model": "True"
+  },
+  "policy_constructor_defaults": {
+    "net_arch": "None",
+    "activation_fn": "<class 'torch.nn.modules.activation.ReLU'>",
+    "use_sde": "False",
+    "log_std_init": "-3",
+    "use_expln": "False",
+    "clip_mean": "2.0",
+    "features_extractor_class": "<class 'stable_baselines3.common.torch_layers.FlattenExtractor'>",
+    "features_extractor_kwargs": "None",
+    "normalize_images": "True",
+    "optimizer_class": "<class 'torch.optim.adam.Adam'>",
+    "optimizer_kwargs": "None",
+    "n_critics": "2",
+    "share_features_extractor": "False"
+  },
+  "actor_optimizer": {
+    "lr": 0.0003,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "amsgrad": false,
+    "maximize": false,
+    "foreach": null,
+    "capturable": false,
+    "differentiable": false,
+    "fused": null,
+    "decoupled_weight_decay": false
+  },
+  "critic_optimizer": {
+    "lr": 0.0003,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "amsgrad": false,
+    "maximize": false,
+    "foreach": null,
+    "capturable": false,
+    "differentiable": false,
+    "fused": null,
+    "decoupled_weight_decay": false
+  },
+  "entropy_optimizer": {
+    "lr": 0.0003,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "amsgrad": false,
+    "maximize": false,
+    "foreach": null,
+    "capturable": false,
+    "differentiable": false,
+    "fused": null,
+    "decoupled_weight_decay": false
+  },
+  "target_entropy": -4.0,
+  "initial_entropy_coefficient": 0.8462598919868469,
+  "entropy_initialization": "log(alpha)=0; alpha=1; Adam on log(alpha), same constant learning rate",
+  "replay_class": "ReplayBuffer",
+  "replay_timeout_handling": true,
+  "normalize_observation": false,
+  "normalize_reward": false,
+  "torch_threads": 4,
+  "torch_interop_threads": 4
+}

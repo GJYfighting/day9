@@ -1,0 +1,26 @@
+[
+  {
+    "file": "generated/day3_v5_robot.sdf",
+    "link": "l_out_link",
+    "collision": "l_out_link_box_collision",
+    "geometry": "<collision name=\"l_out_link_box_collision\">\n        <pose>0.006136277 0.003408384 0.006161234 0 0 0</pose>\n        <geometry>\n          <box>\n            <size>0.00666 0.020723 0.059778</size>\n          </box>\n        </geometry>\n        <max_contacts>20</max_contacts>\n        <surface>\n          <friction>\n            <ode>\n              <mu>6.0</mu>\n              <mu2>6.0</mu2>\n              <slip1>0.0</slip1>\n              <slip2>0.0</slip2>\n            </ode>\n          </friction>\n          <contact>\n            <collide_without_contact>false</collide_without_contact>\n            <poissons_ratio>0.35</poissons_ratio>\n            <elastic_modulus>1e8</elastic_modulus>\n            <ode>\n              <kp>100000</kp>\n              <kd>10</kd>\n              <max_vel>0.02</max_vel>\n              <min_depth>0.0001</min_depth>\n            </ode>\n          </contact>\n        </surface>\n      </collision>\n      "
+  },
+  {
+    "file": "generated/day3_v5_robot.sdf",
+    "link": "r_out_link",
+    "collision": "r_out_link_box_collision",
+    "geometry": "<collision name=\"r_out_link_box_collision\">\n        <pose>0.006136277 -0.003408384 0.006161234 0 0 0</pose>\n        <geometry>\n          <box>\n            <size>0.00666 0.020723 0.059778</size>\n          </box>\n        </geometry>\n        <max_contacts>20</max_contacts>\n        <surface>\n          <friction>\n            <ode>\n              <mu>6.0</mu>\n              <mu2>6.0</mu2>\n              <slip1>0.0</slip1>\n              <slip2>0.0</slip2>\n            </ode>\n          </friction>\n          <contact>\n            <collide_without_contact>false</collide_without_contact>\n            <poissons_ratio>0.35</poissons_ratio>\n            <elastic_modulus>1e8</elastic_modulus>\n            <ode>\n              <kp>100000</kp>\n              <kd>10</kd>\n              <max_vel>0.02</max_vel>\n              <min_depth>0.0001</min_depth>\n            </ode>\n          </contact>\n        </surface>\n      </collision>\n      "
+  },
+  {
+    "file": "generated/day3_v5_robot.urdf",
+    "link": "l_out_link",
+    "collision": "l_out_link_box_collision",
+    "geometry": "<collision name=\"l_out_link_box_collision\">\n      <origin rpy=\"0 0 0\" xyz=\"0.006136277 0.003408384 0.006161234\" />\n      <geometry>\n        <box size=\"0.006660189 0.020723153 0.059778098\" />\n      </geometry>\n    </collision>\n  "
+  },
+  {
+    "file": "generated/day3_v5_robot.urdf",
+    "link": "r_out_link",
+    "collision": "r_out_link_box_collision",
+    "geometry": "<collision name=\"r_out_link_box_collision\">\n      <origin rpy=\"0 0 0\" xyz=\"0.006136277 -0.003408384 0.006161234\" />\n      <geometry>\n        <box size=\"0.006660189 0.020723153 0.059778098\" />\n      </geometry>\n    </collision>\n  "
+  }
+]

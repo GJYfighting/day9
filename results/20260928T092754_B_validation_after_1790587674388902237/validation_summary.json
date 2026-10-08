@@ -1,0 +1,642 @@
+{
+  "run": "20260928T092754_B_validation_after_1790587674388902237",
+  "status": "COMPLETE",
+  "method": "B",
+  "label": "after",
+  "episodes": [
+    {
+      "scene": "validation_08",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": -0.3855990245938301,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.028856273740530014,
+        "yaw_error_rad": 0.011904668113414297,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.24127159267663956,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.002626291709020734,
+        "executed_tcp_move_m": 0.002587126099555866,
+        "step_elapsed_sim_sec": 1.2019999999999982,
+        "step_initial_joint_error_rad": 0.016507459014933112,
+        "step_final_joint_error_rad": 0.0002471885779118388,
+        "step_arm_max_velocity": 0.002746539695095168,
+        "reset_arm_max_velocity": 2.264520714231888e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.00021710945293307304,
+            -0.0008809049613773823,
+            -0.0024646050296723843,
+            0.0003881677985191345
+          ],
+          "final_action": [
+            -0.00021710945293307304,
+            -0.0008809049613773823,
+            -0.0024646050296723843,
+            0.0003881677985191345
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 57.80333603100007
+    },
+    {
+      "scene": "validation_09",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": -0.3847051411867142,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.028847306966781616,
+        "yaw_error_rad": 0.10486413759673079,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.2233048900961876,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0025390663649886847,
+        "executed_tcp_move_m": 0.0025011904912585364,
+        "step_elapsed_sim_sec": 1.2000000000000028,
+        "step_initial_joint_error_rad": 0.017620362217142027,
+        "step_final_joint_error_rad": 0.0002642059178035172,
+        "step_arm_max_velocity": 0.0029356214072891462,
+        "reset_arm_max_velocity": 1.993628342747411e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.000593267846852541,
+            -0.0010778377763926983,
+            -0.0022210711613297462,
+            -0.005058221518993378
+          ],
+          "final_action": [
+            -0.000593267846852541,
+            -0.0010778377763926983,
+            -0.0022210711613297462,
+            -0.005058221518993378
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 45.74375684000006
+    },
+    {
+      "scene": "validation_10",
+      "success": false,
+      "steps": 0,
+      "grasp_attempts": 0,
+      "completed_episode": false,
+      "task_reset_failure": true,
+      "technical_failure": false,
+      "return_": 0.0,
+      "error": "TestFailure('RESET_FAIL: Day4 reset failed after 1 attempts: IK_FAIL: [{\"contour_yaw_deg\": -0.141649014998145, \"symmetry\": 0, \"feasible\": false, \"failure_samples\": [\"IK_FAIL: no contour-constrained IK at center=[0.23317008465528488, -0.027380824089050293, 0.1070733292587763] axis=-0.14; samples=[\\'COLLISION_PLAN_FAIL: link3<->servo_link2\\', \\'COLLISION_PLAN_FAIL: link3<->servo_link2\\', \\'geometry pos=0.00070 line=0.01040 tilt=179.40\\']\"]}, {\"contour_yaw_deg\": -0.141649014998145, \"symmetry\": 1, \"feasible\": false, \"failure_samples\": [\"IK_FAIL: no contour-constrained IK at center=[0.23317008465528488, -0.027380824089050293, 0.1070733292587763] axis=89.86; samples=[\\'COLLISION_PLAN_FAIL: link3<->servo_link2\\', \\'geometry pos=0.03090 line=0.99564 tilt=79.28\\', \\'geometry pos=0.00000 line=0.00156 tilt=179.22\\']\"]}, {\"contour_yaw_deg\": -0.141649014998145, \"symmetry\": 2, \"feasible\": true, \"equivalent_to_symmetry\": 0}, {\"contour_yaw_deg\": -0.141649014998145, \"symmetry\": 3, \"feasible\": true, \"equivalent_to_symmetry\": 1}]')",
+      "recovered": true,
+      "recovery_detail": "",
+      "wall_sec": 23.337288771999738
+    },
+    {
+      "scene": "validation_11",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": -0.3512116149067879,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.028512371703982353,
+        "yaw_error_rad": 0.02561339270122355,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.23664068430662155,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0026004535611718893,
+        "executed_tcp_move_m": 0.002552630946972645,
+        "step_elapsed_sim_sec": 1.2019999999999982,
+        "step_initial_joint_error_rad": 0.01639418832996231,
+        "step_final_joint_error_rad": 0.00030314670095110685,
+        "step_arm_max_velocity": 0.003368296560974482,
+        "reset_arm_max_velocity": 2.0237028584474404e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.00027992110699415207,
+            -0.0009059719741344452,
+            -0.0024214081931859255,
+            -0.0003435760736465454
+          ],
+          "final_action": [
+            -0.00027992110699415207,
+            -0.0009059719741344452,
+            -0.0024214081931859255,
+            -0.0003435760736465454
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 46.303424820000146
+    },
+    {
+      "scene": "validation_12",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": -0.04534367471933365,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.0254537221044302,
+        "yaw_error_rad": 0.08077812935490686,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.20873639732599258,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0024033901281654835,
+        "executed_tcp_move_m": 0.0023591720307411103,
+        "step_elapsed_sim_sec": 1.2019999999999982,
+        "step_initial_joint_error_rad": 0.015978977446753362,
+        "step_final_joint_error_rad": 0.0002954699201729305,
+        "step_arm_max_velocity": 0.003282999191675212,
+        "reset_arm_max_velocity": 2.2356285174399138e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.0005696006119251251,
+            -0.0008925800211727619,
+            -0.0021575773134827614,
+            -0.0037468448281288147
+          ],
+          "final_action": [
+            -0.0005696006119251251,
+            -0.0008925800211727619,
+            -0.0021575773134827614,
+            -0.0037468448281288147
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 47.42982037999991
+    },
+    {
+      "scene": "validation_13",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": -0.628594309091568,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.031286198645830154,
+        "yaw_error_rad": 0.1001679632493632,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.23878347128629684,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0026731882244348526,
+        "executed_tcp_move_m": 0.002628994872054419,
+        "step_elapsed_sim_sec": 1.200000000000017,
+        "step_initial_joint_error_rad": 0.01972047226054785,
+        "step_final_joint_error_rad": 0.00032740864472968756,
+        "step_arm_max_velocity": 0.003637873972872241,
+        "reset_arm_max_velocity": 2.0888552802411642e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.0004986170679330826,
+            -0.001156962476670742,
+            -0.0023577010724693537,
+            -0.004415571689605713
+          ],
+          "final_action": [
+            -0.0004986170679330826,
+            -0.001156962476670742,
+            -0.0023577010724693537,
+            -0.004415571689605713
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 46.8659730090003
+    },
+    {
+      "scene": "validation_14",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": -0.22872183471918106,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.027287503704428673,
+        "yaw_error_rad": 0.07575357554216959,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.22133532911539078,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0025219584349542856,
+        "executed_tcp_move_m": 0.0024650295950462814,
+        "step_elapsed_sim_sec": 1.2019999999999982,
+        "step_initial_joint_error_rad": 0.0166975085867751,
+        "step_final_joint_error_rad": 0.00037910072429747643,
+        "step_arm_max_velocity": 0.004212230341656492,
+        "reset_arm_max_velocity": 2.2099583705526005e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.0005092364735901356,
+            -0.0009903432801365852,
+            -0.0022627797443419695,
+            -0.0033998191356658936
+          ],
+          "final_action": [
+            -0.0005092364735901356,
+            -0.0009903432801365852,
+            -0.0022627797443419695,
+            -0.0033998191356658936
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 46.66582751900023
+    },
+    {
+      "scene": "validation_15",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": 0.4066957160830498,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.020933128893375397,
+        "yaw_error_rad": 0.02380900384520513,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.18318705260753632,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0021837211679667234,
+        "executed_tcp_move_m": 0.0021511101784703356,
+        "step_elapsed_sim_sec": 1.2019999999999982,
+        "step_initial_joint_error_rad": 0.016247811056424033,
+        "step_final_joint_error_rad": 0.00024327967159587516,
+        "step_arm_max_velocity": 0.002703108588841331,
+        "reset_arm_max_velocity": 2.3345956156106684e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.0006253034807741642,
+            -0.0004922877997159958,
+            -0.002033540513366461,
+            -0.0011025741696357727
+          ],
+          "final_action": [
+            -0.0006253034807741642,
+            -0.0004922877997159958,
+            -0.002033540513366461,
+            -0.0011025741696357727
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 46.7075370550001
+    },
+    {
+      "scene": "validation_16",
+      "success": false,
+      "steps": 0,
+      "grasp_attempts": 0,
+      "completed_episode": false,
+      "task_reset_failure": true,
+      "technical_failure": false,
+      "return_": 0.0,
+      "error": "TestFailure('RESET_FAIL: Day4 reset failed after 1 attempts: PERCEPTION_FAIL: valid samples 0/12')",
+      "recovered": true,
+      "recovery_detail": "",
+      "wall_sec": 52.17165886600014
+    },
+    {
+      "scene": "validation_17",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": 0.04367232322692871,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.024563562124967575,
+        "yaw_error_rad": 0.03174067218386897,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.2188684418797493,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0024289286229759455,
+        "executed_tcp_move_m": 0.0023962875835713765,
+        "step_elapsed_sim_sec": 1.2000000000000455,
+        "step_initial_joint_error_rad": 0.014585311125113298,
+        "step_final_joint_error_rad": 0.00019678026488501033,
+        "step_arm_max_velocity": 0.0021864473288371183,
+        "reset_arm_max_velocity": 2.23014142694683e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.00044136960059404373,
+            -0.0007468624971807003,
+            -0.002268718322739005,
+            -0.001143522560596466
+          ],
+          "final_action": [
+            -0.00044136960059404373,
+            -0.0007468624971807003,
+            -0.002268718322739005,
+            -0.001143522560596466
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 46.45669619399996
+    },
+    {
+      "scene": "validation_18",
+      "success": false,
+      "steps": 20,
+      "grasp_attempts": 0,
+      "completed_episode": true,
+      "task_reset_failure": false,
+      "technical_failure": false,
+      "return_": -0.2112407237291336,
+      "last_info": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.027112692594528198,
+        "yaw_error_rad": 0.03393556020821094,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": -0.22811945527791977,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.00253657135181129,
+        "executed_tcp_move_m": 0.0024849719034323982,
+        "step_elapsed_sim_sec": 1.2019999999999982,
+        "step_initial_joint_error_rad": 0.015522074888246529,
+        "step_final_joint_error_rad": 0.00031792628525728617,
+        "step_arm_max_velocity": 0.003532514231494588,
+        "reset_arm_max_velocity": 2.201792983234918e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_policy_action": [
+            -0.00035827094689011574,
+            -0.0008844281546771526,
+            -0.002350239083170891,
+            -0.0009092316031455994
+          ],
+          "final_action": [
+            -0.00035827094689011574,
+            -0.0008844281546771526,
+            -0.002350239083170891,
+            -0.0009092316031455994
+          ]
+        },
+        "is_success": false,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "wall_sec": 46.51880205100042
+    },
+    {
+      "scene": "validation_19",
+      "success": false,
+      "steps": 0,
+      "grasp_attempts": 0,
+      "completed_episode": false,
+      "task_reset_failure": true,
+      "technical_failure": false,
+      "return_": 0.0,
+      "error": "TestFailure('RESET_FAIL: Day4 reset failed after 1 attempts: IK_FAIL: [{\"contour_yaw_deg\": 0.4376248941090514, \"symmetry\": 0, \"feasible\": false, \"failure_samples\": [\"COLLISION_PLAN_FAIL: finger/table clearance=0.001910\"]}, {\"contour_yaw_deg\": 0.4376248941090514, \"symmetry\": 1, \"feasible\": false, \"failure_samples\": [\"COLLISION_PLAN_FAIL: finger/table clearance=0.001910\"]}, {\"contour_yaw_deg\": 0.4376248941090514, \"symmetry\": 2, \"feasible\": true, \"equivalent_to_symmetry\": 0}, {\"contour_yaw_deg\": 0.4376248941090514, \"symmetry\": 3, \"feasible\": true, \"equivalent_to_symmetry\": 1}]')",
+      "recovered": true,
+      "recovery_detail": "",
+      "wall_sec": 25.25610341599986
+    }
+  ],
+  "scheduled": 12,
+  "successes": 0,
+  "failure": null,
+  "wall_sec": 541.3899737969996,
+  "updates": 0,
+  "replay_writes": 0,
+  "weights_unchanged": true
+}

@@ -1,0 +1,14 @@
+{
+  "monotonic": 186757.869441845,
+  "loadavg": "13.61 11.12 9.77 23/835 119300\n",
+  "meminfo": "MemTotal:        8083856 kB\nMemFree:         1457612 kB\nMemAvailable:    5215476 kB\nBuffers:          465672 kB\nCached:          3378452 kB\nSwapCached:            4 kB\nActive:          3469948 kB\nInactive:        2524336 kB\nActive(anon):    2001236 kB\nInactive(anon):   183552 kB\nActive(file):    1468712 kB\nInactive(file):  2340784 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       2097148 kB\nSwapFree:        2096368 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               472 kB\nWriteback:             0 kB\nAnonPages:       2150028 kB\nMapped:          1071816 kB\nShmem:             34628 kB\nKReclaimable:     253808 kB\nSlab:             415932 kB\nSReclaimable:     253808 kB\nSUnreclaim:       162124 kB\nKernelStack:       15412 kB\nPageTables:        28476 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     6139076 kB\nCommitted_AS:    7850772 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       35460 kB\nVmallocChunk:          0 kB\nPercpu:           116736 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      139072 kB\nDirectMap2M:     3006464 kB\nDirectMap1G:     7340032 kB\n",
+  "cpu_count": 4,
+  "cgroup_cpu_stat": "usage_usec 135611555000\nuser_usec 42364268000\nsystem_usec 93247287000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "daemon_pid": 112721,
+  "daemon_environment": {
+    "DAY9_ROOT": "/home/ubuntu/ros2_ws/day9",
+    "ROS_DOMAIN_ID": "91",
+    "ROS_HOME": "/home/ubuntu/ros2_ws/day9/runtime/ros-home",
+    "ROS_LOG_DIR": "/home/ubuntu/ros2_ws/day9/runtime/logs/ros"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "purpose": "isolated optimizer/replay/save-load interface probe; not pilot learning",
+  "environment_steps": 0,
+  "updates_per_method": 10,
+  "total_updates": 20,
+  "batch_size": 128,
+  "sampling": "SB3 replacement sampling from measured real transitions; small buffer explicitly allowed for this interface check",
+  "paired_models_mutated": false,
+  "seed": 20260908,
+  "wall_limit_sec": 180,
+  "stop": "nonfinite loss/parameters, missing real data, any budget exceeded"
+}

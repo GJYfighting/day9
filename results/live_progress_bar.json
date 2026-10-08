@@ -1,0 +1,22 @@
+{
+  "updated_utc": "2026-09-29 03:02:57 UTC",
+  "pipeline_status": "DAY9_COMPLETE_DAY10_DEFERRED",
+  "stage": "F_post",
+  "progress_units": 6100,
+  "progress_target": 6100,
+  "validation_done": 100,
+  "validation_target": 100,
+  "B": {
+    "steps": 3000,
+    "target": 3000,
+    "checkpoint_steps": 3000,
+    "checkpoint_updates": 2000
+  },
+  "F": {
+    "steps": 3000,
+    "target": 3000,
+    "checkpoint_steps": 3000,
+    "checkpoint_updates": 2000
+  },
+  "day10_held": true
+}

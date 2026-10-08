@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-28T12:05:24Z",
+  "previous_review_sha256": "04e262ee582cd765c5ff0e10838cd8f0ceb8d51012e259ad550724d4c40f67c3",
+  "new_review_sha256": "2e6185da2872d9fdc819a2d85d87b7522e2fcab7d837ea5e3d4fc260c2d137f9",
+  "state_prior_review_sha256": "75bdd596fcba621ce4798fa23d048aab953fe2f07a69d6a93f9cae217362f560",
+  "review_snapshot": "results/review_drafts/review_before_orphan_cleanup_04e262ee582c.json",
+  "changed_automation": "automation/run_pipeline.py",
+  "new_automation_sha256": "de45df41c33b0629b16effde46cdc681a2f84664ac38d7d254baa7f855810c28",
+  "checkpoint": "models/pilot/F_20260909/latest.json",
+  "checkpoint_steps": 371,
+  "checkpoint_updates": 0,
+  "cleanup_record": "results/orphan_stack_cleanup_20260928.json",
+  "scope": "Repair Day9 supervisor cleanup of verified orphan Ignition/ROS daemon after controller-manager discovery conflict; resume from preserved F step 371 checkpoint with a new bounded recovery epoch; training code, P1, model, scenes, budgets unchanged.",
+  "F_run_count_before_resume": 6,
+  "recovery_epoch_start": 6,
+  "training_code_hashes_unchanged": true,
+  "candidate_config_unchanged": true
+}

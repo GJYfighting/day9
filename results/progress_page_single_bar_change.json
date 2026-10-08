@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-28T08:24:32Z",
+  "reason": "user requested the progress page remain open while one progress bar updates",
+  "changed_files": [
+    "runtime/live_dashboard.py",
+    "results/live_dashboard.html",
+    "results/live_progress_fragment.html",
+    "results/live_progress_bar.json",
+    "runtime/live_dashboard_process.json"
+  ],
+  "behavior": "parent page has no refresh; one iframe containing one progress element refreshes every 10 seconds",
+  "experiment_impact": "read-only progress display; no changes to running training, checkpoints, or fixed budgets",
+  "session_id": 94438,
+  "validation_live_count_fix_utc": "2026-09-28T09:25:59Z",
+  "validation_live_count_rule": "Only count valid episodes in the currently declared validation run when its declaration is newer than persisted pipeline_state; completed partial runs are already counted in pipeline_state."
+}

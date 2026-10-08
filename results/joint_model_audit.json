@@ -1,0 +1,220 @@
+[
+  {
+    "name": "joint2",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "0 0 0.054048012164686"
+    },
+    "axis": {
+      "xyz": "0 -1 0"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-2.09",
+      "upper": "2.09",
+      "velocity": "10"
+    },
+    "mimic": {}
+  },
+  {
+    "name": "joint3",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "0 0 0.134416446394797"
+    },
+    "axis": {
+      "xyz": "0 -1 0"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-2.09",
+      "upper": "2.09",
+      "velocity": "10"
+    },
+    "mimic": {}
+  },
+  {
+    "name": "joint4",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "0 0 0.134444631186569"
+    },
+    "axis": {
+      "xyz": "0 -1 0"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-2.09",
+      "upper": "2.09",
+      "velocity": "10"
+    },
+    "mimic": {}
+  },
+  {
+    "name": "joint5",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "0 0 0"
+    },
+    "axis": {
+      "xyz": "0 0 -1"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-2.09",
+      "upper": "2.09",
+      "velocity": "10"
+    },
+    "mimic": {}
+  },
+  {
+    "name": "joint1",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "0.0 0.0 0.05"
+    },
+    "axis": {
+      "xyz": "0 0 1"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-2.09",
+      "upper": "2.09",
+      "velocity": "10"
+    },
+    "mimic": {}
+  },
+  {
+    "name": "r_joint",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "-0.0073166 -0.013992 0.027059"
+    },
+    "axis": {
+      "xyz": "0.99996 -0.004699 -0.0070434"
+    },
+    "limit": {
+      "effort": "1.50",
+      "lower": "0",
+      "upper": "1.57",
+      "velocity": "0.10"
+    },
+    "mimic": {}
+  },
+  {
+    "name": "l_joint",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "-0.0073352 0.013977 0.027057"
+    },
+    "axis": {
+      "xyz": "0.99997 0.0055811 -0.0058397"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-1.57",
+      "upper": "1.57",
+      "velocity": "0.35"
+    },
+    "mimic": {
+      "joint": "r_joint",
+      "multiplier": "-1",
+      "offset": "0"
+    }
+  },
+  {
+    "name": "l_in_joint",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "-0.0071623 0.0049403 0.046019"
+    },
+    "axis": {
+      "xyz": "0.99996 0.0046983 -0.0070439"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-1.57",
+      "upper": "1.57",
+      "velocity": "0.35"
+    },
+    "mimic": {
+      "joint": "r_joint",
+      "multiplier": "-1",
+      "offset": "0"
+    }
+  },
+  {
+    "name": "l_out_joint",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "0.00020427 0 0.028999"
+    },
+    "axis": {
+      "xyz": "0.99996 0.0046983 -0.0070439"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-1.57",
+      "upper": "1.57",
+      "velocity": "0.35"
+    },
+    "mimic": {
+      "joint": "r_joint",
+      "multiplier": "1",
+      "offset": "0"
+    }
+  },
+  {
+    "name": "r_in_joint",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "-0.0071623 -0.004943 0.046019"
+    },
+    "axis": {
+      "xyz": "-0.99996 0.0046987 0.0070436"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-1.57",
+      "upper": "1.57",
+      "velocity": "0.35"
+    },
+    "mimic": {
+      "joint": "r_joint",
+      "multiplier": "-1",
+      "offset": "0"
+    }
+  },
+  {
+    "name": "r_out_joint",
+    "type": "revolute",
+    "origin": {
+      "rpy": "0 0 0",
+      "xyz": "0.00020427 0 0.028999"
+    },
+    "axis": {
+      "xyz": "-0.99996 0.0046987 0.0070436"
+    },
+    "limit": {
+      "effort": "1000",
+      "lower": "-1.57",
+      "upper": "1.57",
+      "velocity": "0.35"
+    },
+    "mimic": {
+      "joint": "r_joint",
+      "multiplier": "1",
+      "offset": "0"
+    }
+  }
+]

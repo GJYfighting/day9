@@ -1,0 +1,590 @@
+[
+  {
+    "scene": "validation_11",
+    "success": true,
+    "steps": 4,
+    "grasp_attempts": 1,
+    "completed_episode": true,
+    "task_reset_failure": false,
+    "technical_failure": false,
+    "return_": 51.96937583386898,
+    "last_info": {
+      "success": true,
+      "stable_hold": true,
+      "max_relative_slip_m": 3.974141033147305e-06,
+      "grasp_attempted": true,
+      "distance_m": 0.005306527018547058,
+      "yaw_error_rad": 9.676437154478985e-05,
+      "step_count": 4,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "success",
+      "approach_reward": 0.49255602061748505,
+      "success_reward": 50.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.005000007338821888,
+      "executed_tcp_move_m": 0.004925681635585474,
+      "step_elapsed_sim_sec": 1.2019999999999982,
+      "step_initial_joint_error_rad": 0.034468859853857614,
+      "step_final_joint_error_rad": 0.0005162662612616664,
+      "step_arm_max_velocity": 0.005736291830350154,
+      "reset_arm_max_velocity": 2.2485935508909094e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          1.0731998372648377e-05,
+          2.603163920866791e-05,
+          -0.004999999888241291,
+          -6.840002606622875e-05
+        ],
+        "raw_residual": [
+          -0.00011748261749744415,
+          -0.00024401070550084114,
+          -0.00011107511818408966,
+          0.0005058646202087402
+        ],
+        "mapped_residual": [
+          -2.3496510038967244e-05,
+          -4.8802139644976705e-05,
+          -2.2215010176296346e-05,
+          0.00010117307101609185
+        ],
+        "filtered_residual": [
+          -1.5507190255448222e-05,
+          -3.3065058232750744e-05,
+          -1.4941835615900345e-05,
+          7.983412069734186e-05
+        ],
+        "final_action": [
+          -4.775191882799845e-06,
+          -7.033419024082832e-06,
+          -0.004999999888241291,
+          1.1434094631113112e-05
+        ],
+        "residual_enabled": true,
+        "residual_valid": true,
+        "fallback_reason": ""
+      },
+      "is_success": true,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "wall_sec": 77.09792798401031
+  },
+  {
+    "scene": "validation_12",
+    "success": true,
+    "steps": 4,
+    "grasp_attempts": 1,
+    "completed_episode": true,
+    "task_reset_failure": false,
+    "technical_failure": false,
+    "return_": 51.96810238994658,
+    "last_info": {
+      "success": true,
+      "stable_hold": true,
+      "max_relative_slip_m": 9.642594710834729e-05,
+      "grasp_attempted": true,
+      "distance_m": 0.005319233518093824,
+      "yaw_error_rad": 0.0007121157744449358,
+      "step_count": 4,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "success",
+      "approach_reward": 0.4915918689221144,
+      "success_reward": 50.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.004998517222702503,
+      "executed_tcp_move_m": 0.0049159921971857505,
+      "step_elapsed_sim_sec": 1.2000000000000028,
+      "step_initial_joint_error_rad": 0.03229039566305403,
+      "step_final_joint_error_rad": 0.0005366952423078164,
+      "step_arm_max_velocity": 0.005963280514834482,
+      "reset_arm_max_velocity": 2.0120356727840183e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          4.957683813699987e-06,
+          2.0760611732839607e-05,
+          -0.004999999888241291,
+          -0.00047425911179743707
+        ],
+        "raw_residual": [
+          -6.975280120968819e-05,
+          -0.0002039838582277298,
+          1.0198913514614105e-05,
+          0.004269920289516449
+        ],
+        "mapped_residual": [
+          -1.395058734487975e-05,
+          -4.079676000401378e-05,
+          2.0397901607793756e-06,
+          0.0008539842092432082
+        ],
+        "filtered_residual": [
+          -8.501823685946874e-06,
+          -2.7124144253320992e-05,
+          1.4879171885695541e-06,
+          0.0005955524975433946
+        ],
+        "final_action": [
+          -3.5441398722468875e-06,
+          -6.363532520481385e-06,
+          -0.004998512100428343,
+          0.0001212933857459575
+        ],
+        "residual_enabled": true,
+        "residual_valid": true,
+        "fallback_reason": ""
+      },
+      "is_success": true,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "wall_sec": 64.4284243889997
+  },
+  {
+    "scene": "validation_13",
+    "success": true,
+    "steps": 4,
+    "grasp_attempts": 1,
+    "completed_episode": true,
+    "task_reset_failure": false,
+    "technical_failure": false,
+    "return_": 51.9638323225081,
+    "last_info": {
+      "success": true,
+      "stable_hold": true,
+      "max_relative_slip_m": 4.102721198817605e-05,
+      "grasp_attempted": true,
+      "distance_m": 0.0053619323298335075,
+      "yaw_error_rad": 0.00044909412978748933,
+      "step_count": 4,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "success",
+      "approach_reward": 0.49068108201026917,
+      "success_reward": 50.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.004989228677004576,
+      "executed_tcp_move_m": 0.0049069960466852245,
+      "step_elapsed_sim_sec": 1.2019999999999982,
+      "step_initial_joint_error_rad": 0.03637677450596999,
+      "step_final_joint_error_rad": 0.0006041900872961747,
+      "step_arm_max_velocity": 0.006713223231626347,
+      "reset_arm_max_velocity": 2.088852680270925e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          2.0228439097991213e-05,
+          2.8274622309254482e-05,
+          -0.004999999888241291,
+          -0.0002963195729535073
+        ],
+        "raw_residual": [
+          -0.00020942464470863342,
+          -0.0002693887799978256,
+          7.894029840826988e-05,
+          0.0027428045868873596
+        ],
+        "mapped_residual": [
+          -4.1884959500748664e-05,
+          -5.387777491705492e-05,
+          1.5788078599143773e-05,
+          0.0005485612200573087
+        ],
+        "filtered_residual": [
+          -2.8015605494147167e-05,
+          -3.6663910577772185e-05,
+          1.0784095138660632e-05,
+          0.0003763354616239667
+        ],
+        "final_action": [
+          -7.787166396155953e-06,
+          -8.389288268517703e-06,
+          -0.004989215638488531,
+          8.001588867045939e-05
+        ],
+        "residual_enabled": true,
+        "residual_valid": true,
+        "fallback_reason": ""
+      },
+      "is_success": true,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "wall_sec": 62.05830895900726
+  },
+  {
+    "scene": "validation_14",
+    "success": true,
+    "steps": 4,
+    "grasp_attempts": 1,
+    "completed_episode": true,
+    "task_reset_failure": false,
+    "technical_failure": false,
+    "return_": 51.95588446222246,
+    "last_info": {
+      "success": true,
+      "stable_hold": true,
+      "max_relative_slip_m": 5.012862212205871e-05,
+      "grasp_attempted": true,
+      "distance_m": 0.005441440735012293,
+      "yaw_error_rad": 0.0005212758700609235,
+      "step_count": 4,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "success",
+      "approach_reward": 0.4894610960036516,
+      "success_reward": 50.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.004996197298169136,
+      "executed_tcp_move_m": 0.004894717271054632,
+      "step_elapsed_sim_sec": 1.2019999999999982,
+      "step_initial_joint_error_rad": 0.03310018041888596,
+      "step_final_joint_error_rad": 0.0006768245656163518,
+      "step_arm_max_velocity": 0.0075202729937252355,
+      "reset_arm_max_velocity": 2.2099800096819777e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          1.0180270692217164e-05,
+          2.4220533305197023e-05,
+          -0.004999999888241291,
+          -0.0003457985003478825
+        ],
+        "raw_residual": [
+          -0.00011933594942092896,
+          -0.00023362226784229279,
+          2.452777698636055e-05,
+          0.003149949014186859
+        ],
+        "mapped_residual": [
+          -2.3867190975579433e-05,
+          -4.6724442654522136e-05,
+          4.905581590719521e-06,
+          0.0006299894885160029
+        ],
+        "filtered_residual": [
+          -1.548123145767022e-05,
+          -3.145160371786915e-05,
+          3.810726184383384e-06,
+          0.00043667061254382133
+        ],
+        "final_action": [
+          -5.3009607654530555e-06,
+          -7.231070412672125e-06,
+          -0.004996189381927252,
+          9.087211219593883e-05
+        ],
+        "residual_enabled": true,
+        "residual_valid": true,
+        "fallback_reason": ""
+      },
+      "is_success": true,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "wall_sec": 63.13082616799511
+  },
+  {
+    "scene": "validation_15",
+    "success": true,
+    "steps": 4,
+    "grasp_attempts": 1,
+    "completed_episode": true,
+    "task_reset_failure": false,
+    "technical_failure": false,
+    "return_": 51.98030434548855,
+    "last_info": {
+      "success": true,
+      "stable_hold": true,
+      "max_relative_slip_m": 4.633414019727944e-05,
+      "grasp_attempted": true,
+      "distance_m": 0.0051970332860946655,
+      "yaw_error_rad": 0.0008104547119550112,
+      "step_count": 4,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "success",
+      "approach_reward": 0.4925013519823551,
+      "success_reward": 50.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.00500000175088644,
+      "executed_tcp_move_m": 0.004925106380661059,
+      "step_elapsed_sim_sec": 1.2019999999999982,
+      "step_initial_joint_error_rad": 0.04582636304926396,
+      "step_final_joint_error_rad": 0.0006866016486315463,
+      "step_arm_max_velocity": 0.007628908889177912,
+      "reset_arm_max_velocity": 2.1012056186625605e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          -1.689369310042821e-05,
+          2.030886389547959e-05,
+          -0.004999999888241291,
+          -0.0005381932714954019
+        ],
+        "raw_residual": [
+          0.00012236228212714195,
+          -0.00016930140554904938,
+          -0.0004082764498889446,
+          0.004906885325908661
+        ],
+        "mapped_residual": [
+          2.447247607051395e-05,
+          -3.386026946827769e-05,
+          -8.165527106029913e-05,
+          0.0009813769720494747
+        ],
+        "filtered_residual": [
+          1.8567217921372503e-05,
+          -2.439212767058052e-05,
+          -5.653607513522729e-05,
+          0.0006779952673241496
+        ],
+        "final_action": [
+          1.6735248209442943e-06,
+          -4.0832637751009315e-06,
+          -0.004999999888241291,
+          0.00013980199582874775
+        ],
+        "residual_enabled": true,
+        "residual_valid": true,
+        "fallback_reason": ""
+      },
+      "is_success": true,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "wall_sec": 63.11500220200105
+  },
+  {
+    "scene": "validation_16",
+    "success": false,
+    "steps": 0,
+    "grasp_attempts": 0,
+    "completed_episode": false,
+    "task_reset_failure": true,
+    "technical_failure": false,
+    "return_": 0.0,
+    "error": "TestFailure('RESET_FAIL: Day4 reset failed after 1 attempts: PERCEPTION_FAIL: valid samples 0/12')",
+    "recovered": true,
+    "recovery_detail": "",
+    "wall_sec": 51.90221445899806
+  },
+  {
+    "scene": "validation_17",
+    "success": true,
+    "steps": 4,
+    "grasp_attempts": 1,
+    "completed_episode": true,
+    "task_reset_failure": false,
+    "technical_failure": false,
+    "return_": 51.971626188606024,
+    "last_info": {
+      "success": true,
+      "stable_hold": true,
+      "max_relative_slip_m": 2.8222716305426054e-05,
+      "grasp_attempted": true,
+      "distance_m": 0.005283995531499386,
+      "yaw_error_rad": 0.0004149721653499156,
+      "step_count": 4,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "success",
+      "approach_reward": 0.49254177138209343,
+      "success_reward": 50.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.005000002682209015,
+      "executed_tcp_move_m": 0.004917193420721842,
+      "step_elapsed_sim_sec": 1.2019999999999982,
+      "step_initial_joint_error_rad": 0.0322611588342856,
+      "step_final_joint_error_rad": 0.0005368746606049246,
+      "step_arm_max_velocity": 0.005965274048485028,
+      "reset_arm_max_velocity": 2.0069953929544027e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          -1.0658638984750723e-06,
+          1.913639425765723e-05,
+          -0.004999999888241291,
+          -0.00027928565395995975
+        ],
+        "raw_residual": [
+          -8.880626410245895e-06,
+          -0.00018240371719002724,
+          -0.00024115340784192085,
+          0.00243280827999115
+        ],
+        "mapped_residual": [
+          -1.776099338712811e-06,
+          -3.6480727430898696e-05,
+          -4.823071139981039e-05,
+          0.00048656162107363343
+        ],
+        "filtered_residual": [
+          -4.181429176242091e-07,
+          -2.440364369249437e-05,
+          -3.2915835618041456e-05,
+          0.0003461476881057024
+        ],
+        "final_action": [
+          -1.4840068160992814e-06,
+          -5.26724943483714e-06,
+          -0.004999999888241291,
+          6.686203414574265e-05
+        ],
+        "residual_enabled": true,
+        "residual_valid": true,
+        "fallback_reason": ""
+      },
+      "is_success": true,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "wall_sec": 61.40205472499656
+  },
+  {
+    "scene": "validation_18",
+    "success": true,
+    "steps": 4,
+    "grasp_attempts": 1,
+    "completed_episode": true,
+    "task_reset_failure": false,
+    "technical_failure": false,
+    "return_": 51.96319781243801,
+    "last_info": {
+      "success": true,
+      "stable_hold": true,
+      "max_relative_slip_m": 1.725850027778364e-06,
+      "grasp_attempted": true,
+      "distance_m": 0.0053683072328567505,
+      "yaw_error_rad": 0.00026219857188787023,
+      "step_count": 4,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "success",
+      "approach_reward": 0.49085142090916634,
+      "success_reward": 50.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.005000006407499313,
+      "executed_tcp_move_m": 0.004908614512648222,
+      "step_elapsed_sim_sec": 1.2000000000000455,
+      "step_initial_joint_error_rad": 0.033010138086547736,
+      "step_final_joint_error_rad": 0.000608492430101748,
+      "step_arm_max_velocity": 0.006761027041703893,
+      "reset_arm_max_velocity": 2.2017923803144268e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          7.2769244070514105e-06,
+          2.4518056306988e-05,
+          -0.004999999888241291,
+          -0.00017764211224857718
+        ],
+        "raw_residual": [
+          -8.877180516719818e-05,
+          -0.0002322085201740265,
+          -0.00011841021478176117,
+          0.0015140771865844727
+        ],
+        "mapped_residual": [
+          -1.7754377040546387e-05,
+          -4.644173532142304e-05,
+          -2.3682059691054747e-05,
+          0.0003028159844689071
+        ],
+        "filtered_residual": [
+          -1.1540934792719781e-05,
+          -3.130346885882318e-05,
+          -1.607891681487672e-05,
+          0.00021853412908967584
+        ],
+        "final_action": [
+          -4.264010385668371e-06,
+          -6.785412551835179e-06,
+          -0.004999999888241291,
+          4.0892016841098666e-05
+        ],
+        "residual_enabled": true,
+        "residual_valid": true,
+        "fallback_reason": ""
+      },
+      "is_success": true,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "wall_sec": 61.31073893001303
+  },
+  {
+    "scene": "validation_19",
+    "success": false,
+    "steps": 0,
+    "grasp_attempts": 0,
+    "completed_episode": false,
+    "task_reset_failure": true,
+    "technical_failure": false,
+    "return_": 0.0,
+    "error": "TestFailure('RESET_FAIL: Day4 reset failed after 1 attempts: IK_FAIL: [{\"contour_yaw_deg\": 0.4475871418214848, \"symmetry\": 0, \"feasible\": false, \"failure_samples\": [\"COLLISION_PLAN_FAIL: finger/table clearance=0.001908\"]}, {\"contour_yaw_deg\": 0.4475871418214848, \"symmetry\": 1, \"feasible\": false, \"failure_samples\": [\"COLLISION_PLAN_FAIL: finger/table clearance=0.001908\"]}, {\"contour_yaw_deg\": 0.4475871418214848, \"symmetry\": 2, \"feasible\": true, \"equivalent_to_symmetry\": 0}, {\"contour_yaw_deg\": 0.4475871418214848, \"symmetry\": 3, \"feasible\": true, \"equivalent_to_symmetry\": 1}]')",
+    "recovered": true,
+    "recovery_detail": "",
+    "wall_sec": 25.282405645994004
+  }
+]

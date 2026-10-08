@@ -1,0 +1,15 @@
+{
+  "time_utc": "2026-09-28T18:28:08Z",
+  "issue": "completed run events could be added to the next run baseline during restart, briefly overcounting live progress",
+  "change": "exclude run IDs already present in pipeline_state from active-run event discovery",
+  "dashboard_source_sha256": "7a0b67e3ebe16ae7ac3759032401c8b92e32e728a02a0a9aa6f39cc509856e36",
+  "verification": {
+    "parent_meta_refresh": false,
+    "fragment_progress_count": 1,
+    "pipeline_status": "RUNNING",
+    "F_steps": 1568,
+    "F_checkpoint_steps": 1565,
+    "units": 4648
+  },
+  "training_files_changed": false
+}

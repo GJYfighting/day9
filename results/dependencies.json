@@ -1,0 +1,30 @@
+{
+  "numpy": {
+    "version": "1.26.4",
+    "file": "/home/ubuntu/ros2_ws/day9/vendor/numpy/__init__.py"
+  },
+  "cv2": {
+    "version": "4.8.1",
+    "file": "/home/ubuntu/ros2_ws/day9/vendor/cv2/__init__.py"
+  },
+  "scipy": {
+    "version": "1.8.0",
+    "file": "/usr/lib/python3/dist-packages/scipy/__init__.py"
+  },
+  "torch": {
+    "version": "2.11.0+cu130",
+    "file": "/home/ubuntu/.local/lib/python3.10/site-packages/torch/__init__.py"
+  },
+  "gymnasium": {
+    "version": "0.29.1",
+    "file": "/home/ubuntu/ros2_ws/day9/vendor/gymnasium/__init__.py"
+  },
+  "stable_baselines3": {
+    "version": "2.3.2",
+    "file": "/home/ubuntu/ros2_ws/day9/vendor/stable_baselines3/__init__.py"
+  },
+  "rclpy": {
+    "version": null,
+    "file": "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py"
+  }
+}

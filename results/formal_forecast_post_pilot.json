@@ -1,0 +1,48 @@
+{
+  "B": {
+    "pilot_status": "COMPLETE",
+    "measured_steps": 3000,
+    "wall_sec_per_step": 3.584283822388667,
+    "update_wall_sec": 0.006731544890500118,
+    "formal_seconds_per_seed": 35858.5451619645,
+    "three_seeds_seconds": 107575.63548589351,
+    "conditional_range_seconds": [
+      28686.836129571602,
+      64545.381291536105
+    ],
+    "includes": [
+      "startup",
+      "reset",
+      "randomization",
+      "grasp",
+      "network_update",
+      "checkpoint",
+      "safe_close"
+    ],
+    "assumption": "same observed task/reset/grasp mix and machine; warmup update-count correction applied; curriculum and learning can change mix",
+    "overhead": "startup/checkpoint/recovery already amortized in complete training window; do not add again; extra evaluation separate"
+  },
+  "F": {
+    "pilot_status": "COMPLETE",
+    "measured_steps": 3000,
+    "wall_sec_per_step": 19.95999749345867,
+    "update_wall_sec": 0.003704674407505081,
+    "formal_seconds_per_seed": 199608.6191748709,
+    "three_seeds_seconds": 598825.8575246127,
+    "conditional_range_seconds": [
+      159686.89533989673,
+      359295.5145147676
+    ],
+    "includes": [
+      "startup",
+      "reset",
+      "randomization",
+      "grasp",
+      "network_update",
+      "checkpoint",
+      "safe_close"
+    ],
+    "assumption": "same observed task/reset/grasp mix and machine; warmup update-count correction applied; curriculum and learning can change mix",
+    "overhead": "startup/checkpoint/recovery already amortized in complete training window; do not add again; extra evaluation separate"
+  }
+}

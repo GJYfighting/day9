@@ -1,0 +1,28 @@
+{
+  "time_utc": "2026-09-28T07:47:44Z",
+  "purpose": "verify failures are preserved, not skipped",
+  "training_run": "20260928T073811_B_pilot_20260909_1790581091525021508",
+  "complete_training_episodes": 10,
+  "ordinary_failed_episodes": 10,
+  "ordinary_failure_reasons": {
+    "max_steps": 10
+  },
+  "transitions": 200,
+  "sum_completed_episode_steps": 200,
+  "pre_observation_reset_failures": 0,
+  "validation": {
+    "A_validation": {
+      "slots": 20,
+      "task_reset_failures": 5,
+      "technical_failures": 0,
+      "recorded_failures": 5
+    },
+    "B_pre": {
+      "slots": 20,
+      "task_reset_failures": 5,
+      "technical_failures": 0,
+      "recorded_failures": 20
+    }
+  },
+  "interpretation": "valid failed episodes retain every transition and one outcome; reset faults before an observation retain an explicit failure record and no fabricated transition"
+}

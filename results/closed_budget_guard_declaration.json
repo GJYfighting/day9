@@ -1,0 +1,7 @@
+{
+  "purpose": "verify closed diagnostic budget rejects before ROS initialization",
+  "environment_steps": 0,
+  "updates": 0,
+  "wall_limit_sec": 20,
+  "retries": 0
+}

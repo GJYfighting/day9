@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-28T12:02:07Z",
+  "reason": "Day9 orphan Ignition server survived registered stack shutdown, causing stale controller-manager discovery",
+  "pid": 27600,
+  "cmd": "ign gazebo -r -s /home/ubuntu/ros2_ws/day9/simulations/robot_gazebo/worlds/grasp_table.sdf",
+  "start_ticks": "1456574",
+  "signals": [
+    "SIGINT",
+    "SIGTERM",
+    "SIGKILL"
+  ],
+  "exited": true,
+  "ros_daemon_pid_7923_exited": true,
+  "scope": "exact Day9-tagged processes only",
+  "verified_utc": "2026-09-28T12:02:38Z"
+}

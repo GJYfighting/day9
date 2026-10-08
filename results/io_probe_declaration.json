@@ -1,0 +1,10 @@
+{
+  "purpose": "checkpoint and representative JSON logging cost only",
+  "environment_steps": 0,
+  "updates": 0,
+  "model_roundtrips": 2,
+  "log_records": 100,
+  "wall_limit_sec": 30,
+  "retries": 0,
+  "stop": "deadline, nonfinite data, model/replay roundtrip mismatch"
+}

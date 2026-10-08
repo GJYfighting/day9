@@ -1,0 +1,12 @@
+{
+  "previous_review_sha256": "1341a8f04318637ef033e43137166b54f4ffb1542f101e499a9266f3fe5b5ef3",
+  "new_review_sha256": "48123d06ede0b25f0b0486b72434ae8a60c9fd2841097c0ca361a942be0629af",
+  "prior_snapshot": "results/review_drafts/review_before_bounded_recovery_1341a8f04318.json",
+  "automation_hashes": {
+    "automation/build_day10.py": "2f5caee8e360a7151e60b0706eb0acd74575582dcebb14695b70476a1155ea45",
+    "automation/run_formal.py": "4640402b97defc66fe66c489e2a1fa8965a4cc846b698b18a0debceb86e2eb6d",
+    "automation/run_pipeline.py": "b4ccbfe01a7483bf7e824be35612be5bbfe5b439a77e506e2a272ea91d7d6f5e"
+  },
+  "scope": "supervisor recovery and process tracking only; no task code/config/model/scene/step change",
+  "created_utc": "2026-09-23T07:54:34Z"
+}

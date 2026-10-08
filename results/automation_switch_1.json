@@ -1,0 +1,10 @@
+{
+  "time_utc": "2026-09-23T07:57:16Z",
+  "reason": "load versioned bounded-recovery automation; no task code/config change",
+  "old_pid": 128527,
+  "saved_checkpoint_steps_before_signal": 360,
+  "old_review_sha256": "1341a8f04318637ef033e43137166b54f4ffb1542f101e499a9266f3fe5b5ef3",
+  "new_review_sha256": "48123d06ede0b25f0b0486b72434ae8a60c9fd2841097c0ca361a942be0629af",
+  "signal": "SIGTERM",
+  "resume_plan": "resume latest checkpoint after old Day9 stack exits and review migration is verified"
+}

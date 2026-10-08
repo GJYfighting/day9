@@ -1,0 +1,1071 @@
+{
+  "run": "20260923T024012_F_reset_once_paired_1790131212817114727",
+  "method": "F",
+  "profile": "reset_once",
+  "tag": "paired",
+  "episodes": [
+    {
+      "scene": {
+        "id": "diagnostic_L0_0",
+        "source": "Day8 smoke_L0 point; new Day9 seed",
+        "position_base": [
+          0.18459222659243593,
+          -0.012438901168749173
+        ],
+        "seed": 20260908,
+        "level": "L0",
+        "mode": "fixed"
+      },
+      "steps": 4,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "completed": true,
+      "technical_failure": false,
+      "return_": 51.93547490052879,
+      "failure": null,
+      "grasp_attempts": 1,
+      "last_info": {
+        "success": true,
+        "stable_hold": true,
+        "max_relative_slip_m": 1.6365725192479808e-05,
+        "grasp_attempted": true,
+        "distance_m": 0.0056455363519489765,
+        "yaw_error_rad": 0.002469425714095052,
+        "step_count": 4,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "success",
+        "approach_reward": 0.4803994204849005,
+        "success_reward": 50.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.004877123050391674,
+        "executed_tcp_move_m": 0.004796541355792986,
+        "step_elapsed_sim_sec": 1.2000000000000455,
+        "step_initial_joint_error_rad": 0.03284994896773541,
+        "step_final_joint_error_rad": 0.0005472837265525499,
+        "step_arm_max_velocity": 0.006080930337259677,
+        "reset_arm_max_velocity": 2.2197735051965317e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            6.486604979727417e-05,
+            1.373212035105098e-05,
+            -0.004999999888241291,
+            0.0016331750666722655
+          ],
+          "raw_residual": [
+            -0.0006130272522568703,
+            -0.00012228311970829964,
+            0.0008984520100057125,
+            -0.015020668506622314
+          ],
+          "mapped_residual": [
+            -0.00012260544463060796,
+            -2.4456621758872643e-05,
+            0.00017969036707654595,
+            -0.00300413416698575
+          ],
+          "filtered_residual": [
+            -8.383867680095136e-05,
+            -1.711216100375168e-05,
+            0.00012291524035390466,
+            -0.002067599445581436
+          ],
+          "final_action": [
+            -1.897262700367719e-05,
+            -3.3800406527007e-06,
+            -0.004877084866166115,
+            -0.00043442437890917063
+          ],
+          "residual_enabled": true,
+          "residual_valid": true,
+          "fallback_reason": ""
+        },
+        "is_success": true,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "elapsed_wall_sec": 79.92343779600924,
+      "parameters": {
+        "seed": 20260908,
+        "level": "L0",
+        "enabled": true,
+        "position_world_m": [
+          -0.01540777340756408,
+          -0.012438901168749173,
+          0.765
+        ],
+        "position_fraction": 1.0,
+        "side_m": 0.03,
+        "yaw_rad": 0.0,
+        "mass_kg": 0.03,
+        "mu": 6.0,
+        "mu2": 6.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "pixel_std": 0.0,
+        "depth_std_m": 0.0,
+        "invalid_fraction": 0.0,
+        "translation_m": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "rotation_rad": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "delay_sec": 0.0,
+        "noise_seed": 3265796664,
+        "sdf_sha256": "d6e57d64963b1cf7c3350af81ae9c0c80d5fc48ea49dd91bd65aa4a230ca1ac1",
+        "model_rebuild_acknowledged": true,
+        "physics_readback": {
+          "mass_kg": 0.03,
+          "mu": 6.0,
+          "mu2": 6.0,
+          "collision_size_m": [
+            0.03,
+            0.03,
+            0.03
+          ],
+          "visual_size_m": [
+            0.03,
+            0.03,
+            0.03
+          ],
+          "inertia_kg_m2": {
+            "ixx": 4.5e-06,
+            "iyy": 4.5e-06,
+            "izz": 4.5e-06,
+            "ixy": 0.0,
+            "ixz": 0.0,
+            "iyz": 0.0
+          }
+        }
+      },
+      "failure_events": [],
+      "timings": {
+        "startup": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "randomization_perception": {
+          "wall": 0.020758667989866808,
+          "exclusive": 0.020758667989866808,
+          "sim": 0.0,
+          "count": 1
+        },
+        "open_motion": {
+          "wall": 27.391950215620454,
+          "exclusive": 27.391950215620454,
+          "sim": 0.0,
+          "count": 2
+        },
+        "open_settle": {
+          "wall": 0.4496187922777608,
+          "exclusive": 0.4496187922777608,
+          "sim": 0.0,
+          "count": 2
+        },
+        "open": {
+          "wall": 28.01861780602485,
+          "exclusive": 0.1770487981266342,
+          "sim": 28.18399999999997,
+          "count": 3
+        },
+        "return_observation": {
+          "wall": 2.5898042540065944,
+          "exclusive": 2.5898042540065944,
+          "sim": 2.3040000000000873,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.172837026999332,
+          "exclusive": 1.172837026999332,
+          "sim": 0.29599999999982174,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.7885794340108987,
+          "exclusive": 0.7885794340108987,
+          "sim": 0.7200000000000273,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 2.331696645967895,
+          "exclusive": 2.331696645967895,
+          "sim": 1.9359999999996944,
+          "count": 6
+        },
+        "ik": {
+          "wall": 2.363960679998854,
+          "exclusive": 0.8175479180063121,
+          "sim": 2.035999999999831,
+          "count": 1
+        },
+        "arm_transfer": {
+          "wall": 3.0785723440058064,
+          "exclusive": 3.0785723440058064,
+          "sim": 2.6260000000002037,
+          "count": 1
+        },
+        "arm_path": {
+          "wall": 1.8773341129999608,
+          "exclusive": 1.8773341129999608,
+          "sim": 1.6200000000001182,
+          "count": 1
+        },
+        "reset": {
+          "wall": 30.318242514011217,
+          "exclusive": 1.3738054069981445,
+          "sim": 29.51000000000022,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 33.82636222202564,
+          "exclusive": 3.4873610400245525,
+          "sim": 0.0,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.004688132059527561,
+          "exclusive": 0.004688132059527561,
+          "sim": 0.0,
+          "count": 4
+        },
+        "ik_step": {
+          "wall": 0.1529754519870039,
+          "exclusive": 0.1529754519870039,
+          "sim": 0.08599999999978536,
+          "count": 4
+        },
+        "action_execution": {
+          "wall": 6.374682209949242,
+          "exclusive": 6.374682209949242,
+          "sim": 4.804000000000087,
+          "count": 4
+        },
+        "environment_step": {
+          "wall": 46.07739701704122,
+          "exclusive": 0.025213034125044942,
+          "sim": 38.04399999999987,
+          "count": 4
+        },
+        "closing": {
+          "wall": 10.719760920997942,
+          "exclusive": 10.719760920997942,
+          "sim": 8.472000000000207,
+          "count": 1
+        },
+        "grip_settle": {
+          "wall": 2.551097685995046,
+          "exclusive": 2.551097685995046,
+          "sim": 1.981999999999971,
+          "count": 1
+        },
+        "lift": {
+          "wall": 3.1730604140029754,
+          "exclusive": 3.1730604140029754,
+          "sim": 2.630000000000109,
+          "count": 1
+        },
+        "hold": {
+          "wall": 6.1990772529970855,
+          "exclusive": 6.1990772529970855,
+          "sim": 5.0,
+          "count": 1
+        },
+        "place": {
+          "wall": 3.0087744369811844,
+          "exclusive": 3.0087744369811844,
+          "sim": 2.6920000000000073,
+          "count": 1
+        },
+        "retreat": {
+          "wall": 2.142203174997121,
+          "exclusive": 2.142203174997121,
+          "sim": 1.9320000000000164,
+          "count": 1
+        }
+      }
+    },
+    {
+      "scene": {
+        "id": "diagnostic_L0_3",
+        "source": "Day8 smoke_L0 point; new Day9 seed",
+        "position_base": [
+          0.1849409066683234,
+          -0.08311052621120449
+        ],
+        "seed": 20260909,
+        "level": "L0",
+        "mode": "fixed"
+      },
+      "steps": 4,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "completed": true,
+      "technical_failure": false,
+      "return_": 51.93707603029907,
+      "failure": null,
+      "grasp_attempts": 1,
+      "last_info": {
+        "success": true,
+        "stable_hold": true,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": true,
+        "distance_m": 0.0056294952519237995,
+        "yaw_error_rad": 0.0023787213376108176,
+        "step_count": 4,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "success",
+        "approach_reward": 0.48040435649454594,
+        "success_reward": 50.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.004870016593486071,
+        "executed_tcp_move_m": 0.004797378472652983,
+        "step_elapsed_sim_sec": 1.2000000000000455,
+        "step_initial_joint_error_rad": 0.0318972784399143,
+        "step_final_joint_error_rad": 0.0004776249106102082,
+        "step_arm_max_velocity": 0.0053069434903061236,
+        "reset_arm_max_velocity": 1.9843011895670504e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            6.556019798154011e-05,
+            9.122397386818193e-06,
+            -0.004999999888241291,
+            0.0015733861364424229
+          ],
+          "raw_residual": [
+            -0.0006125480867922306,
+            -7.307389751076698e-05,
+            0.0009494596160948277,
+            -0.0144638791680336
+          ],
+          "mapped_residual": [
+            -0.00012250960571691394,
+            -1.4614761312259361e-05,
+            0.00018989194359164685,
+            -0.00289277546107769
+          ],
+          "filtered_residual": [
+            -8.414685726165771e-05,
+            -1.0648194802342914e-05,
+            0.00013001903425902128,
+            -0.0019909883849322796
+          ],
+          "final_action": [
+            -1.85866592801176e-05,
+            -1.5257974155247211e-06,
+            -0.004869980737566948,
+            -0.0004176022484898567
+          ],
+          "residual_enabled": true,
+          "residual_valid": true,
+          "fallback_reason": ""
+        },
+        "is_success": true,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "elapsed_wall_sec": 59.27856315500685,
+      "parameters": {
+        "seed": 20260909,
+        "level": "L0",
+        "enabled": true,
+        "position_world_m": [
+          -0.015059093331676598,
+          -0.08311052621120449,
+          0.765
+        ],
+        "position_fraction": 1.0,
+        "side_m": 0.03,
+        "yaw_rad": 0.0,
+        "mass_kg": 0.03,
+        "mu": 6.0,
+        "mu2": 6.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "pixel_std": 0.0,
+        "depth_std_m": 0.0,
+        "invalid_fraction": 0.0,
+        "translation_m": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "rotation_rad": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "delay_sec": 0.0,
+        "noise_seed": 3632583906,
+        "sdf_sha256": "5faa698f45fd68f183910df920b014cfce8414ce45523e45311cfe592f75f679",
+        "model_rebuild_acknowledged": true,
+        "physics_readback": {
+          "mass_kg": 0.03,
+          "mu": 6.0,
+          "mu2": 6.0,
+          "collision_size_m": [
+            0.03,
+            0.03,
+            0.03
+          ],
+          "visual_size_m": [
+            0.03,
+            0.03,
+            0.03
+          ],
+          "inertia_kg_m2": {
+            "ixx": 4.5e-06,
+            "iyy": 4.5e-06,
+            "izz": 4.5e-06,
+            "ixy": 0.0,
+            "ixz": 0.0,
+            "iyz": 0.0
+          }
+        }
+      },
+      "failure_events": [],
+      "timings": {
+        "startup": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "randomization_perception": {
+          "wall": 0.010767673986265436,
+          "exclusive": 0.010767673986265436,
+          "sim": 0.01999999999998181,
+          "count": 1
+        },
+        "open_motion": {
+          "wall": 11.414433365542209,
+          "exclusive": 11.414433365542209,
+          "sim": 0.0,
+          "count": 2
+        },
+        "open_settle": {
+          "wall": 0.450158211577218,
+          "exclusive": 0.450158211577218,
+          "sim": 0.0,
+          "count": 2
+        },
+        "open": {
+          "wall": 11.933923695003614,
+          "exclusive": 0.06933211788418703,
+          "sim": 10.234000000000151,
+          "count": 3
+        },
+        "return_observation": {
+          "wall": 2.6988559830060694,
+          "exclusive": 2.6988559830060694,
+          "sim": 2.4200000000000728,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.1484646360040642,
+          "exclusive": 1.1484646360040642,
+          "sim": 0.27800000000002,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.8272157839965075,
+          "exclusive": 0.8272157839965075,
+          "sim": 0.7380000000000564,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 2.5480140739819035,
+          "exclusive": 2.5480140739819035,
+          "sim": 2.1099999999999,
+          "count": 6
+        },
+        "ik": {
+          "wall": 2.6013942069839686,
+          "exclusive": 0.7822590970026795,
+          "sim": 2.16599999999994,
+          "count": 1
+        },
+        "arm_transfer": {
+          "wall": 2.94594087798032,
+          "exclusive": 2.94594087798032,
+          "sim": 2.683999999999969,
+          "count": 1
+        },
+        "arm_path": {
+          "wall": 1.8548530450207181,
+          "exclusive": 1.8548530450207181,
+          "sim": 1.6340000000000146,
+          "count": 1
+        },
+        "reset": {
+          "wall": 13.947031638002954,
+          "exclusive": 1.389217126998119,
+          "sim": 11.898000000000138,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 13.961182536993874,
+          "exclusive": 0.0033832250046543777,
+          "sim": 11.91800000000012,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.0048116149846464396,
+          "exclusive": 0.0048116149846464396,
+          "sim": 0.0,
+          "count": 4
+        },
+        "ik_step": {
+          "wall": 0.0979244310001377,
+          "exclusive": 0.0979244310001377,
+          "sim": 0.08399999999983265,
+          "count": 4
+        },
+        "action_execution": {
+          "wall": 5.507508158014389,
+          "exclusive": 5.507508158014389,
+          "sim": 4.800000000000182,
+          "count": 4
+        },
+        "environment_step": {
+          "wall": 45.29433348099701,
+          "exclusive": 0.020766047993674874,
+          "sim": 38.08999999999992,
+          "count": 4
+        },
+        "closing": {
+          "wall": 9.873187821009196,
+          "exclusive": 9.873187821009196,
+          "sim": 8.422000000000025,
+          "count": 1
+        },
+        "grip_settle": {
+          "wall": 2.7385401409992483,
+          "exclusive": 2.7385401409992483,
+          "sim": 2.074000000000069,
+          "count": 1
+        },
+        "lift": {
+          "wall": 3.198289571009809,
+          "exclusive": 3.198289571009809,
+          "sim": 2.6079999999999472,
+          "count": 1
+        },
+        "hold": {
+          "wall": 6.339082033984596,
+          "exclusive": 6.339082033984596,
+          "sim": 5.0,
+          "count": 1
+        },
+        "place": {
+          "wall": 3.1653916770010255,
+          "exclusive": 3.1653916770010255,
+          "sim": 2.742000000000189,
+          "count": 1
+        },
+        "retreat": {
+          "wall": 2.171930918993894,
+          "exclusive": 2.171930918993894,
+          "sim": 1.9299999999998363,
+          "count": 1
+        }
+      }
+    },
+    {
+      "scene": {
+        "id": "diagnostic_L0_4",
+        "source": "Day8 smoke_L0 point; new Day9 seed",
+        "position_base": [
+          0.18424354651654845,
+          0.05823272387370615
+        ],
+        "seed": 20260910,
+        "level": "L0",
+        "mode": "fixed"
+      },
+      "steps": 4,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "completed": true,
+      "technical_failure": false,
+      "return_": 51.938363118097186,
+      "failure": null,
+      "grasp_attempts": 1,
+      "last_info": {
+        "success": true,
+        "stable_hold": true,
+        "max_relative_slip_m": 7.372683040574035e-05,
+        "grasp_attempted": true,
+        "distance_m": 0.005616624373942614,
+        "yaw_error_rad": 0.002285039903930361,
+        "step_count": 4,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "success",
+        "approach_reward": 0.48108785413205624,
+        "success_reward": 50.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.00487679336220026,
+        "executed_tcp_move_m": 0.0048114126603003415,
+        "step_elapsed_sim_sec": 1.2019999999997708,
+        "step_initial_joint_error_rad": 0.032333767117202594,
+        "step_final_joint_error_rad": 0.00043633324599379186,
+        "step_arm_max_velocity": 0.0048481472225201105,
+        "reset_arm_max_velocity": 1.985248620969826e-05,
+        "reset_block_linear_velocity": 0.0,
+        "reset_block_angular_velocity": 0.0,
+        "day9_action": {
+          "base_action": [
+            6.127213418949395e-05,
+            1.151075957750436e-05,
+            -0.004999999888241291,
+            0.0015095268609002233
+          ],
+          "raw_residual": [
+            -0.0005751592107117176,
+            -0.0001006079837679863,
+            0.0009003495797514915,
+            -0.013932302594184875
+          ],
+          "mapped_residual": [
+            -0.00011503184214234352,
+            -2.0121575289522298e-05,
+            0.00018006992468144745,
+            -0.00278646033257246
+          ],
+          "filtered_residual": [
+            -7.888679101597518e-05,
+            -1.4498926248052157e-05,
+            0.0001232391659868881,
+            -0.0019130761502310634
+          ],
+          "final_action": [
+            -1.7614656826481223e-05,
+            -2.9881666705477983e-06,
+            -0.004876760765910149,
+            -0.0004035492893308401
+          ],
+          "residual_enabled": true,
+          "residual_valid": true,
+          "fallback_reason": ""
+        },
+        "is_success": true,
+        "curriculum": {
+          "mode": "off",
+          "level": "L0",
+          "window": [],
+          "dwell": 0,
+          "valid_total": 0
+        }
+      },
+      "elapsed_wall_sec": 60.82531067801756,
+      "parameters": {
+        "seed": 20260910,
+        "level": "L0",
+        "enabled": true,
+        "position_world_m": [
+          -0.01575645348345156,
+          0.05823272387370615,
+          0.765
+        ],
+        "position_fraction": 1.0,
+        "side_m": 0.03,
+        "yaw_rad": 0.0,
+        "mass_kg": 0.03,
+        "mu": 6.0,
+        "mu2": 6.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "pixel_std": 0.0,
+        "depth_std_m": 0.0,
+        "invalid_fraction": 0.0,
+        "translation_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delay_sec": 0.0,
+        "noise_seed": 3442894840,
+        "sdf_sha256": "7bd6c67b63a04108b9eb6336c997dab224fd824efbb2369275a4eabbb3a49532",
+        "model_rebuild_acknowledged": true,
+        "physics_readback": {
+          "mass_kg": 0.03,
+          "mu": 6.0,
+          "mu2": 6.0,
+          "collision_size_m": [
+            0.03,
+            0.03,
+            0.03
+          ],
+          "visual_size_m": [
+            0.03,
+            0.03,
+            0.03
+          ],
+          "inertia_kg_m2": {
+            "ixx": 4.5e-06,
+            "iyy": 4.5e-06,
+            "izz": 4.5e-06,
+            "ixy": 0.0,
+            "ixz": 0.0,
+            "iyz": 0.0
+          }
+        }
+      },
+      "failure_events": [],
+      "timings": {
+        "startup": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "randomization_perception": {
+          "wall": 0.008595173014327884,
+          "exclusive": 0.008595173014327884,
+          "sim": 0.009999999999763531,
+          "count": 1
+        },
+        "open_motion": {
+          "wall": 12.387584406882524,
+          "exclusive": 12.387584406882524,
+          "sim": 0.0,
+          "count": 2
+        },
+        "open_settle": {
+          "wall": 0.48495964318863116,
+          "exclusive": 0.48495964318863116,
+          "sim": 0.0,
+          "count": 2
+        },
+        "open": {
+          "wall": 12.96570621500723,
+          "exclusive": 0.09316216493607499,
+          "sim": 10.29800000000023,
+          "count": 3
+        },
+        "return_observation": {
+          "wall": 2.75598124001408,
+          "exclusive": 2.75598124001408,
+          "sim": 2.451999999999771,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.2366192470071837,
+          "exclusive": 1.2366192470071837,
+          "sim": 0.3120000000003529,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.8415785859979223,
+          "exclusive": 0.8415785859979223,
+          "sim": 0.737999999999829,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 2.3081789469579235,
+          "exclusive": 2.3081789469579235,
+          "sim": 1.9800000000009277,
+          "count": 6
+        },
+        "ik": {
+          "wall": 2.3924981669988483,
+          "exclusive": 0.755635709996568,
+          "sim": 1.9639999999999418,
+          "count": 1
+        },
+        "arm_transfer": {
+          "wall": 2.9048842820047867,
+          "exclusive": 2.9048842820047867,
+          "sim": 2.6340000000000146,
+          "count": 1
+        },
+        "arm_path": {
+          "wall": 1.8271224059863016,
+          "exclusive": 1.8271224059863016,
+          "sim": 1.6199999999998909,
+          "count": 1
+        },
+        "reset": {
+          "wall": 13.771838467015186,
+          "exclusive": 1.3775826720229816,
+          "sim": 11.66000000000031,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 13.785954908991698,
+          "exclusive": 0.005521268962183967,
+          "sim": 11.670000000000073,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.0034123410005122423,
+          "exclusive": 0.0034123410005122423,
+          "sim": 0.0,
+          "count": 4
+        },
+        "ik_step": {
+          "wall": 0.08682502902229317,
+          "exclusive": 0.08682502902229317,
+          "sim": 0.0860000000002401,
+          "count": 4
+        },
+        "action_execution": {
+          "wall": 5.533358727960149,
+          "exclusive": 5.533358727960149,
+          "sim": 4.805999999999585,
+          "count": 4
+        },
+        "environment_step": {
+          "wall": 47.022579017007956,
+          "exclusive": 0.015394914051285014,
+          "sim": 38.0,
+          "count": 4
+        },
+        "closing": {
+          "wall": 9.747119036008371,
+          "exclusive": 9.747119036008371,
+          "sim": 8.472000000000207,
+          "count": 1
+        },
+        "grip_settle": {
+          "wall": 2.463455370016163,
+          "exclusive": 2.463455370016163,
+          "sim": 1.949999999999818,
+          "count": 1
+        },
+        "lift": {
+          "wall": 3.214913601987064,
+          "exclusive": 3.214913601987064,
+          "sim": 2.5859999999997854,
+          "count": 1
+        },
+        "hold": {
+          "wall": 6.871397465991322,
+          "exclusive": 6.871397465991322,
+          "sim": 5.001999999999953,
+          "count": 1
+        },
+        "place": {
+          "wall": 3.6186142030055635,
+          "exclusive": 3.6186142030055635,
+          "sim": 2.6579999999999018,
+          "count": 1
+        },
+        "retreat": {
+          "wall": 2.270049830985954,
+          "exclusive": 2.270049830985954,
+          "sim": 1.930000000000291,
+          "count": 1
+        }
+      }
+    }
+  ],
+  "window_wall_sec": 203.02069123802357,
+  "environment_steps": 12,
+  "completed_episodes": 3,
+  "success_count": 3,
+  "requested_episodes": 3,
+  "failure": null,
+  "window_includes": [
+    "first_reset",
+    "inter_episode_reset",
+    "grasp",
+    "randomization",
+    "inference",
+    "final_recovery"
+  ],
+  "window_excludes": [
+    "startup",
+    "network_updates"
+  ],
+  "timings": {
+    "startup": {
+      "wall": 2.4408368700242136,
+      "exclusive": 2.4408368700242136,
+      "sim": 0.0,
+      "count": 1
+    },
+    "randomization_perception": {
+      "wall": 0.04012151499046013,
+      "exclusive": 0.04012151499046013,
+      "sim": 0.02999999999974534,
+      "count": 3
+    },
+    "open_motion": {
+      "wall": 51.19396798804519,
+      "exclusive": 51.19396798804519,
+      "sim": 0.0,
+      "count": 7
+    },
+    "open_settle": {
+      "wall": 1.610390696034301,
+      "exclusive": 1.610390696034301,
+      "sim": 0.0,
+      "count": 7
+    },
+    "open": {
+      "wall": 53.14625169002102,
+      "exclusive": 0.3418930059415288,
+      "sim": 48.91800000000012,
+      "count": 10
+    },
+    "return_observation": {
+      "wall": 10.776875780022237,
+      "exclusive": 10.776875780022237,
+      "sim": 9.60400000000027,
+      "count": 4
+    },
+    "randomization_physics": {
+      "wall": 3.55792091001058,
+      "exclusive": 3.55792091001058,
+      "sim": 0.8860000000001946,
+      "count": 3
+    },
+    "vision": {
+      "wall": 2.4573738040053286,
+      "exclusive": 2.4573738040053286,
+      "sim": 2.1959999999999127,
+      "count": 3
+    },
+    "ik_path": {
+      "wall": 7.187889666907722,
+      "exclusive": 7.187889666907722,
+      "sim": 6.026000000000522,
+      "count": 18
+    },
+    "ik": {
+      "wall": 7.357853053981671,
+      "exclusive": 2.3554427250055596,
+      "sim": 6.165999999999713,
+      "count": 3
+    },
+    "arm_transfer": {
+      "wall": 8.929397503990913,
+      "exclusive": 8.929397503990913,
+      "sim": 7.944000000000187,
+      "count": 3
+    },
+    "arm_path": {
+      "wall": 5.5593095640069805,
+      "exclusive": 5.5593095640069805,
+      "sim": 4.874000000000024,
+      "count": 3
+    },
+    "reset": {
+      "wall": 58.03711261902936,
+      "exclusive": 4.140605206019245,
+      "sim": 53.068000000000666,
+      "count": 3
+    },
+    "reset_total": {
+      "wall": 61.57349966801121,
+      "exclusive": 3.496265533991391,
+      "sim": 23.588000000000193,
+      "count": 3
+    },
+    "inference": {
+      "wall": 0.012912088044686243,
+      "exclusive": 0.012912088044686243,
+      "sim": 0.0,
+      "count": 12
+    },
+    "ik_step": {
+      "wall": 0.3377249120094348,
+      "exclusive": 0.3377249120094348,
+      "sim": 0.2559999999998581,
+      "count": 12
+    },
+    "action_execution": {
+      "wall": 17.41554909592378,
+      "exclusive": 17.41554909592378,
+      "sim": 14.409999999999854,
+      "count": 12
+    },
+    "environment_step": {
+      "wall": 138.3943095150462,
+      "exclusive": 0.06137399617000483,
+      "sim": 114.13399999999979,
+      "count": 12
+    },
+    "closing": {
+      "wall": 30.34006777801551,
+      "exclusive": 30.34006777801551,
+      "sim": 25.36600000000044,
+      "count": 3
+    },
+    "grip_settle": {
+      "wall": 7.7530931970104575,
+      "exclusive": 7.7530931970104575,
+      "sim": 6.005999999999858,
+      "count": 3
+    },
+    "lift": {
+      "wall": 9.586263586999848,
+      "exclusive": 9.586263586999848,
+      "sim": 7.823999999999842,
+      "count": 3
+    },
+    "hold": {
+      "wall": 19.409556752973003,
+      "exclusive": 19.409556752973003,
+      "sim": 15.001999999999953,
+      "count": 3
+    },
+    "place": {
+      "wall": 9.792780316987773,
+      "exclusive": 9.792780316987773,
+      "sim": 8.092000000000098,
+      "count": 3
+    },
+    "retreat": {
+      "wall": 6.584183924976969,
+      "exclusive": 6.584183924976969,
+      "sim": 5.792000000000144,
+      "count": 3
+    },
+    "recovery": {
+      "wall": 2.9609901389922015,
+      "exclusive": 0.0007518620113842189,
+      "sim": 2.630000000000109,
+      "count": 1
+    }
+  },
+  "updates": 0,
+  "weights_unchanged": true
+}

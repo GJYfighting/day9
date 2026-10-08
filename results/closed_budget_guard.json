@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "returncode": 1,
+  "wall_sec": 4.315473216003738,
+  "stderr": "/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4\n  warnings.warn(f\"A NumPy version >={np_minversion} and <{np_maxversion}\"\nTraceback (most recent call last):\n  File \"/home/ubuntu/ros2_ws/day9/run_day9.py\", line 438, in <module>\n    if __name__=='__main__':main()\n  File \"/home/ubuntu/ros2_ws/day9/run_day9.py\", line 434, in main\n    result=run_batch(args.method,args.profile,scenes,tag=args.tag)\n  File \"/home/ubuntu/ros2_ws/day9/run_day9.py\", line 262, in run_batch\n    raise RuntimeError('diagnostic allocation closed at report checkpoint; no automatic extension')\nRuntimeError: diagnostic allocation closed at report checkpoint; no automatic extension\n"
+}

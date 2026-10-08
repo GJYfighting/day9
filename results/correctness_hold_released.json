@@ -1,0 +1,16 @@
+{
+  "reason": "Measured driver/passive lag at first contact; correctness repair required before paired tests",
+  "previous_A_success": "original task criterion only, not complete physical correctness acceptance",
+  "repair": "velocity feedback in search only; preserve original hold servo, overclose .04, contacts, lift, 5s hold",
+  "status": "RELEASED",
+  "evidence": "results/20260923T021924_A_baseline_closing_handoff_correctness_1790129964845027950/summary.json",
+  "released_monotonic": 184501.417958127,
+  "missing_contact_fields": [
+    "normals",
+    "depths"
+  ],
+  "remaining_live_domain_regression": [
+    "L3"
+  ],
+  "L1_L2": "not live retested; correctness repair used the existing four-episode allocation"
+}

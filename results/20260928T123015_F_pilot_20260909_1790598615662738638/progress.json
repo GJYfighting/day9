@@ -1,0 +1,13 @@
+{
+  "status": "RUNNING",
+  "method": "F",
+  "seed": 20260909,
+  "steps": 548,
+  "updates": 0,
+  "episodes": 135,
+  "level": "L1",
+  "elapsed_wall_sec": 1840.3769694260009,
+  "estimated_remaining_sec": 8234.679432541157,
+  "estimate_basis": "own full training window; current course and episode mix may change",
+  "checkpoint": "models/pilot/F_20260909/step_000548_1790600456005674413.zip"
+}

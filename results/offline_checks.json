@@ -1,0 +1,334 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "smoke_load_predict",
+      "passed": true,
+      "detail": {
+        "hash": "21682552bea0970e59072f04f66c77d75d6e097d7caa90520be87f4ee30e6920",
+        "archive_steps": 12,
+        "archive_updates": 10
+      }
+    },
+    {
+      "name": "no_model_loaded_for_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "external_residual_mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "residual_not_cancelled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid_action_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid_action_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid_action_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reward_approach",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.014999999664723873,
+        "yaw_error_rad": 0.0,
+        "step_count": 1,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "",
+        "approach_reward": 0.5000000335276127,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "reward_recede",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.02500000037252903,
+        "yaw_error_rad": 0.0,
+        "step_count": 1,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "",
+        "approach_reward": -0.500000037252903,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "reward_stationary",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.019999999552965164,
+        "yaw_error_rad": 0.0,
+        "step_count": 1,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "",
+        "approach_reward": 4.470348362317633e-08,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "reward_yaw_misaligned",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.004000000189989805,
+        "yaw_error_rad": 0.5000000152453673,
+        "step_count": 1,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "",
+        "approach_reward": -1.899898051382909e-08,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "reward_success",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "stable_hold": true,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": true,
+        "distance_m": 0.004000000189989805,
+        "yaw_error_rad": 0.0,
+        "step_count": 1,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "success",
+        "approach_reward": 0.19999998100101948,
+        "success_reward": 50.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "reward_ordinary_failure",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": true,
+        "distance_m": 0.004000000189989805,
+        "yaw_error_rad": 0.0,
+        "step_count": 1,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "grasp_failed",
+        "approach_reward": 0.19999998100101948,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "reward_drop",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": true,
+        "distance_m": 0.004000000189989805,
+        "yaw_error_rad": 0.0,
+        "step_count": 1,
+        "dropped": true,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "drop",
+        "approach_reward": 0.19999998100101948,
+        "success_reward": 0.0,
+        "drop_penalty": -30.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "reward_collision",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": true,
+        "distance_m": 0.004000000189989805,
+        "yaw_error_rad": 0.0,
+        "step_count": 1,
+        "dropped": false,
+        "collision": true,
+        "invalid_actions": 0,
+        "termination_reason": "collision",
+        "approach_reward": 0.19999998100101948,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": -30.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "reward_max_steps",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "stable_hold": false,
+        "max_relative_slip_m": 0.0,
+        "grasp_attempted": false,
+        "distance_m": 0.019999999552965164,
+        "yaw_error_rad": 0.0,
+        "step_count": 20,
+        "dropped": false,
+        "collision": false,
+        "invalid_actions": 0,
+        "termination_reason": "max_steps",
+        "approach_reward": 4.470348362317633e-08,
+        "success_reward": 0.0,
+        "drop_penalty": 0.0,
+        "collision_penalty": 0.0,
+        "requested_tcp_move_m": 0.0,
+        "executed_tcp_move_m": 0.0
+      }
+    },
+    {
+      "name": "fresh_network_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto_entropy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "save_load_same_weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "day8_unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "parent_index_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physics_step_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hold_both_clocks_5s",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "physics_proven": false,
+  "training_proven": false,
+  "code_hashes": {
+    "analyze_self_occlusion.py": "021159e7da66f9dde02fc6c62abdf58864cf33a4787a53ce369de707892a46bf",
+    "config.yaml": "e9f60a524e088d1a0fe6572a085eb5a001839e76db71d1244f9a80c90b61e54d",
+    "day4_env.py": "710b07661208fcf8474e14ae853d5d872d3ea04cf3660f6df5350760b3b53522",
+    "day8_check.py": "9393336635604aba50938a0adcf0f3fdee36f97cc935f85d2f1bf6441b5fe08f",
+    "day8_env.py": "c20c8c59cfafb9ecf3d222deb621af64bddcaf8f1a29b3bde434cfa1269fc537",
+    "day9_env.py": "8da7aefe9411425282a6b8a856d8ea56d18f9e1ca01fa6f87b40d55372d6cb5b",
+    "generated/camera_baseline/day3_v5_robot.sdf": "7316b273a6d2bed98ddc6853af26c76470b69d0e736d11a79e04e669a76d9595",
+    "generated/camera_baseline/day3_v5_robot.urdf": "479818df56947f89bd0bfa6db6bed642f1b892a423aa4dcbb5571c88ec469fdc",
+    "generated/day3_v5_robot.sdf": "ede63437936c6597baf51f0f42f1d094e63750ae42616768373defc2102086e1",
+    "generated/day3_v5_robot.urdf": "928b1da749265fd660662bb42779c37dd7d4ba5001cbed816e59bdea1a1085ef",
+    "grasp_geometry_v5.py": "fc1815d10cbcfbb64563268a1b2e978d952b76dc85bb4da522dacc6f46a80352",
+    "manage_day8.py": "3790ff7f3621944df43d904721715a1bde15da3216fd74b024bf907bbc4cfa4c",
+    "manage_day9.py": "a149b0fab4e8862c6fef035c894423b528f0eb2c019c1e93d9845d70ecc910e1",
+    "moveit.launch.py": "5f4395e957478022f0bc32acbbcf1f27e565cdf793a46169005a86a1312a01b5",
+    "moveit_v5/jetarm_6dof.srdf": "050e781b46de6e20a8e380889c80fa323864715766db22108718a7ab7a41f358",
+    "moveit_v5/joint_limits.yaml": "34100799bd26830db251e4384988c390fcf6d52da34f7f668b9d1c78b98d4f3f",
+    "moveit_v5/kinematics.yaml": "1501ebb454f62845ae94011e0d7cb9150185b05fbd45cffd8fec181a750182b9",
+    "moveit_v5/launch_defaults.yaml": "9b52d3771161f749276f21709054fbb411ccddd54c479accf797c9e7e36dd4e6",
+    "moveit_v5/moveit_controllers.yaml": "6e81d67a80a63f0db24406a99e8efc8993a3a24482c20e7c523497bce4c5248f",
+    "moveit_v5/pilz_cartesian_limits.yaml": "fed80b213b77f13fb7b913d703609a66caa72ccb0617b41e83d3057e31749047",
+    "moveit_v5/sensors_3d.yaml": "2da018b37e1038d2d868499d8c6cdf56b95ceda2d859eba80744ed2e7ec246c2",
+    "perception_v5.py": "8c0cd48399360b78dd807550332ef132cc397abdb1576bad2eda2020bd322b99",
+    "perception_v5.yaml": "927b371725cc84f6c939ec085161c6037c2ae221c309213e140dd5090ae1afad",
+    "repair_camera.py": "86eb2db1b1236f4b72859ac8327c6c187de73e02768bc612f08c38696e838a10",
+    "residual_env.py": "caee2ca833a1b226216a80d71be626870e055b79d16824fc35d251c8c92afd95",
+    "run_day9.py": "da6b22bf66f5a06b25d542c8e66323f3d4d26a5536c573a78c7de6da886037a9",
+    "run_validation.py": "28ac3bea09c5c53475ea9f33098563dcc4075fb9f557bff598cb8740ac41c1b6",
+    "session_env.sh": "5ec506eb63faecde9d282d77e074aca9cca07cb24760e5b480596cbe573c7b5d",
+    "simulations/robot_gazebo/config/robot_config.yaml": "37ec82d26af5103bd193a50325465c55b993e43c05589fbf2f6fd9a848d6c35d",
+    "simulations/robot_gazebo/worlds/grasp_table.sdf": "c626376a90506a7f4834ec1124ad66fcc4ac8ab067fcba2964cb6508c2873d6f",
+    "visual_grasp_v5.py": "6c427a085323aba690965df860ac81f7f2e0e53be9458aea3ef44405f857d4c0",
+    "white_area.py": "72fe11ce9de3f9470851f389c908c922f1bbe692b78eddc29adfe76506795069",
+    "white_area_check.py": "a8707b567eaba2687a0748079a2b813dbd4e160cad3b133caffe30b051cff09c",
+    "world.launch.py": "811932079c7c959111b394aedef8eb83227fb48cc2ec911dddf603ea42cd1446"
+  }
+}

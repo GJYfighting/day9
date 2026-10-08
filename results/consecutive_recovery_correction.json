@@ -1,0 +1,18 @@
+{
+  "time_utc": "2026-09-28T07:37:39Z",
+  "old_review_sha256": "48123d06ede0b25f0b0486b72434ae8a60c9fd2841097c0ca361a942be0629af",
+  "new_review_sha256": "75bdd596fcba621ce4798fa23d048aab953fe2f07a69d6a93f9cae217362f560",
+  "old_failed_state": "results/pipeline_failed_before_consecutive_fix.json",
+  "stage": "B_train",
+  "checkpoint_steps": 1292,
+  "updates": 292,
+  "infrastructure_failures_total": 3,
+  "correct_consecutive_failure_streak": 1,
+  "old_deadline_wall_epoch": 1790509709.5425584,
+  "new_deadline_wall_epoch": 1790937331.972366,
+  "stopped_wall_sec_excluded": 427622.42980766296,
+  "training_steps_budget_unchanged": 3000,
+  "validation_slots_budget_unchanged": 100,
+  "task_code_config_assets_unchanged": true,
+  "note": "Resume after coding the existing stated consecutive-recovery rule. No original result is deleted."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checkpoint": [
+    {
+      "method": "B",
+      "model_save_sec": 0.008074015990132466,
+      "replay_save_sec": 0.00521374901290983,
+      "load_sec": 0.012806615006411448,
+      "model_bytes": 275217,
+      "replay_bytes": 10801648,
+      "updates_added": 0
+    },
+    {
+      "method": "F",
+      "model_save_sec": 0.005359592993045226,
+      "replay_save_sec": 0.005393384984927252,
+      "load_sec": 0.010504660021979362,
+      "model_bytes": 275246,
+      "replay_bytes": 10801648,
+      "updates_added": 0
+    }
+  ],
+  "logging": {
+    "records": 100,
+    "wall_sec": 0.00563186698127538,
+    "bytes": 216616
+  },
+  "note": "buffered OS writes, no fsync durability timing; includes full allocated replay arrays; no network/update-frequency changes"
+}

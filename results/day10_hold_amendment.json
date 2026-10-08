@@ -1,0 +1,8 @@
+{
+  "old_review_sha256": "75bdd596fcba621ce4798fa23d048aab953fe2f07a69d6a93f9cae217362f560",
+  "new_review_sha256": "04e262ee582cd765c5ff0e10838cd8f0ceb8d51012e259ad550724d4c40f67c3",
+  "user_hold": "results/day10_hold.json",
+  "test": "in isolated mock tree, build_and_start returned None, wrote DAY9_COMPLETE_DAY10_DEFERRED and did not create day10",
+  "task_code_config_assets_unchanged": true,
+  "created_utc": "2026-09-28T07:54:09Z"
+}

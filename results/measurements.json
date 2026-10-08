@@ -1,0 +1,5958 @@
+{
+  "runs": [
+    {
+      "run": "20260923T020819_A_baseline_correctness_1790129299979688026",
+      "method": "A",
+      "profile": "baseline",
+      "tag": "correctness",
+      "window_wall_sec": 79.96425021198229,
+      "environment_steps": 4,
+      "completed_episodes": 1,
+      "success_count": 1,
+      "requested_episodes": 1,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 19.991062552995572,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        77.03740696798195
+      ],
+      "grasp_attempts": 1,
+      "failure_reasons": [
+        "success"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0"
+      ],
+      "declaration": "results/20260923T020819_A_baseline_correctness_1790129299979688026/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 20,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 1
+      },
+      "stages": {
+        "startup": {
+          "wall": 0.20086491899564862,
+          "exclusive": 0.20086491899564862,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 34.341617961996235,
+          "exclusive": 3.0882936269626953,
+          "sim": 307.528,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.3640982130018529,
+          "exclusive": 1.3640982130018529,
+          "sim": 0.3160000000000309,
+          "count": 1
+        },
+        "randomization_perception": {
+          "wall": 2.7664648610225413,
+          "exclusive": 2.7664648610225413,
+          "sim": 279.562,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.8599674019787926,
+          "exclusive": 0.8599674019787926,
+          "sim": 0.7599999999999909,
+          "count": 1
+        },
+        "ik": {
+          "wall": 2.691451758990297,
+          "exclusive": 0.8621064540056977,
+          "sim": 2.1719999999999686,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 2.53497523497208,
+          "exclusive": 2.53497523497208,
+          "sim": 2.0860000000000127,
+          "count": 6
+        },
+        "ik_step": {
+          "wall": 0.1034617820114363,
+          "exclusive": 0.1034617820114363,
+          "sim": 0.08999999999997499,
+          "count": 4
+        },
+        "action_execution": {
+          "wall": 5.477150756953051,
+          "exclusive": 5.477150756953051,
+          "sim": 4.807999999999993,
+          "count": 4
+        },
+        "closing": {
+          "wall": 3.3886176490050275,
+          "exclusive": 3.3886176490050275,
+          "sim": 2.920000000000016,
+          "count": 1
+        },
+        "grip_settle": {
+          "wall": 5.027230409992626,
+          "exclusive": 5.027230409992626,
+          "sim": 3.995999999999981,
+          "count": 1
+        },
+        "lift": {
+          "wall": 3.1925738390127663,
+          "exclusive": 3.1925738390127663,
+          "sim": 2.6259999999999764,
+          "count": 1
+        },
+        "hold": {
+          "wall": 6.141150589013705,
+          "exclusive": 6.141150589013705,
+          "sim": 5.0020000000000095,
+          "count": 1
+        },
+        "place": {
+          "wall": 2.881555934000062,
+          "exclusive": 2.881555934000062,
+          "sim": 2.548000000000002,
+          "count": 1
+        },
+        "open_motion": {
+          "wall": 27.133746400126256,
+          "exclusive": 27.133746400126256,
+          "sim": 0.0,
+          "count": 4
+        },
+        "open_settle": {
+          "wall": 0.8672579526319169,
+          "exclusive": 0.8672579526319169,
+          "sim": 0.0,
+          "count": 4
+        },
+        "retreat": {
+          "wall": 2.1340384799987078,
+          "exclusive": 2.1340384799987078,
+          "sim": 1.9319999999999595,
+          "count": 1
+        },
+        "return_observation": {
+          "wall": 5.64718738902593,
+          "exclusive": 5.64718738902593,
+          "sim": 4.966000000000008,
+          "count": 2
+        },
+        "recovery": {
+          "wall": 2.9004712449968792,
+          "exclusive": 0.0007433709688484669,
+          "sim": 2.6160000000000423,
+          "count": 1
+        },
+        "inference": {
+          "wall": 4.3452047975733876e-05,
+          "exclusive": 4.3452047975733876e-05,
+          "sim": 0.0,
+          "count": 4
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8778286765060109,
+        "contact": 0.8194000171346333
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000003105408,
+          "velocity_rad_sec": 1.493334567115312e-09,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 13.578957476158394,
+          "settle_wall_sec": 0.20091087569016963,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000029279915,
+          "velocity_rad_sec": 6.375955319271043e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.226684303896036,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001802419,
+          "velocity_rad_sec": 9.206244655501905e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 13.554788923967863,
+          "settle_wall_sec": 0.22545495483791456,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015147157,
+          "velocity_rad_sec": 6.136302577175456e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21420781820779666,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T020819_A_baseline_correctness_1790129299979688026",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 183713.332253741,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.4112718792720395,
+              "expected_contact_angle": 0.6231066083806114,
+              "contact_gap_m": 0.019163411429750768,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.01916 width=0.02982; lift_and_hold_required"
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 0,
+        "real_collision_pairs": [],
+        "position_count": 0,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 4,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 54,
+          "minimum": -0.6225926973244624,
+          "maximum": 6.228517701600822e-10,
+          "samples_abs_above_model_0_10": 53
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 4,
+          "minimum": -0.20899071479408116,
+          "maximum": 0.1000000000190435,
+          "samples_abs_above_model_0_10": 3
+        },
+        "WAIT_STALL": {
+          "samples": 84,
+          "minimum": -0.07473625003365367,
+          "maximum": 0.0035263599989665273,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 51,
+          "minimum": -0.0036526887167787903,
+          "maximum": -0.0012551864238451171,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 97,
+          "minimum": -0.0012570140053992096,
+          "maximum": -0.00012478688752290412,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    },
+    {
+      "run": "20260923T021103_B_baseline_preparation_1790129463791674096",
+      "method": "B",
+      "profile": "baseline",
+      "tag": "preparation",
+      "window_wall_sec": 66.92827896800009,
+      "environment_steps": 20,
+      "completed_episodes": 1,
+      "success_count": 0,
+      "requested_episodes": 1,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 3.3464139484000044,
+      "mean_episode_steps": 20.0,
+      "episode_wall_sec": [
+        63.88821163499961
+      ],
+      "grasp_attempts": 0,
+      "failure_reasons": [
+        "max_steps"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0"
+      ],
+      "declaration": "results/20260923T021103_B_baseline_preparation_1790129463791674096/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 20,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 1,
+        "measured_episodes": 0
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.835501469002338,
+          "exclusive": 2.835501469002338,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 35.39586027502082,
+          "exclusive": 4.39903595202486,
+          "sim": 458.062,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.159859957988374,
+          "exclusive": 1.159859957988374,
+          "sim": 0.29599999999999227,
+          "count": 1
+        },
+        "randomization_perception": {
+          "wall": 0.014526821993058547,
+          "exclusive": 0.014526821993058547,
+          "sim": 427.478,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.8753777709789574,
+          "exclusive": 0.8753777709789574,
+          "sim": 0.7540000000000191,
+          "count": 1
+        },
+        "ik": {
+          "wall": 2.470844194001984,
+          "exclusive": 0.7996317409852054,
+          "sim": 2.0459999999999923,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 1.950179247010965,
+          "exclusive": 1.950179247010965,
+          "sim": 1.6219999999999573,
+          "count": 5
+        },
+        "ik_step": {
+          "wall": 0.4911878440179862,
+          "exclusive": 0.4911878440179862,
+          "sim": 0.38799999999991996,
+          "count": 20
+        },
+        "action_execution": {
+          "wall": 27.87213852093555,
+          "exclusive": 27.87213852093555,
+          "sim": 24.036000000000058,
+          "count": 20
+        },
+        "closing": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "grip_settle": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "lift": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "hold": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "place": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "open_motion": {
+          "wall": 16.846267664252082,
+          "exclusive": 16.846267664252082,
+          "sim": 0.0,
+          "count": 3
+        },
+        "open_settle": {
+          "wall": 0.6811893597187009,
+          "exclusive": 0.6811893597187009,
+          "sim": 0.0,
+          "count": 3
+        },
+        "retreat": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "return_observation": {
+          "wall": 5.401349396968726,
+          "exclusive": 5.401349396968726,
+          "sim": 4.70599999999996,
+          "count": 2
+        },
+        "recovery": {
+          "wall": 3.0047106629936025,
+          "exclusive": 0.0004157540388405323,
+          "sim": 2.6059999999999945,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.025247588026104495,
+          "exclusive": 0.025247588026104495,
+          "sim": 0.0,
+          "count": 20
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8623665522452086,
+        "contact": null
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001871575,
+          "velocity_rad_sec": 9.365688224960422e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 16.846267664252082,
+          "settle_wall_sec": 0.21489389654016122,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018042195,
+          "velocity_rad_sec": 6.378917394300743e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.22173952500452287,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 20,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000228065507,
+          "velocity_rad_sec": 6.256688500627661e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.24455593817401677,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [],
+        "payload_sample_count": 0,
+        "real_collision_pairs": [],
+        "position_count": 0,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 20,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0006853165104985237,
+          0.00018196320161223412,
+          0.0008998732082545757,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {}
+    },
+    {
+      "run": "20260923T021218_F_baseline_preparation_1790129538512981638",
+      "method": "F",
+      "profile": "baseline",
+      "tag": "preparation",
+      "window_wall_sec": 88.05148238898255,
+      "environment_steps": 4,
+      "completed_episodes": 1,
+      "success_count": 1,
+      "requested_episodes": 1,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 22.012870597245637,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        85.13611453201156
+      ],
+      "grasp_attempts": 1,
+      "failure_reasons": [
+        "success"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0"
+      ],
+      "declaration": "results/20260923T021218_F_baseline_preparation_1790129538512981638/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 20,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 1,
+        "measured_episodes": 0
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.710030315007316,
+          "exclusive": 2.710030315007316,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 35.43064874998527,
+          "exclusive": 3.397833366994746,
+          "sim": 521.392,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.2330759309988935,
+          "exclusive": 1.2330759309988935,
+          "sim": 0.31599999999991724,
+          "count": 1
+        },
+        "randomization_perception": {
+          "wall": 0.006342681008391082,
+          "exclusive": 0.006342681008391082,
+          "sim": 491.562,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.8939610570087098,
+          "exclusive": 0.8939610570087098,
+          "sim": 0.7900000000000773,
+          "count": 1
+        },
+        "ik": {
+          "wall": 2.7178690799919423,
+          "exclusive": 0.7818443909636699,
+          "sim": 2.0979999999999563,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 2.829911212029401,
+          "exclusive": 2.829911212029401,
+          "sim": 2.1380000000000337,
+          "count": 6
+        },
+        "ik_step": {
+          "wall": 0.1657109160150867,
+          "exclusive": 0.1657109160150867,
+          "sim": 0.10199999999997544,
+          "count": 4
+        },
+        "action_execution": {
+          "wall": 6.3695480289752595,
+          "exclusive": 6.3695480289752595,
+          "sim": 4.802000000000135,
+          "count": 4
+        },
+        "closing": {
+          "wall": 5.057488049991662,
+          "exclusive": 5.057488049991662,
+          "sim": 2.9160000000000537,
+          "count": 1
+        },
+        "grip_settle": {
+          "wall": 6.991894985985709,
+          "exclusive": 6.991894985985709,
+          "sim": 3.189999999999941,
+          "count": 1
+        },
+        "lift": {
+          "wall": 3.7482313950022217,
+          "exclusive": 3.7482313950022217,
+          "sim": 2.613999999999919,
+          "count": 1
+        },
+        "hold": {
+          "wall": 7.245684224006254,
+          "exclusive": 7.245684224006254,
+          "sim": 5.008000000000038,
+          "count": 1
+        },
+        "place": {
+          "wall": 2.988811135001015,
+          "exclusive": 2.988811135001015,
+          "sim": 2.552000000000021,
+          "count": 1
+        },
+        "open_motion": {
+          "wall": 31.026213683129754,
+          "exclusive": 31.026213683129754,
+          "sim": 0.0,
+          "count": 4
+        },
+        "open_settle": {
+          "wall": 0.9586395927181002,
+          "exclusive": 0.9586395927181002,
+          "sim": 0.0,
+          "count": 4
+        },
+        "retreat": {
+          "wall": 2.1696655779960565,
+          "exclusive": 2.1696655779960565,
+          "sim": 1.9319999999999027,
+          "count": 1
+        },
+        "return_observation": {
+          "wall": 5.353376278013457,
+          "exclusive": 5.353376278013457,
+          "sim": 4.723999999999933,
+          "count": 2
+        },
+        "recovery": {
+          "wall": 2.8811900159926154,
+          "exclusive": 0.000288159993942827,
+          "sim": 2.6200000000000045,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.010176736977882683,
+          "exclusive": 0.010176736977882683,
+          "sim": 0.0,
+          "count": 4
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.7538996453367958,
+        "contact": 0.5957480396162658
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001909045,
+          "velocity_rad_sec": 9.363734232437082e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 17.043194574886,
+          "settle_wall_sec": 0.27607040252769366,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018015965,
+          "velocity_rad_sec": 6.161977594842938e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.23578146102954634,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.570000000180318,
+          "velocity_rad_sec": 9.205740614248725e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 13.983019108243752,
+          "settle_wall_sec": 0.22541936906054616,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015148239,
+          "velocity_rad_sec": 6.131444241219697e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.22136836010031402,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T021218_F_baseline_preparation_1790129538512981638",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 183958.129966345,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.4133596006668532,
+              "expected_contact_angle": 0.6230970379427214,
+              "contact_gap_m": 0.01927434922040817,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.01927 width=0.02982; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.06683537001072162,
+                -1.265142577830912e-11
+              ],
+              "joint2": [
+                -0.4481600069159746,
+                1.8905936789020972e-07
+              ],
+              "joint3": [
+                -1.478655166794182,
+                3.277537371365602e-07
+              ],
+              "joint4": [
+                -1.2147771416245998,
+                5.483763582114776e-09
+              ],
+              "joint5": [
+                0.06436393021133995,
+                -2.8442703162330496e-11
+              ],
+              "l_in_joint": [
+                -0.5537437301613536,
+                0.3498620162931538
+              ],
+              "l_out_joint": [
+                0.5536704113671597,
+                -0.35024464310338593
+              ],
+              "l_joint": [
+                -0.553635037528466,
+                0.3499999999370323
+              ],
+              "r_in_joint": [
+                -0.557161439746274,
+                0.3498618107740956
+              ],
+              "r_out_joint": [
+                0.5571325983353149,
+                -0.3500009649767632
+              ],
+              "r_joint": [
+                0.40811123781556913,
+                -0.048266750572141054
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 0,
+        "real_collision_pairs": [],
+        "position_count": 0,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 4,
+        "F_steps_with_nonzero_effect": 4,
+        "maximum_policy_absolute_components": [
+          0.0006148680113255978,
+          0.00012940634042024612,
+          0.0008998732082545757,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 53,
+          "minimum": -0.6229238370920325,
+          "maximum": 6.015867803910169e-10,
+          "samples_abs_above_model_0_10": 52
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 4,
+          "minimum": -0.20898151593179054,
+          "maximum": 0.04532926354576347,
+          "samples_abs_above_model_0_10": 2
+        },
+        "WAIT_STALL": {
+          "samples": 67,
+          "minimum": -0.04845352317606422,
+          "maximum": -0.0037403426336478918,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 49,
+          "minimum": -0.0036830856430828673,
+          "maximum": -0.0012189673224553,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 95,
+          "minimum": -0.0011866882300234638,
+          "maximum": -0.0001192337173535063,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    },
+    {
+      "run": "20260923T021354_B_baseline_paired_1790129634200042985",
+      "method": "B",
+      "profile": "baseline",
+      "tag": "paired",
+      "window_wall_sec": 152.72000844200375,
+      "environment_steps": 60,
+      "completed_episodes": 3,
+      "success_count": 0,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 2.545333474033396,
+      "mean_episode_steps": 20.0,
+      "episode_wall_sec": [
+        63.33910448299139,
+        44.05745583100361,
+        42.3535532670212
+      ],
+      "grasp_attempts": 0,
+      "failure_reasons": [
+        "max_steps",
+        "max_steps",
+        "max_steps"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T021354_B_baseline_paired_1790129634200042985/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.8086883469950408,
+          "exclusive": 2.8086883469950408,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 64.1097491440305,
+          "exclusive": 3.3358756780216936,
+          "sim": 24.166000000000054,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.611072660976788,
+          "exclusive": 3.611072660976788,
+          "sim": 0.9259999999999309,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.022638427006313577,
+          "exclusive": 0.022638427006313577,
+          "sim": 0.012000000000057298,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.6930377240059897,
+          "exclusive": 2.6930377240059897,
+          "sim": 2.2759999999999536,
+          "count": 3
+        },
+        "ik": {
+          "wall": 8.283335622982122,
+          "exclusive": 2.8501713239820674,
+          "sim": 6.414000000000101,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 6.197571051015984,
+          "exclusive": 6.197571051015984,
+          "sim": 4.831999999999994,
+          "count": 15
+        },
+        "ik_step": {
+          "wall": 1.493336538085714,
+          "exclusive": 1.493336538085714,
+          "sim": 1.1040000000001555,
+          "count": 60
+        },
+        "action_execution": {
+          "wall": 83.744871932955,
+          "exclusive": 83.744871932955,
+          "sim": 72.06000000000131,
+          "count": 60
+        },
+        "closing": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "grip_settle": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "lift": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "hold": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "place": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "open_motion": {
+          "wall": 16.820327393565094,
+          "exclusive": 16.820327393565094,
+          "sim": 0.0,
+          "count": 7
+        },
+        "open_settle": {
+          "wall": 1.6092027347767726,
+          "exclusive": 1.6092027347767726,
+          "sim": 0.0,
+          "count": 7
+        },
+        "retreat": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "return_observation": {
+          "wall": 11.143972384015797,
+          "exclusive": 11.143972384015797,
+          "sim": 9.565999999999917,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 2.9383013600017875,
+          "exclusive": 0.000263572990661487,
+          "sim": 2.631999999999948,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.06398580595850945,
+          "exclusive": 0.06398580595850945,
+          "sim": 0.0,
+          "count": 60
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8604705976228797,
+        "contact": null
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001835661,
+          "velocity_rad_sec": 9.367013831251825e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 16.820327393565094,
+          "settle_wall_sec": 0.22662376958760433,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018036262,
+          "velocity_rad_sec": 6.375995287299929e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21415953751420602,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.570000022857586,
+          "velocity_rad_sec": 6.252152129349042e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2721262730192393,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000245077703,
+          "velocity_rad_sec": 6.370233229802125e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.233824713883223,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000451393565,
+          "velocity_rad_sec": 6.09112316141136e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21936229796847329,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.570000046794632,
+          "velocity_rad_sec": 6.162432786283034e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.22428531077457592,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 20,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000680694157,
+          "velocity_rad_sec": 6.341436264989397e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21882083202945068,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [],
+        "payload_sample_count": 0,
+        "real_collision_pairs": [],
+        "position_count": 0,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 60,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0006929202936589718,
+          0.00018189474940299988,
+          0.0009538806043565273,
+          0.015258774161338806
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {}
+    },
+    {
+      "run": "20260923T021722_A_baseline_closing_correctness_1790129842434426629",
+      "method": "A",
+      "profile": "baseline",
+      "tag": "closing_correctness",
+      "window_wall_sec": 68.98292796500027,
+      "environment_steps": 4,
+      "completed_episodes": 1,
+      "success_count": 0,
+      "requested_episodes": 1,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 17.245731991250068,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        53.90127882201341
+      ],
+      "grasp_attempts": 1,
+      "failure_reasons": [
+        "collision"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0"
+      ],
+      "declaration": "results/20260923T021722_A_baseline_closing_correctness_1790129842434426629/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 20,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 1
+      },
+      "stages": {
+        "startup": {
+          "wall": 0.232702117995359,
+          "exclusive": 0.232702117995359,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 37.50418023299426,
+          "exclusive": 3.416766573995119,
+          "sim": 0.0,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.1923940130218398,
+          "exclusive": 1.1923940130218398,
+          "sim": 0.2899999999999636,
+          "count": 1
+        },
+        "randomization_perception": {
+          "wall": 0.3039427649928257,
+          "exclusive": 0.3039427649928257,
+          "sim": 0.0,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.9616591300000437,
+          "exclusive": 0.9616591300000437,
+          "sim": 0.7699999999999818,
+          "count": 1
+        },
+        "ik": {
+          "wall": 2.364922161999857,
+          "exclusive": 0.7821420750115067,
+          "sim": 1.9360000000000355,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 1.8147161649831105,
+          "exclusive": 1.8147161649831105,
+          "sim": 1.4939999999999145,
+          "count": 5
+        },
+        "ik_step": {
+          "wall": 0.08969517197692767,
+          "exclusive": 0.08969517197692767,
+          "sim": 0.07399999999995543,
+          "count": 4
+        },
+        "action_execution": {
+          "wall": 5.4676788880024105,
+          "exclusive": 5.4676788880024105,
+          "sim": 4.804000000000087,
+          "count": 4
+        },
+        "closing": {
+          "wall": 10.249936982989311,
+          "exclusive": 10.249936982989311,
+          "sim": 8.458000000000084,
+          "count": 1
+        },
+        "grip_settle": {
+          "wall": 0.5565341890032869,
+          "exclusive": 0.5565341890032869,
+          "sim": 0.38999999999998636,
+          "count": 1
+        },
+        "lift": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "hold": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "place": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "open_motion": {
+          "wall": 31.400309519347502,
+          "exclusive": 31.400309519347502,
+          "sim": 0.0,
+          "count": 3
+        },
+        "open_settle": {
+          "wall": 0.7361428311851341,
+          "exclusive": 0.7361428311851341,
+          "sim": 0.0,
+          "count": 3
+        },
+        "retreat": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "return_observation": {
+          "wall": 5.60021077201236,
+          "exclusive": 5.60021077201236,
+          "sim": 4.744000000000028,
+          "count": 2
+        },
+        "recovery": {
+          "wall": 15.048369750002166,
+          "exclusive": 0.0006511969841085374,
+          "sim": 12.802000000000021,
+          "count": 1
+        },
+        "inference": {
+          "wall": 8.92479729373008e-05,
+          "exclusive": 8.92479729373008e-05,
+          "sim": 0.0,
+          "count": 4
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8786178007895421,
+        "contact": 0.8187686673270044
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001964787,
+          "velocity_rad_sec": 9.152889557384469e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 19.52014209740446,
+          "settle_wall_sec": 0.2558964811905753,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018072204,
+          "velocity_rad_sec": 6.378921835192841e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2621160550334025,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.570000000184016,
+          "velocity_rad_sec": 9.203500184185032e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 11.880167421943042,
+          "settle_wall_sec": 0.21813029496115632,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T021722_A_baseline_closing_correctness_1790129842434426629",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 184265.836875407,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6255712613943742,
+              "expected_contact_angle": 0.6230990943948977,
+              "contact_gap_m": 0.029938716889301133,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02994 width=0.02982; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.06668790161699403,
+                -7.537892762776201e-11
+              ],
+              "joint2": [
+                -0.449854612149297,
+                2.2574073534065153e-08
+              ],
+              "joint3": [
+                -1.479228874104161,
+                3.9273831381470004e-08
+              ],
+              "joint4": [
+                -1.212509033035473,
+                1.8586412964261e-09
+              ],
+              "joint5": [
+                0.06669034646346896,
+                -1.3602684495288286e-10
+              ],
+              "l_in_joint": [
+                -0.6011649900015101,
+                0.09170405485083029
+              ],
+              "l_out_joint": [
+                0.6011635352601732,
+                -0.09168999934394655
+              ],
+              "l_joint": [
+                -0.6011644716616564,
+                0.09169928089174832
+              ],
+              "r_in_joint": [
+                -0.6021823946660328,
+                0.10425534818552501
+              ],
+              "r_out_joint": [
+                0.6021809860250841,
+                -0.1042420209108073
+              ],
+              "r_joint": [
+                0.6002570462346982,
+                -0.08691559091168843
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 54,
+        "real_collision_pairs": [
+          [
+            "robot::l_out_link::l_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ],
+          [
+            "robot::r_out_link::r_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ]
+        ],
+        "position_count": 213,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 4,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 161,
+          "minimum": -0.6805243633829835,
+          "maximum": 6.234608385113916e-10,
+          "samples_abs_above_model_0_10": 48
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 4,
+          "minimum": -0.18789841144199895,
+          "maximum": -0.08015887753678447,
+          "samples_abs_above_model_0_10": 2
+        },
+        "WAIT_STALL": {
+          "samples": 7,
+          "minimum": -0.1230130836796689,
+          "maximum": -0.06607515837864891,
+          "samples_abs_above_model_0_10": 3
+        }
+      }
+    },
+    {
+      "run": "20260923T021924_A_baseline_closing_handoff_correctness_1790129964845027950",
+      "method": "A",
+      "profile": "baseline",
+      "tag": "closing_handoff_correctness",
+      "window_wall_sec": 81.43877235497348,
+      "environment_steps": 4,
+      "completed_episodes": 1,
+      "success_count": 1,
+      "requested_episodes": 1,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 20.35969308874337,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        78.46433171699755
+      ],
+      "grasp_attempts": 1,
+      "failure_reasons": [
+        "success"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0"
+      ],
+      "declaration": "results/20260923T021924_A_baseline_closing_handoff_correctness_1790129964845027950/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 20,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 1
+      },
+      "stages": {
+        "startup": {
+          "wall": 0.19726493701455183,
+          "exclusive": 0.19726493701455183,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 34.37387045298237,
+          "exclusive": 2.8777011529600713,
+          "sim": 0.0,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.1697825730079785,
+          "exclusive": 1.1697825730079785,
+          "sim": 0.31399999999996453,
+          "count": 1
+        },
+        "randomization_perception": {
+          "wall": 1.0097765150130726,
+          "exclusive": 1.0097765150130726,
+          "sim": 0.0,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.8200867619889323,
+          "exclusive": 0.8200867619889323,
+          "sim": 0.7379999999999427,
+          "count": 1
+        },
+        "ik": {
+          "wall": 2.3544885290029924,
+          "exclusive": 0.7465882190153934,
+          "sim": 2.0020000000000664,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 2.338580859010108,
+          "exclusive": 2.338580859010108,
+          "sim": 2.0239999999998872,
+          "count": 6
+        },
+        "ik_step": {
+          "wall": 0.11672442595590837,
+          "exclusive": 0.11672442595590837,
+          "sim": 0.09400000000005093,
+          "count": 4
+        },
+        "action_execution": {
+          "wall": 5.340998707979452,
+          "exclusive": 5.340998707979452,
+          "sim": 4.80600000000004,
+          "count": 4
+        },
+        "closing": {
+          "wall": 9.640283612010535,
+          "exclusive": 9.640283612010535,
+          "sim": 8.47199999999998,
+          "count": 1
+        },
+        "grip_settle": {
+          "wall": 2.4506536639819387,
+          "exclusive": 2.4506536639819387,
+          "sim": 1.97199999999998,
+          "count": 1
+        },
+        "lift": {
+          "wall": 3.25140634298441,
+          "exclusive": 3.25140634298441,
+          "sim": 2.6259999999999764,
+          "count": 1
+        },
+        "hold": {
+          "wall": 6.096818380989134,
+          "exclusive": 6.096818380989134,
+          "sim": 5.0,
+          "count": 1
+        },
+        "place": {
+          "wall": 3.0605757489975076,
+          "exclusive": 3.0605757489975076,
+          "sim": 2.7080000000000837,
+          "count": 1
+        },
+        "open_motion": {
+          "wall": 27.70841242617462,
+          "exclusive": 27.70841242617462,
+          "sim": 0.0,
+          "count": 4
+        },
+        "open_settle": {
+          "wall": 0.8920582494756673,
+          "exclusive": 0.8920582494756673,
+          "sim": 0.0,
+          "count": 4
+        },
+        "retreat": {
+          "wall": 2.312094894994516,
+          "exclusive": 2.312094894994516,
+          "sim": 1.9279999999999973,
+          "count": 1
+        },
+        "return_observation": {
+          "wall": 5.291844114981359,
+          "exclusive": 5.291844114981359,
+          "sim": 4.719999999999914,
+          "count": 2
+        },
+        "recovery": {
+          "wall": 2.9453210159845185,
+          "exclusive": 0.00030139199225232005,
+          "sim": 2.6200000000000045,
+          "count": 1
+        },
+        "inference": {
+          "wall": 9.892796515487134e-05,
+          "exclusive": 9.892796515487134e-05,
+          "sim": 0.0,
+          "count": 4
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8998317099047181,
+        "contact": 0.8428501076687875
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001964787,
+          "velocity_rad_sec": 9.152893998276568e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 16.72863454936305,
+          "settle_wall_sec": 0.22403386954101734,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018072204,
+          "velocity_rad_sec": 6.378921835192841e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.23362824169453233,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001913568,
+          "velocity_rad_sec": 8.762235381709615e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 10.979777876811568,
+          "settle_wall_sec": 0.22096945749945007,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015196605,
+          "velocity_rad_sec": 6.148479503309545e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2134266807406675,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T021924_A_baseline_closing_handoff_correctness_1790129964845027950",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 184384.36226888,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6256593334021534,
+              "expected_contact_angle": 0.6231025943253004,
+              "contact_gap_m": 0.029942857506477634,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02994 width=0.02982; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.06668808741901101,
+                7.326913761037529e-11
+              ],
+              "joint2": [
+                -0.44979856914311817,
+                1.6295563370904986e-09
+              ],
+              "joint3": [
+                -1.4791391711935469,
+                2.7611271880001453e-09
+              ],
+              "joint4": [
+                -1.212654878886108,
+                -6.983808253924195e-10
+              ],
+              "joint5": [
+                0.06669239696326698,
+                8.541622986170394e-11
+              ],
+              "l_in_joint": [
+                -0.6198482132545158,
+                0.029396156424834324
+              ],
+              "l_out_joint": [
+                0.6198477089017844,
+                -0.029402215169425854
+              ],
+              "l_joint": [
+                -0.619848047298948,
+                0.02939877487249229
+              ],
+              "r_in_joint": [
+                -0.6200529283267195,
+                0.01823752699214958
+              ],
+              "r_out_joint": [
+                0.6200524187564352,
+                -0.018245189608947908
+              ],
+              "r_joint": [
+                0.6195238013241847,
+                -0.04452788922942702
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 514,
+        "real_collision_pairs": [
+          [
+            "robot::l_out_link::l_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ],
+          [
+            "robot::r_out_link::r_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ]
+        ],
+        "position_count": 2056,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 4,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 162,
+          "minimum": -0.44672537203644874,
+          "maximum": 6.233620286621999e-10,
+          "samples_abs_above_model_0_10": 48
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 3,
+          "minimum": -0.059096587610706575,
+          "maximum": -0.008200091846016833,
+          "samples_abs_above_model_0_10": 0
+        },
+        "WAIT_STALL": {
+          "samples": 45,
+          "minimum": -0.044452057199398154,
+          "maximum": -0.003463308228463413,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 51,
+          "minimum": -0.003316909114744526,
+          "maximum": -7.361587902571243e-05,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 95,
+          "minimum": -0.0004113196334672997,
+          "maximum": -5.49610150355484e-05,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    },
+    {
+      "run": "20260923T022219_F_baseline_paired_1790130139858827394",
+      "method": "F",
+      "profile": "baseline",
+      "tag": "paired",
+      "window_wall_sec": 201.3184971139999,
+      "environment_steps": 12,
+      "completed_episodes": 3,
+      "success_count": 3,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 16.77654142616666,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        79.77865210498567,
+        60.231581924977945,
+        58.28814369899919
+      ],
+      "grasp_attempts": 3,
+      "failure_reasons": [
+        "success",
+        "success",
+        "success"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T022219_F_baseline_paired_1790130139858827394/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 3.311310933000641,
+          "exclusive": 3.311310933000641,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 63.27104083300219,
+          "exclusive": 4.195284959976561,
+          "sim": 24.069999999999936,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.5403268270019908,
+          "exclusive": 3.5403268270019908,
+          "sim": 0.8979999999999109,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.026897129049757496,
+          "exclusive": 0.026897129049757496,
+          "sim": 0.023999999999887223,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.4869806960050482,
+          "exclusive": 2.4869806960050482,
+          "sim": 2.22199999999998,
+          "count": 3
+        },
+        "ik": {
+          "wall": 7.415070937975543,
+          "exclusive": 2.401419500965858,
+          "sim": 6.238000000000056,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 7.427272539003752,
+          "exclusive": 7.427272539003752,
+          "sim": 6.231999999999971,
+          "count": 18
+        },
+        "ik_step": {
+          "wall": 0.3147402170288842,
+          "exclusive": 0.3147402170288842,
+          "sim": 0.2480000000000473,
+          "count": 12
+        },
+        "action_execution": {
+          "wall": 16.269458350987406,
+          "exclusive": 16.269458350987406,
+          "sim": 14.408000000000357,
+          "count": 12
+        },
+        "closing": {
+          "wall": 30.19790136802476,
+          "exclusive": 30.19790136802476,
+          "sim": 25.292000000000144,
+          "count": 3
+        },
+        "grip_settle": {
+          "wall": 8.365935034991708,
+          "exclusive": 8.365935034991708,
+          "sim": 5.983999999999924,
+          "count": 3
+        },
+        "lift": {
+          "wall": 9.572357547964202,
+          "exclusive": 9.572357547964202,
+          "sim": 7.885999999999967,
+          "count": 3
+        },
+        "hold": {
+          "wall": 18.72389208403183,
+          "exclusive": 18.72389208403183,
+          "sim": 15.003999999999905,
+          "count": 3
+        },
+        "place": {
+          "wall": 9.23285716198734,
+          "exclusive": 9.23285716198734,
+          "sim": 8.106000000000222,
+          "count": 3
+        },
+        "open_motion": {
+          "wall": 50.108253841259284,
+          "exclusive": 50.108253841259284,
+          "sim": 0.0,
+          "count": 10
+        },
+        "open_settle": {
+          "wall": 2.1716927932575345,
+          "exclusive": 2.1716927932575345,
+          "sim": 0.0,
+          "count": 10
+        },
+        "retreat": {
+          "wall": 6.6087851359916385,
+          "exclusive": 6.6087851359916385,
+          "sim": 5.793999999999869,
+          "count": 3
+        },
+        "return_observation": {
+          "wall": 10.783793297974626,
+          "exclusive": 10.783793297974626,
+          "sim": 9.611999999999853,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 2.971424646995729,
+          "exclusive": 0.0003781930136028677,
+          "sim": 2.632000000000062,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.011632472975179553,
+          "exclusive": 0.011632472975179553,
+          "sim": 0.0,
+          "count": 12
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8855857207517867,
+        "contact": 0.8101395498000844
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001871575,
+          "velocity_rad_sec": 9.365688224960422e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 16.904452364804456,
+          "settle_wall_sec": 0.22244294607662596,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018072204,
+          "velocity_rad_sec": 6.378921835192841e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2197161431540735,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001840049,
+          "velocity_rad_sec": 9.203380280098372e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 11.062985671538627,
+          "settle_wall_sec": 0.2166132089914754,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015214732,
+          "velocity_rad_sec": 6.130786989189119e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21364032561541535,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000031787507,
+          "velocity_rad_sec": 6.207787617285021e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.20796399289974943,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001769514,
+          "velocity_rad_sec": 9.04009977986675e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 11.053643814433599,
+          "settle_wall_sec": 0.22830665041692555,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000014704445,
+          "velocity_rad_sec": 5.553537629765515e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21707886934746057,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000031092072,
+          "velocity_rad_sec": 6.376243977257445e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21920653080451302,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001847447,
+          "velocity_rad_sec": 9.241813980764846e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 11.087171990482602,
+          "settle_wall_sec": 0.214298618840985,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015567268,
+          "velocity_rad_sec": 6.404625718658963e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21242550711031072,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T022219_F_baseline_paired_1790130139858827394",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 184563.819753854,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6257713493921105,
+              "expected_contact_angle": 0.6230983825457231,
+              "contact_gap_m": 0.029948123445334165,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02995 width=0.02982; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.0668354235846609,
+                7.235972720532127e-11
+              ],
+              "joint2": [
+                -0.4482393016462207,
+                5.0842054330479947e-08
+              ],
+              "joint3": [
+                -1.4787820188004774,
+                8.840893873929279e-08
+              ],
+              "joint4": [
+                -1.2145713014590602,
+                1.598823073933886e-09
+              ],
+              "joint5": [
+                0.0643643657561482,
+                1.393756885077757e-10
+              ],
+              "l_in_joint": [
+                -0.620141284222859,
+                0.039833336576288014
+              ],
+              "l_out_joint": [
+                0.6201407204781769,
+                -0.0398425278048541
+              ],
+              "l_joint": [
+                -0.620141094131014,
+                0.039836672807261705
+              ],
+              "r_in_joint": [
+                -0.6204638129179596,
+                0.03035396863670358
+              ],
+              "r_out_joint": [
+                0.6204632355225708,
+                -0.03036347304193102
+              ],
+              "r_joint": [
+                0.6197332335707755,
+                -0.04458359018271846
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T022219_F_baseline_paired_1790130139858827394",
+            "episode": 2,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 184623.255407601,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6260878012973178,
+              "expected_contact_angle": 0.6261569252146676,
+              "contact_gap_m": 0.029962997735867,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02996 width=0.02997; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.42193290077233814,
+                -4.178043631550277e-11
+              ],
+              "joint2": [
+                -0.5751964423082628,
+                5.98281395744471e-08
+              ],
+              "joint3": [
+                -1.2863810693012414,
+                1.1258125579005629e-07
+              ],
+              "joint4": [
+                -1.2800150975265077,
+                6.78770306627996e-09
+              ],
+              "joint5": [
+                0.41954876272506114,
+                -1.8550185530447766e-10
+              ],
+              "l_in_joint": [
+                -0.619915802710473,
+                0.034060210177196105
+              ],
+              "l_out_joint": [
+                0.6199150969847057,
+                -0.0340586378457926
+              ],
+              "l_joint": [
+                -0.6199155633132792,
+                0.034059130316865596
+              ],
+              "r_in_joint": [
+                -0.620323444159724,
+                0.042440850997864696
+              ],
+              "r_out_joint": [
+                0.620322740128021,
+                -0.042438093345120935
+              ],
+              "r_joint": [
+                0.6195978734945401,
+                -0.022608389390912254
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T022219_F_baseline_paired_1790130139858827394",
+            "episode": 3,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 184681.839458557,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6259870128872108,
+              "expected_contact_angle": 0.6269663394058039,
+              "contact_gap_m": 0.029958260715153475,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02996 width=0.03000; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                0.3093233904072895,
+                5.387365647178694e-11
+              ],
+              "joint2": [
+                -0.5070580478228741,
+                2.6080275487838644e-08
+              ],
+              "joint3": [
+                -1.3917255054954503,
+                4.7247476139822275e-08
+              ],
+              "joint4": [
+                -1.2428090646931242,
+                5.083115539594729e-09
+              ],
+              "joint5": [
+                -0.31161369470657646,
+                1.0814510289884616e-10
+              ],
+              "l_in_joint": [
+                -0.6200196157238554,
+                0.03459103206267191
+              ],
+              "l_out_joint": [
+                0.6200190914187171,
+                -0.034599156358310554
+              ],
+              "l_joint": [
+                -0.6200194397189863,
+                0.034594258927153544
+              ],
+              "r_in_joint": [
+                -0.6202740992612964,
+                0.023159290442795577
+              ],
+              "r_out_joint": [
+                0.6202735642365028,
+                -0.02316849627231361
+              ],
+              "r_joint": [
+                0.6196551995169812,
+                -0.04374306664083527
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 1538,
+        "real_collision_pairs": [
+          [
+            "robot::l_out_link::l_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ],
+          [
+            "robot::r_out_link::r_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ]
+        ],
+        "position_count": 6120,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 12,
+        "F_steps_with_nonzero_effect": 12,
+        "maximum_policy_absolute_components": [
+          0.000620352104306221,
+          0.00012940634042024612,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 482,
+          "minimum": -0.4595432378438497,
+          "maximum": 6.244877948091698e-10,
+          "samples_abs_above_model_0_10": 143
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 12,
+          "minimum": -0.0802612983346272,
+          "maximum": -0.008274869637486748,
+          "samples_abs_above_model_0_10": 0
+        },
+        "WAIT_STALL": {
+          "samples": 135,
+          "minimum": -0.037797549048081525,
+          "maximum": -0.003281603244057074,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 152,
+          "minimum": -0.003322296895447552,
+          "maximum": 0.0029076148125987133,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 284,
+          "minimum": -0.0015496474488697065,
+          "maximum": 0.0007636275467379217,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    },
+    {
+      "run": "20260923T022549_F_baseline_domain_regression_1790130349445599232",
+      "method": "F",
+      "profile": "baseline",
+      "tag": "domain_regression",
+      "window_wall_sec": 83.01277078999556,
+      "environment_steps": 4,
+      "completed_episodes": 1,
+      "success_count": 1,
+      "requested_episodes": 1,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 20.75319269749889,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        79.99349277300644
+      ],
+      "grasp_attempts": 1,
+      "failure_reasons": [
+        "success"
+      ],
+      "scene_ids": [
+        "domain_L3"
+      ],
+      "declaration": "results/20260923T022549_F_baseline_domain_regression_1790130349445599232/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 20,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 1
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.7079493349883705,
+          "exclusive": 2.7079493349883705,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 35.51607991900528,
+          "exclusive": 4.085104489990044,
+          "sim": 0.0,
+          "count": 1
+        },
+        "randomization_physics": {
+          "wall": 1.2242678230104502,
+          "exclusive": 1.2242678230104502,
+          "sim": 0.32600000000002183,
+          "count": 1
+        },
+        "randomization_perception": {
+          "wall": 0.00719304900849238,
+          "exclusive": 0.00719304900849238,
+          "sim": 0.0,
+          "count": 1
+        },
+        "vision": {
+          "wall": 0.8581456870015245,
+          "exclusive": 0.8581456870015245,
+          "sim": 0.7440000000001419,
+          "count": 1
+        },
+        "ik": {
+          "wall": 2.472748706000857,
+          "exclusive": 0.7196191900002304,
+          "sim": 2.0860000000000127,
+          "count": 1
+        },
+        "ik_path": {
+          "wall": 2.552517848991556,
+          "exclusive": 2.552517848991556,
+          "sim": 2.1500000000003183,
+          "count": 6
+        },
+        "ik_step": {
+          "wall": 0.12092184397624806,
+          "exclusive": 0.12092184397624806,
+          "sim": 0.09000000000014552,
+          "count": 4
+        },
+        "action_execution": {
+          "wall": 5.567922614980489,
+          "exclusive": 5.567922614980489,
+          "sim": 4.804000000000087,
+          "count": 4
+        },
+        "closing": {
+          "wall": 9.706214706005994,
+          "exclusive": 9.706214706005994,
+          "sim": 8.115999999999985,
+          "count": 1
+        },
+        "grip_settle": {
+          "wall": 2.260734069015598,
+          "exclusive": 2.260734069015598,
+          "sim": 1.7699999999999818,
+          "count": 1
+        },
+        "lift": {
+          "wall": 3.294901782006491,
+          "exclusive": 3.294901782006491,
+          "sim": 2.6720000000000255,
+          "count": 1
+        },
+        "hold": {
+          "wall": 6.479212956997799,
+          "exclusive": 6.479212956997799,
+          "sim": 5.0,
+          "count": 1
+        },
+        "place": {
+          "wall": 3.135415288998047,
+          "exclusive": 3.135415288998047,
+          "sim": 2.7739999999998872,
+          "count": 1
+        },
+        "open_motion": {
+          "wall": 27.576876547915163,
+          "exclusive": 27.576876547915163,
+          "sim": 0.0,
+          "count": 4
+        },
+        "open_settle": {
+          "wall": 0.9075553335133009,
+          "exclusive": 0.9075553335133009,
+          "sim": 0.0,
+          "count": 4
+        },
+        "retreat": {
+          "wall": 2.239571790996706,
+          "exclusive": 2.239571790996706,
+          "sim": 1.9919999999999618,
+          "count": 1
+        },
+        "return_observation": {
+          "wall": 5.609362597024301,
+          "exclusive": 5.609362597024301,
+          "sim": 4.851999999999862,
+          "count": 2
+        },
+        "recovery": {
+          "wall": 2.994792965007946,
+          "exclusive": 0.0002846790011972189,
+          "sim": 2.6879999999998745,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.004572110017761588,
+          "exclusive": 0.004572110017761588,
+          "sim": 0.0,
+          "count": 4
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8627993476552513,
+        "contact": 0.8075961872183826
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001816172,
+          "velocity_rad_sec": 9.36904331894084e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 16.74732429118012,
+          "settle_wall_sec": 0.23245883229537867,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018578413,
+          "velocity_rad_sec": 6.378915173854693e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.23168921281467192,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001878327,
+          "velocity_rad_sec": 9.211755802596144e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 10.829552256735042,
+          "settle_wall_sec": 0.23419762606499717,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015698694,
+          "velocity_rad_sec": 5.86273696256967e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2092096623382531,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T022549_F_baseline_domain_regression_1790130349445599232",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 184772.923833086,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6559743265265707,
+              "expected_contact_angle": 0.6458208629214843,
+              "contact_gap_m": 0.03135221676913881,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.03135 width=0.03088; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.036154562501116906,
+                8.358805227842714e-11
+              ],
+              "joint2": [
+                -0.4250612948883249,
+                5.956139997875809e-09
+              ],
+              "joint3": [
+                -1.5031174499916076,
+                9.901828329494933e-09
+              ],
+              "joint4": [
+                -1.2134138913018546,
+                -2.115302988325851e-09
+              ],
+              "joint5": [
+                0.05777018311456124,
+                1.912831143480176e-10
+              ],
+              "l_in_joint": [
+                -0.6490014779472514,
+                0.02320727966278102
+              ],
+              "l_out_joint": [
+                0.6490012235746814,
+                -0.023216323011441838
+              ],
+              "l_joint": [
+                -0.6490013963657655,
+                0.023211199511968584
+              ],
+              "r_in_joint": [
+                -0.6490849901135013,
+                0.004633151799501271
+              ],
+              "r_out_joint": [
+                0.6490847263646744,
+                -0.00464440278580981
+              ],
+              "r_joint": [
+                0.648719900073822,
+                -0.047903349360881364
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 575,
+        "real_collision_pairs": [
+          [
+            "robot::l_out_link::l_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ],
+          [
+            "robot::r_out_link::r_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ]
+        ],
+        "position_count": 2116,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 4,
+        "F_steps_with_nonzero_effect": 4,
+        "maximum_policy_absolute_components": [
+          0.0006144926883280277,
+          0.0001447713002562523,
+          0.0008966638706624508,
+          0.015268325805664062
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 155,
+          "minimum": -0.6896086996673149,
+          "maximum": 6.222913295772514e-10,
+          "samples_abs_above_model_0_10": 46
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 3,
+          "minimum": -0.08080054472781684,
+          "maximum": 0.000277599618934421,
+          "samples_abs_above_model_0_10": 0
+        },
+        "WAIT_STALL": {
+          "samples": 41,
+          "minimum": -0.05316262776021552,
+          "maximum": -0.0033743288965856766,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 51,
+          "minimum": -0.0032110771916162295,
+          "maximum": 0.00016119092199107232,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 95,
+          "minimum": -0.00026321303690646225,
+          "maximum": -3.611280434157038e-05,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    },
+    {
+      "run": "20260923T022928_B_open_servo_paired_1790130568020286283",
+      "method": "B",
+      "profile": "open_servo",
+      "tag": "paired",
+      "window_wall_sec": 206.67011534201447,
+      "environment_steps": 60,
+      "completed_episodes": 3,
+      "success_count": 0,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 3.444501922366908,
+      "mean_episode_steps": 20.0,
+      "episode_wall_sec": [
+        77.05911261800793,
+        59.93119080000906,
+        58.814120669994736
+      ],
+      "grasp_attempts": 0,
+      "failure_reasons": [
+        "max_steps",
+        "max_steps",
+        "max_steps"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T022928_B_open_servo_paired_1790130568020286283/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 3.0414871429966297,
+          "exclusive": 3.0414871429966297,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 110.8410383729788,
+          "exclusive": 7.3012877159926575,
+          "sim": 52.90399999999977,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.5074753479857463,
+          "exclusive": 3.5074753479857463,
+          "sim": 0.8859999999995125,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.034512882004491985,
+          "exclusive": 0.034512882004491985,
+          "sim": 0.013999999999896318,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.6775373889831826,
+          "exclusive": 2.6775373889831826,
+          "sim": 2.2699999999997544,
+          "count": 3
+        },
+        "ik": {
+          "wall": 8.89245995800593,
+          "exclusive": 2.8439427040866576,
+          "sim": 7.134000000000242,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 6.89706111693522,
+          "exclusive": 6.89706111693522,
+          "sim": 5.504000000000133,
+          "count": 15
+        },
+        "ik_step": {
+          "wall": 1.4586830690095667,
+          "exclusive": 1.4586830690095667,
+          "sim": 1.090000000000373,
+          "count": 60
+        },
+        "action_execution": {
+          "wall": 83.07870265690144,
+          "exclusive": 83.07870265690144,
+          "sim": 72.01200000000244,
+          "count": 60
+        },
+        "closing": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "grip_settle": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "lift": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "hold": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "place": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "open_motion": {
+          "wall": 66.36368320832844,
+          "exclusive": 66.36368320832844,
+          "sim": 0.0,
+          "count": 7
+        },
+        "open_settle": {
+          "wall": 1.7168239576858468,
+          "exclusive": 1.7168239576858468,
+          "sim": 0.0,
+          "count": 7
+        },
+        "retreat": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "return_observation": {
+          "wall": 11.07504784699995,
+          "exclusive": 11.07504784699995,
+          "sim": 9.56399999999985,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 10.835591214010492,
+          "exclusive": 0.000255952007137239,
+          "sim": 9.6099999999999,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.05955231288680807,
+          "exclusive": 0.05955231288680807,
+          "sim": 0.0,
+          "count": 60
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8667925436606505,
+        "contact": null
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911748747708964,
+          "velocity_rad_sec": 0.005757514174512868,
+          "effort_nm": 0.5342251302825756,
+          "movement_wall_sec": 19.2133592547616,
+          "settle_wall_sec": 0.21733326205867343,
+          "servo": true
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911521656467266,
+          "velocity_rad_sec": 0.0056507180194239615,
+          "effort_nm": 0.5341155120609644,
+          "movement_wall_sec": 7.948800384707283,
+          "settle_wall_sec": 0.24706317868549377,
+          "servo": true
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911788457548878,
+          "velocity_rad_sec": 0.005568008950610048,
+          "effort_nm": 0.5465970781493078,
+          "movement_wall_sec": 7.954057190945605,
+          "settle_wall_sec": 0.2547628778847866,
+          "servo": true
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2912142567197173,
+          "velocity_rad_sec": 0.005533930008318144,
+          "effort_nm": 0.5341645605575145,
+          "movement_wall_sec": 7.709279743779916,
+          "settle_wall_sec": 0.22901214976445772,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911560413238325,
+          "velocity_rad_sec": 0.005546373368335522,
+          "effort_nm": 0.5608673349595625,
+          "movement_wall_sec": 8.041627577302279,
+          "settle_wall_sec": 0.2742848448106088,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911974101752364,
+          "velocity_rad_sec": 0.00564932402361773,
+          "effort_nm": 0.5340787713201036,
+          "movement_wall_sec": 7.675756210839609,
+          "settle_wall_sec": 0.2564756821957417,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 20,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911997458124955,
+          "velocity_rad_sec": 0.005598203629264775,
+          "effort_nm": 0.5362043112700403,
+          "movement_wall_sec": 7.820802845992148,
+          "settle_wall_sec": 0.2378919622860849,
+          "servo": true
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [],
+        "payload_sample_count": 0,
+        "real_collision_pairs": [],
+        "position_count": 0,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 60,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0006928830407559872,
+          0.00018195388838648796,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {}
+    },
+    {
+      "run": "20260923T023302_F_open_servo_paired_1790130782579660727",
+      "method": "F",
+      "profile": "open_servo",
+      "tag": "paired",
+      "window_wall_sec": 259.8424365259998,
+      "environment_steps": 12,
+      "completed_episodes": 3,
+      "success_count": 3,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 21.65353637716665,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        98.00528354599373,
+        76.13886771700345,
+        74.9452847870125
+      ],
+      "grasp_attempts": 3,
+      "failure_reasons": [
+        "success",
+        "success",
+        "success"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T023302_F_open_servo_paired_1790130782579660727/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.3472771320084576,
+          "exclusive": 2.3472771320084576,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 111.56948474698584,
+          "exclusive": 9.192775724979583,
+          "sim": 52.29399999999987,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.3872162570187356,
+          "exclusive": 3.3872162570187356,
+          "sim": 0.8599999999996726,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.3801563849847298,
+          "exclusive": 0.3801563849847298,
+          "sim": 0.12399999999979627,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.6267141880234703,
+          "exclusive": 2.6267141880234703,
+          "sim": 2.3299999999997,
+          "count": 3
+        },
+        "ik": {
+          "wall": 7.519261525972979,
+          "exclusive": 2.4282278959581163,
+          "sim": 6.2680000000002565,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 7.2959490160574205,
+          "exclusive": 7.2959490160574205,
+          "sim": 6.118000000000393,
+          "count": 18
+        },
+        "ik_step": {
+          "wall": 0.3346096840396058,
+          "exclusive": 0.3346096840396058,
+          "sim": 0.27199999999970714,
+          "count": 12
+        },
+        "action_execution": {
+          "wall": 16.287059512978885,
+          "exclusive": 16.287059512978885,
+          "sim": 14.406000000000404,
+          "count": 12
+        },
+        "closing": {
+          "wall": 20.006876633997308,
+          "exclusive": 20.006876633997308,
+          "sim": 17.212000000000216,
+          "count": 3
+        },
+        "grip_settle": {
+          "wall": 7.658445680019213,
+          "exclusive": 7.658445680019213,
+          "sim": 5.979999999999791,
+          "count": 3
+        },
+        "lift": {
+          "wall": 9.520323237025877,
+          "exclusive": 9.520323237025877,
+          "sim": 7.86400000000026,
+          "count": 3
+        },
+        "hold": {
+          "wall": 19.227542656008154,
+          "exclusive": 19.227542656008154,
+          "sim": 15.001999999999953,
+          "count": 3
+        },
+        "place": {
+          "wall": 9.61873354203999,
+          "exclusive": 9.61873354203999,
+          "sim": 8.101999999999862,
+          "count": 3
+        },
+        "open_motion": {
+          "wall": 113.0428747033875,
+          "exclusive": 113.0428747033875,
+          "sim": 0.0,
+          "count": 10
+        },
+        "open_settle": {
+          "wall": 2.346741350571392,
+          "exclusive": 2.346741350571392,
+          "sim": 0.0,
+          "count": 10
+        },
+        "retreat": {
+          "wall": 6.593843408016255,
+          "exclusive": 6.593843408016255,
+          "sim": 5.792000000000144,
+          "count": 3
+        },
+        "return_observation": {
+          "wall": 10.803143894969253,
+          "exclusive": 10.803143894969253,
+          "sim": 9.599999999999909,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 10.708419251983287,
+          "exclusive": 0.00031122600194066763,
+          "sim": 9.585999999999785,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.013289361959323287,
+          "exclusive": 0.013289361959323287,
+          "sim": 0.0,
+          "count": 12
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8845058857014984,
+        "contact": 0.816440294616142
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.291263501274312,
+          "velocity_rad_sec": 0.0057965493822320635,
+          "effort_nm": 0.5341443185936428,
+          "movement_wall_sec": 20.156323904142482,
+          "settle_wall_sec": 0.21995674751815386,
+          "servo": true
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911739495177679,
+          "velocity_rad_sec": 0.00565202002932208,
+          "effort_nm": 0.5340952912724635,
+          "movement_wall_sec": 7.804959345405223,
+          "settle_wall_sec": 0.249610873113852,
+          "servo": true
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.291157766191816,
+          "velocity_rad_sec": 0.005704324093884328,
+          "effort_nm": 0.5491268125340142,
+          "movement_wall_sec": 15.286395408766111,
+          "settle_wall_sec": 0.22389245190424845,
+          "servo": true
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911743171507883,
+          "velocity_rad_sec": 0.005534324816689362,
+          "effort_nm": 0.5556629809975813,
+          "movement_wall_sec": 7.94985131098656,
+          "settle_wall_sec": 0.24028213971178047,
+          "servo": true
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2912118142924363,
+          "velocity_rad_sec": 0.005621101970083586,
+          "effort_nm": 0.5340937762635853,
+          "movement_wall_sec": 7.6883571973012295,
+          "settle_wall_sec": 0.24897210006020032,
+          "servo": true
+        },
+        {
+          "episode": 2,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.291232339004754,
+          "velocity_rad_sec": 0.005660377186098353,
+          "effort_nm": 0.5654791441134799,
+          "movement_wall_sec": 15.54059688191046,
+          "settle_wall_sec": 0.2125762767973356,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911267519076375,
+          "velocity_rad_sec": 0.005484012504272218,
+          "effort_nm": 0.583411932495282,
+          "movement_wall_sec": 8.129414016846567,
+          "settle_wall_sec": 0.2499513167713303,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911819264120366,
+          "velocity_rad_sec": 0.005614189498639899,
+          "effort_nm": 0.5340983670802948,
+          "movement_wall_sec": 7.6640998497314285,
+          "settle_wall_sec": 0.22795403769123368,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.2912265016662299,
+          "velocity_rad_sec": 0.005637942370860682,
+          "effort_nm": 0.5450956473577777,
+          "movement_wall_sec": 15.03966578564723,
+          "settle_wall_sec": 0.2314084472018294,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.2912081206030879,
+          "velocity_rad_sec": 0.005547151557912744,
+          "effort_nm": 0.5273177531052881,
+          "movement_wall_sec": 7.783211002650205,
+          "settle_wall_sec": 0.24213695980142802,
+          "servo": true
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T023302_F_open_servo_paired_1790130782579660727",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 185219.002193356,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6262466957389804,
+              "expected_contact_angle": 0.6230990943948977,
+              "contact_gap_m": 0.029970465018950024,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02997 width=0.02982; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.06683533897285551,
+                7.008628809149035e-11
+              ],
+              "joint2": [
+                -0.4482193946825378,
+                6.779825999919664e-08
+              ],
+              "joint3": [
+                -1.478752146584882,
+                1.1813690074802263e-07
+              ],
+              "joint4": [
+                -1.2146210788453542,
+                2.9908946430623473e-09
+              ],
+              "joint5": [
+                0.06436205543661921,
+                2.942561216391637e-10
+              ],
+              "l_in_joint": [
+                -0.6201474966568752,
+                0.04354712322179232
+              ],
+              "l_out_joint": [
+                0.62014684851309,
+                -0.04355366847521012
+              ],
+              "l_joint": [
+                -0.6201472770410072,
+                0.04354926732033506
+              ],
+              "r_in_joint": [
+                -0.620554103460029,
+                0.03993642393352564
+              ],
+              "r_out_joint": [
+                0.6205534477271195,
+                -0.03994259799111828
+              ],
+              "r_joint": [
+                0.619709928741723,
+                -0.04447708163565972
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T023302_F_open_servo_paired_1790130782579660727",
+            "episode": 2,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 185294.730621894,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6262272109174033,
+              "expected_contact_angle": 0.6261521690873535,
+              "contact_gap_m": 0.029969549371168178,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02997 width=0.02997; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.4219325885029914,
+                6.035357207490738e-11
+              ],
+              "joint2": [
+                -0.5752087734587461,
+                2.102544117282834e-08
+              ],
+              "joint3": [
+                -1.2864084415897334,
+                3.844148044329643e-08
+              ],
+              "joint4": [
+                -1.2799753969085412,
+                -5.492111279647993e-09
+              ],
+              "joint5": [
+                0.41954833103053507,
+                9.310620238114561e-11
+              ],
+              "l_in_joint": [
+                -0.6197243580656044,
+                0.03365434859486931
+              ],
+              "l_out_joint": [
+                0.6197238262512044,
+                -0.03366247993492482
+              ],
+              "l_joint": [
+                -0.6197241798350086,
+                0.0336575906547156
+              ],
+              "r_in_joint": [
+                -0.6199690332562849,
+                0.022167169751345035
+              ],
+              "r_out_joint": [
+                0.6199684903438119,
+                -0.02217641141372314
+              ],
+              "r_joint": [
+                0.6193692688542082,
+                -0.04282512907381725
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T023302_F_open_servo_paired_1790130782579660727",
+            "episode": 3,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 185370.961305156,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6258651135815348,
+              "expected_contact_angle": 0.6269663394058039,
+              "contact_gap_m": 0.02995253102837195,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02995 width=0.03000; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                0.30932339771494416,
+                5.71001028984398e-11
+              ],
+              "joint2": [
+                -0.507073309908562,
+                4.9587283487695366e-08
+              ],
+              "joint3": [
+                -1.3917528246130553,
+                8.930199711654208e-08
+              ],
+              "joint4": [
+                -1.2427664804666978,
+                5.396610713859218e-09
+              ],
+              "joint5": [
+                -0.3116139965254486,
+                8.4098666182017e-11
+              ],
+              "l_in_joint": [
+                -0.6196204560037509,
+                0.04002453323044989
+              ],
+              "l_out_joint": [
+                0.6196198528736583,
+                -0.04003341853126024
+              ],
+              "l_joint": [
+                -0.619620251066535,
+                0.04002771205534219
+              ],
+              "r_in_joint": [
+                -0.6199546041557965,
+                0.03175885023267077
+              ],
+              "r_out_joint": [
+                0.6199539891271882,
+                -0.031767830975247276
+              ],
+              "r_joint": [
+                0.6192126352296661,
+                -0.043697071538932986
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 1748,
+        "real_collision_pairs": [
+          [
+            "robot::l_out_link::l_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ],
+          [
+            "robot::r_out_link::r_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ]
+        ],
+        "position_count": 6958,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 12,
+        "F_steps_with_nonzero_effect": 12,
+        "maximum_policy_absolute_components": [
+          0.000620352104306221,
+          0.00012940634042024612,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 326,
+          "minimum": -0.4315485714022346,
+          "maximum": 0.00037270818570334097,
+          "samples_abs_above_model_0_10": 123
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 11,
+          "minimum": -0.058952171652076085,
+          "maximum": -0.00814347796929088,
+          "samples_abs_above_model_0_10": 0
+        },
+        "WAIT_STALL": {
+          "samples": 136,
+          "minimum": -0.04286233065195055,
+          "maximum": -0.003224225442786055,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 152,
+          "minimum": -0.0034187456547076223,
+          "maximum": 0.0028559691964727962,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 286,
+          "minimum": -0.0015588411646711986,
+          "maximum": 0.0004700147291937795,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    },
+    {
+      "run": "20260923T023738_B_reset_once_paired_1790131058417845803",
+      "method": "B",
+      "profile": "reset_once",
+      "tag": "paired",
+      "window_wall_sec": 146.44369303499116,
+      "environment_steps": 60,
+      "completed_episodes": 3,
+      "success_count": 0,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 2.440728217249853,
+      "mean_episode_steps": 20.0,
+      "episode_wall_sec": [
+        60.70757194899488,
+        41.577283616003115,
+        41.21124547498766
+      ],
+      "grasp_attempts": 0,
+      "failure_reasons": [
+        "max_steps",
+        "max_steps",
+        "max_steps"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T023738_B_reset_once_paired_1790131058417845803/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 3.0312510470103007,
+          "exclusive": 3.0312510470103007,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 60.76267188199563,
+          "exclusive": 2.775669848982943,
+          "sim": 23.690000000000282,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.496180901012849,
+          "exclusive": 3.496180901012849,
+          "sim": 0.9479999999998654,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.10400087301968597,
+          "exclusive": 0.10400087301968597,
+          "sim": 0.08999999999991815,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.653884705970995,
+          "exclusive": 2.653884705970995,
+          "sim": 2.35799999999972,
+          "count": 3
+        },
+        "ik": {
+          "wall": 7.32725097500952,
+          "exclusive": 2.2614084310480393,
+          "sim": 6.11200000000008,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 5.896926929970505,
+          "exclusive": 5.896926929970505,
+          "sim": 4.942000000000007,
+          "count": 15
+        },
+        "ik_step": {
+          "wall": 1.3556090299971402,
+          "exclusive": 1.3556090299971402,
+          "sim": 1.1020000000000891,
+          "count": 60
+        },
+        "action_execution": {
+          "wall": 80.96669935400132,
+          "exclusive": 80.96669935400132,
+          "sim": 72.03200000000197,
+          "count": 60
+        },
+        "closing": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "grip_settle": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "lift": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "hold": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "place": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "open_motion": {
+          "wall": 16.56966197726433,
+          "exclusive": 16.56966197726433,
+          "sim": 0.0,
+          "count": 4
+        },
+        "open_settle": {
+          "wall": 0.8841016420337837,
+          "exclusive": 0.8841016420337837,
+          "sim": 0.0,
+          "count": 4
+        },
+        "retreat": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "return_observation": {
+          "wall": 10.636722272989573,
+          "exclusive": 10.636722272989573,
+          "sim": 9.562000000000353,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 2.91260599999805,
+          "exclusive": 0.0002434880007058382,
+          "sim": 2.630000000000109,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.07010974403237924,
+          "exclusive": 0.07010974403237924,
+          "sim": 0.0,
+          "count": 60
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8896497025902563,
+        "contact": null
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001872205,
+          "velocity_rad_sec": 9.365672681838078e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 16.56966197726433,
+          "settle_wall_sec": 0.22691255115205422,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000227404467,
+          "velocity_rad_sec": 6.202469648997067e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.22127796357381158,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.570000044761203,
+          "velocity_rad_sec": 5.832516691839373e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2140497508808039,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 20,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000675594505,
+          "velocity_rad_sec": 6.35312913388475e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.221861376427114,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [],
+        "payload_sample_count": 0,
+        "real_collision_pairs": [],
+        "position_count": 0,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 60,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0006929510273039341,
+          0.00018194736912846565,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {}
+    },
+    {
+      "run": "20260923T024012_F_reset_once_paired_1790131212817114727",
+      "method": "F",
+      "profile": "reset_once",
+      "tag": "paired",
+      "window_wall_sec": 203.02069123802357,
+      "environment_steps": 12,
+      "completed_episodes": 3,
+      "success_count": 3,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 16.918390936501964,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        79.92343779600924,
+        59.27856315500685,
+        60.82531067801756
+      ],
+      "grasp_attempts": 3,
+      "failure_reasons": [
+        "success",
+        "success",
+        "success"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T024012_F_reset_once_paired_1790131212817114727/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.4408368700242136,
+          "exclusive": 2.4408368700242136,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 61.57349966801121,
+          "exclusive": 3.496265533991391,
+          "sim": 23.588000000000193,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.55792091001058,
+          "exclusive": 3.55792091001058,
+          "sim": 0.8860000000001946,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.04012151499046013,
+          "exclusive": 0.04012151499046013,
+          "sim": 0.02999999999974534,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.4573738040053286,
+          "exclusive": 2.4573738040053286,
+          "sim": 2.1959999999999127,
+          "count": 3
+        },
+        "ik": {
+          "wall": 7.357853053981671,
+          "exclusive": 2.3554427250055596,
+          "sim": 6.165999999999713,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 7.187889666907722,
+          "exclusive": 7.187889666907722,
+          "sim": 6.026000000000522,
+          "count": 18
+        },
+        "ik_step": {
+          "wall": 0.3377249120094348,
+          "exclusive": 0.3377249120094348,
+          "sim": 0.2559999999998581,
+          "count": 12
+        },
+        "action_execution": {
+          "wall": 17.41554909592378,
+          "exclusive": 17.41554909592378,
+          "sim": 14.409999999999854,
+          "count": 12
+        },
+        "closing": {
+          "wall": 30.34006777801551,
+          "exclusive": 30.34006777801551,
+          "sim": 25.36600000000044,
+          "count": 3
+        },
+        "grip_settle": {
+          "wall": 7.7530931970104575,
+          "exclusive": 7.7530931970104575,
+          "sim": 6.005999999999858,
+          "count": 3
+        },
+        "lift": {
+          "wall": 9.586263586999848,
+          "exclusive": 9.586263586999848,
+          "sim": 7.823999999999842,
+          "count": 3
+        },
+        "hold": {
+          "wall": 19.409556752973003,
+          "exclusive": 19.409556752973003,
+          "sim": 15.001999999999953,
+          "count": 3
+        },
+        "place": {
+          "wall": 9.792780316987773,
+          "exclusive": 9.792780316987773,
+          "sim": 8.092000000000098,
+          "count": 3
+        },
+        "open_motion": {
+          "wall": 51.19396798804519,
+          "exclusive": 51.19396798804519,
+          "sim": 0.0,
+          "count": 7
+        },
+        "open_settle": {
+          "wall": 1.610390696034301,
+          "exclusive": 1.610390696034301,
+          "sim": 0.0,
+          "count": 7
+        },
+        "retreat": {
+          "wall": 6.584183924976969,
+          "exclusive": 6.584183924976969,
+          "sim": 5.792000000000144,
+          "count": 3
+        },
+        "return_observation": {
+          "wall": 10.776875780022237,
+          "exclusive": 10.776875780022237,
+          "sim": 9.60400000000027,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 2.9609901389922015,
+          "exclusive": 0.0007518620113842189,
+          "sim": 2.630000000000109,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.012912088044686243,
+          "exclusive": 0.012912088044686243,
+          "sim": 0.0,
+          "count": 12
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8274215139947902,
+        "contact": 0.8078524809540261
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001798082,
+          "velocity_rad_sec": 9.370606512959512e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 16.448262358026113,
+          "settle_wall_sec": 0.2149216759717092,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001875978,
+          "velocity_rad_sec": 9.201837070094143e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 10.943687857594341,
+          "settle_wall_sec": 0.2346971163060516,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015311066,
+          "velocity_rad_sec": 6.170817190565003e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.20803175237961113,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001752359,
+          "velocity_rad_sec": 9.04019081815477e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 11.414433365542209,
+          "settle_wall_sec": 0.2421264591976069,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000014601616,
+          "velocity_rad_sec": 5.832774263581086e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2043408270983491,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001865702,
+          "velocity_rad_sec": 8.981677623864925e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 12.387584406882524,
+          "settle_wall_sec": 0.28061881609028205,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015620392,
+          "velocity_rad_sec": 6.435105781577022e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.22565404899069108,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T024012_F_reset_once_paired_1790131212817114727",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 185636.17772418,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6260739992395306,
+              "expected_contact_angle": 0.6231015463226185,
+              "contact_gap_m": 0.029962349064284483,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02996 width=0.02982; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.06683547582329641,
+                7.448029256599924e-11
+              ],
+              "joint2": [
+                -0.44818060112429237,
+                2.5029799281817144e-08
+              ],
+              "joint3": [
+                -1.4786894796657255,
+                4.349532357894592e-08
+              ],
+              "joint4": [
+                -1.2147225405910052,
+                4.436152278852745e-10
+              ],
+              "joint5": [
+                0.06436217398422506,
+                1.6207929161120294e-10
+              ],
+              "l_in_joint": [
+                -0.6201145431477749,
+                0.0347748133521737
+              ],
+              "l_out_joint": [
+                0.6201140275261257,
+                -0.03478309603886684
+              ],
+              "l_joint": [
+                -0.6201143716887997,
+                0.03477808375547131
+              ],
+              "r_in_joint": [
+                -0.6203680478138147,
+                0.02299079435251453
+              ],
+              "r_out_joint": [
+                0.6203675216119494,
+                -0.023000205747338166
+              ],
+              "r_joint": [
+                0.6197476540649326,
+                -0.04424647822736377
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T024012_F_reset_once_paired_1790131212817114727",
+            "episode": 2,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 185694.466994242,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6259817359638977,
+              "expected_contact_angle": 0.6261521690873535,
+              "contact_gap_m": 0.02995801269205721,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02996 width=0.02997; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.4219325932651344,
+                4.576562986544595e-11
+              ],
+              "joint2": [
+                -0.5752570578218712,
+                5.1572812673206236e-08
+              ],
+              "joint3": [
+                -1.2865017939534824,
+                9.574267530176872e-08
+              ],
+              "joint4": [
+                -1.2798337606275076,
+                -3.1751132140156457e-09
+              ],
+              "joint5": [
+                0.4195482582612129,
+                1.6397988110601613e-11
+              ],
+              "l_in_joint": [
+                -0.6195241359364657,
+                0.039396859683751034
+              ],
+              "l_out_joint": [
+                0.6195235362448346,
+                -0.03940598172354996
+              ],
+              "l_joint": [
+                -0.6195239325122233,
+                0.03940015667208707
+              ],
+              "r_in_joint": [
+                -0.6198479570157559,
+                0.030624631474061432
+              ],
+              "r_out_joint": [
+                0.6198473427410862,
+                -0.030633891014438835
+              ],
+              "r_joint": [
+                0.6191220211907454,
+                -0.04335503530656082
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T024012_F_reset_once_paired_1790131212817114727",
+            "episode": 3,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 185753.455602618,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6262150196585303,
+              "expected_contact_angle": 0.6269663394058039,
+              "contact_gap_m": 0.029968976462302184,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02997 width=0.03000; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                0.3093233964623124,
+                5.3324494627316095e-11
+              ],
+              "joint2": [
+                -0.507075459533513,
+                6.432911973247579e-08
+              ],
+              "joint3": [
+                -1.391755956152966,
+                1.155814085690432e-07
+              ],
+              "joint4": [
+                -1.2427612014928906,
+                4.902740130541261e-09
+              ],
+              "joint5": [
+                -0.3116138543229891,
+                7.348780720235759e-11
+              ],
+              "l_in_joint": [
+                -0.6202504031328824,
+                0.04233600873684756
+              ],
+              "l_out_joint": [
+                0.6202497997874403,
+                -0.04234449946153786
+              ],
+              "l_joint": [
+                -0.6202501961137156,
+                0.04233894754942723
+              ],
+              "r_in_joint": [
+                -0.6206209811928521,
+                0.03573494533827437
+              ],
+              "r_out_joint": [
+                0.6206203662576271,
+                -0.035743236014518835
+              ],
+              "r_joint": [
+                0.6198220122045252,
+                -0.04473616571474748
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 1543,
+        "real_collision_pairs": [
+          [
+            "robot::l_out_link::l_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ],
+          [
+            "robot::r_out_link::r_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ]
+        ],
+        "position_count": 6143,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 12,
+        "F_steps_with_nonzero_effect": 12,
+        "maximum_policy_absolute_components": [
+          0.000620352104306221,
+          0.00012940587475895882,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 485,
+          "minimum": -0.5426198700193287,
+          "maximum": 6.255600482063528e-10,
+          "samples_abs_above_model_0_10": 144
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 10,
+          "minimum": -0.05914363684185314,
+          "maximum": -0.00804730221203337,
+          "samples_abs_above_model_0_10": 0
+        },
+        "WAIT_STALL": {
+          "samples": 136,
+          "minimum": -0.04424218073008329,
+          "maximum": -0.003395017551543089,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 151,
+          "minimum": -0.003420554883088567,
+          "maximum": 0.0030240797110806517,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 285,
+          "minimum": -0.001522738216843067,
+          "maximum": 0.0006856538583446259,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    },
+    {
+      "run": "20260923T024509_B_no_resend_paired_1790131509421571671",
+      "method": "B",
+      "profile": "no_resend",
+      "tag": "paired",
+      "window_wall_sec": 157.56618040797184,
+      "environment_steps": 60,
+      "completed_episodes": 3,
+      "success_count": 0,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 2.626103006799531,
+      "mean_episode_steps": 20.0,
+      "episode_wall_sec": [
+        66.03203866200056,
+        44.32740428001853,
+        44.237523671996314
+      ],
+      "grasp_attempts": 0,
+      "failure_reasons": [
+        "max_steps",
+        "max_steps",
+        "max_steps"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T024509_B_no_resend_paired_1790131509421571671/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.724848996993387,
+          "exclusive": 2.724848996993387,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 66.36528084700694,
+          "exclusive": 3.0286571769975126,
+          "sim": 24.623999999999796,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.6457574779633433,
+          "exclusive": 3.6457574779633433,
+          "sim": 0.8979999999996835,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.019732568005565554,
+          "exclusive": 0.019732568005565554,
+          "sim": 0.011999999999716238,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.7102729229955003,
+          "exclusive": 2.7102729229955003,
+          "sim": 2.3040000000000873,
+          "count": 3
+        },
+        "ik": {
+          "wall": 8.545282609964488,
+          "exclusive": 2.8269655629701447,
+          "sim": 6.85399999999936,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 6.7474622770096175,
+          "exclusive": 6.7474622770096175,
+          "sim": 5.384000000000469,
+          "count": 15
+        },
+        "ik_step": {
+          "wall": 1.5366247720085084,
+          "exclusive": 1.5366247720085084,
+          "sim": 1.1000000000008185,
+          "count": 60
+        },
+        "action_execution": {
+          "wall": 86.22812558797887,
+          "exclusive": 86.22812558797887,
+          "sim": 72.07800000000088,
+          "count": 60
+        },
+        "closing": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "grip_settle": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "lift": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "hold": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "place": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "open_motion": {
+          "wall": 17.93986678888905,
+          "exclusive": 17.93986678888905,
+          "sim": 0.0,
+          "count": 7
+        },
+        "open_settle": {
+          "wall": 1.6260453928844072,
+          "exclusive": 1.6260453928844072,
+          "sim": 0.0,
+          "count": 7
+        },
+        "retreat": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "return_observation": {
+          "wall": 11.016463907028083,
+          "exclusive": 11.016463907028083,
+          "sim": 9.561999999999898,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 2.926956028008135,
+          "exclusive": 0.0004845760122407228,
+          "sim": 2.632000000000062,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.07400619387044571,
+          "exclusive": 0.07400619387044571,
+          "sim": 0.0,
+          "count": 60
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8358989541812485,
+        "contact": null
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001871575,
+          "velocity_rad_sec": 9.365688224960422e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 17.93986678888905,
+          "settle_wall_sec": 0.22183977413806133,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018012188,
+          "velocity_rad_sec": 6.378917394300743e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.27562833807314746,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000229685591,
+          "velocity_rad_sec": 6.230733706757974e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2124889900733251,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000246188979,
+          "velocity_rad_sec": 6.367495419823399e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.24003632992389612,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000453535992,
+          "velocity_rad_sec": 6.086604553701136e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.24160819753888063,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000470058495,
+          "velocity_rad_sec": 6.402489649559584e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.22848706194781698,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 20,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000684782254,
+          "velocity_rad_sec": 6.34193142445838e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.20595670118927956,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [],
+        "payload_sample_count": 0,
+        "real_collision_pairs": [],
+        "position_count": 0,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 60,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0006928928196430206,
+          0.00018190965056419373,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {}
+    },
+    {
+      "run": "20260923T024754_F_no_resend_paired_1790131674965460130",
+      "method": "F",
+      "profile": "no_resend",
+      "tag": "paired",
+      "window_wall_sec": 199.966789055994,
+      "environment_steps": 12,
+      "completed_episodes": 3,
+      "success_count": 3,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 16.6638990879995,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        80.88833674398484,
+        58.51729696901748,
+        57.65144468299695
+      ],
+      "grasp_attempts": 3,
+      "failure_reasons": [
+        "success",
+        "success",
+        "success"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T024754_F_no_resend_paired_1790131674965460130/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.9865562290069647,
+          "exclusive": 2.9865562290069647,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 64.59094157902291,
+          "exclusive": 4.463954715029104,
+          "sim": 23.978000000000065,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.4974013900209684,
+          "exclusive": 3.4974013900209684,
+          "sim": 0.8779999999997017,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.04269716300768778,
+          "exclusive": 0.04269716300768778,
+          "sim": 0.018000000000029104,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.40665047703078,
+          "exclusive": 2.40665047703078,
+          "sim": 2.188000000000102,
+          "count": 3
+        },
+        "ik": {
+          "wall": 7.648874570993939,
+          "exclusive": 2.3663761400675867,
+          "sim": 6.384000000000469,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 7.6871391549066175,
+          "exclusive": 7.6871391549066175,
+          "sim": 6.398000000000138,
+          "count": 18
+        },
+        "ik_step": {
+          "wall": 0.3087825250113383,
+          "exclusive": 0.3087825250113383,
+          "sim": 0.2699999999999818,
+          "count": 12
+        },
+        "action_execution": {
+          "wall": 16.124504717998207,
+          "exclusive": 16.124504717998207,
+          "sim": 14.412000000000262,
+          "count": 12
+        },
+        "closing": {
+          "wall": 28.98571319601615,
+          "exclusive": 28.98571319601615,
+          "sim": 25.355999999999767,
+          "count": 3
+        },
+        "grip_settle": {
+          "wall": 7.826601082982961,
+          "exclusive": 7.826601082982961,
+          "sim": 6.039999999999509,
+          "count": 3
+        },
+        "lift": {
+          "wall": 9.505441568995593,
+          "exclusive": 9.505441568995593,
+          "sim": 7.7960000000002765,
+          "count": 3
+        },
+        "hold": {
+          "wall": 18.567422984022414,
+          "exclusive": 18.567422984022414,
+          "sim": 15.0,
+          "count": 3
+        },
+        "place": {
+          "wall": 9.153233903984074,
+          "exclusive": 9.153233903984074,
+          "sim": 8.091999999999643,
+          "count": 3
+        },
+        "open_motion": {
+          "wall": 50.01451028895099,
+          "exclusive": 50.01451028895099,
+          "sim": 0.0,
+          "count": 10
+        },
+        "open_settle": {
+          "wall": 2.216588756040437,
+          "exclusive": 2.216588756040437,
+          "sim": 0.0,
+          "count": 10
+        },
+        "retreat": {
+          "wall": 6.585348894033814,
+          "exclusive": 6.585348894033814,
+          "sim": 5.7979999999997744,
+          "count": 3
+        },
+        "return_observation": {
+          "wall": 10.767392348992871,
+          "exclusive": 10.767392348992871,
+          "sim": 9.588000000000193,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 2.87972524901852,
+          "exclusive": 0.0003093330014962703,
+          "sim": 2.624000000000251,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.013288385991472751,
+          "exclusive": 0.013288385991472751,
+          "sim": 0.0,
+          "count": 12
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8937948949162796,
+        "contact": 0.8351984378481655
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001854053,
+          "velocity_rad_sec": 9.366016850975711e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 17.026078986906214,
+          "settle_wall_sec": 0.21727893641218543,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000018054046,
+          "velocity_rad_sec": 6.112683692549581e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.21553418980329297,
+          "servo": false
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.570000000194886,
+          "velocity_rad_sec": 9.251495125539577e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 11.02215282456018,
+          "settle_wall_sec": 0.22556556985364296,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.570000001529373,
+          "velocity_rad_sec": 6.144209585556837e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.22835028817644343,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000031802757,
+          "velocity_rad_sec": 6.207951930292666e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2192315959255211,
+          "servo": false
+        },
+        {
+          "episode": 2,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001914236,
+          "velocity_rad_sec": 9.033369607891473e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 10.968815541506046,
+          "settle_wall_sec": 0.22925603893236257,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000014733677,
+          "velocity_rad_sec": 5.83457060443493e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.22565858365851454,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000031120964,
+          "velocity_rad_sec": 6.366120963718913e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2253215002710931,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000001921586,
+          "velocity_rad_sec": 9.28554788615088e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 10.997462935978547,
+          "settle_wall_sec": 0.22357827617088333,
+          "servo": false
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.5700000015549633,
+          "velocity_rad_sec": 6.404627939105012e-10,
+          "effort_nm": 1.2,
+          "movement_wall_sec": 0.0,
+          "settle_wall_sec": 0.2068137768364977,
+          "servo": false
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T024754_F_no_resend_paired_1790131674965460130",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 186099.664777111,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6258848533172808,
+              "expected_contact_angle": 0.6230990943948977,
+              "contact_gap_m": 0.029953458898129753,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02995 width=0.02982; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.06683534715243707,
+                6.024574049812333e-11
+              ],
+              "joint2": [
+                -0.44823826234926384,
+                5.937855474674736e-08
+              ],
+              "joint3": [
+                -1.4787826441360266,
+                1.0327870463011646e-07
+              ],
+              "joint4": [
+                -1.214571711477506,
+                2.1587600318451194e-09
+              ],
+              "joint5": [
+                0.06436175280203281,
+                1.4903713918372474e-10
+              ],
+              "l_in_joint": [
+                -0.6195455865578925,
+                0.0425318710211644
+              ],
+              "l_out_joint": [
+                0.6195449338511694,
+                -0.04253945726902568
+              ],
+              "l_joint": [
+                -0.6195453659478686,
+                0.04253441161088058
+              ],
+              "r_in_joint": [
+                -0.6199303660499552,
+                0.037461462120821146
+              ],
+              "r_out_joint": [
+                0.619929701206591,
+                -0.03746872771369576
+              ],
+              "r_joint": [
+                0.619116907912589,
+                -0.04409137247188788
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T024754_F_no_resend_paired_1790131674965460130",
+            "episode": 2,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 186157.925007655,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6257474321247033,
+              "expected_contact_angle": 0.6261569252146676,
+              "contact_gap_m": 0.02994699911603953,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02995 width=0.02997; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.42193289499306535,
+                4.9682466636818273e-11
+              ],
+              "joint2": [
+                -0.5751950544460085,
+                8.786730389814812e-08
+              ],
+              "joint3": [
+                -1.286378267475755,
+                1.6415652340229236e-07
+              ],
+              "joint4": [
+                -1.280019289015641,
+                2.127182388567128e-09
+              ],
+              "joint5": [
+                0.41954879675400725,
+                -8.563563703642418e-12
+              ],
+              "l_in_joint": [
+                -0.6199132788153319,
+                0.04416748720580647
+              ],
+              "l_out_joint": [
+                0.6199125879865891,
+                -0.04417245163974624
+              ],
+              "l_joint": [
+                -0.619913042069837,
+                0.044169076536439235
+              ],
+              "r_in_joint": [
+                -0.6203403082986892,
+                0.04233472608265942
+              ],
+              "r_out_joint": [
+                0.6203396098729024,
+                -0.04233936105839198
+              ],
+              "r_joint": [
+                0.6194706995376744,
+                -0.04449496117866447
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T024754_F_no_resend_paired_1790131674965460130",
+            "episode": 3,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 186216.112572192,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6258766301411338,
+              "expected_contact_angle": 0.6269696309981014,
+              "contact_gap_m": 0.029953072367894455,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02995 width=0.03000; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                0.3093236729927499,
+                5.111592320749224e-11
+              ],
+              "joint2": [
+                -0.5070598047367084,
+                5.139617224175774e-08
+              ],
+              "joint3": [
+                -1.3917268235169662,
+                9.246684097574676e-08
+              ],
+              "joint4": [
+                -1.2428059862260243,
+                4.8762050230966025e-09
+              ],
+              "joint5": [
+                -0.31161409592552,
+                8.007124737557936e-11
+              ],
+              "l_in_joint": [
+                -0.6196761022008745,
+                0.04148982371074705
+              ],
+              "l_out_joint": [
+                0.6196754860717497,
+                -0.04149869237383821
+              ],
+              "l_joint": [
+                -0.6196758921398046,
+                0.041492953801086536
+              ],
+              "r_in_joint": [
+                -0.6200294255747777,
+                0.03378947566873948
+              ],
+              "r_out_joint": [
+                0.6200287970296091,
+                -0.03379831071115503
+              ],
+              "r_joint": [
+                0.6192547497582457,
+                -0.04459937689985166
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 1558,
+        "real_collision_pairs": [
+          [
+            "robot::l_out_link::l_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ],
+          [
+            "robot::r_out_link::r_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ]
+        ],
+        "position_count": 6196,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 12,
+        "F_steps_with_nonzero_effect": 12,
+        "maximum_policy_absolute_components": [
+          0.000620352104306221,
+          0.00012940587475895882,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 485,
+          "minimum": -0.5329872169232054,
+          "maximum": 6.275779895759115e-10,
+          "samples_abs_above_model_0_10": 144
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 11,
+          "minimum": -0.08002138004450704,
+          "maximum": -0.0077556271463728454,
+          "samples_abs_above_model_0_10": 0
+        },
+        "WAIT_STALL": {
+          "samples": 138,
+          "minimum": -0.044597296723563495,
+          "maximum": -0.003346241702594066,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 152,
+          "minimum": -0.0032945010161661292,
+          "maximum": 0.003203692628236887,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 288,
+          "minimum": -0.001524589260328335,
+          "maximum": 0.0007667686552191855,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    },
+    {
+      "run": "20260923T025251_B_combined_paired_1790131971339610062",
+      "method": "B",
+      "profile": "combined",
+      "tag": "paired",
+      "window_wall_sec": 180.9316109069914,
+      "environment_steps": 60,
+      "completed_episodes": 3,
+      "success_count": 0,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 3.015526848449857,
+      "mean_episode_steps": 20.0,
+      "episode_wall_sec": [
+        65.87141703101224,
+        50.74612799199531,
+        53.554413209989434
+      ],
+      "grasp_attempts": 0,
+      "failure_reasons": [
+        "max_steps",
+        "max_steps",
+        "max_steps"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T025251_B_combined_paired_1790131971339610062/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.5005857149953954,
+          "exclusive": 2.5005857149953954,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 85.18420948999119,
+          "exclusive": 4.090547304018401,
+          "sim": 38.511999999999716,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 3.579166057985276,
+          "exclusive": 3.579166057985276,
+          "sim": 0.9079999999999018,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.0476994679775089,
+          "exclusive": 0.0476994679775089,
+          "sim": 0.021999999999934516,
+          "count": 3
+        },
+        "vision": {
+          "wall": 2.7054132699850015,
+          "exclusive": 2.7054132699850015,
+          "sim": 2.326000000000022,
+          "count": 3
+        },
+        "ik": {
+          "wall": 8.939895826013526,
+          "exclusive": 2.8585003570187837,
+          "sim": 6.960000000000036,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 6.988327483006287,
+          "exclusive": 6.988327483006287,
+          "sim": 5.378000000000611,
+          "count": 15
+        },
+        "ik_step": {
+          "wall": 1.503028007922694,
+          "exclusive": 1.503028007922694,
+          "sim": 1.079999999998563,
+          "count": 60
+        },
+        "action_execution": {
+          "wall": 83.05356079892954,
+          "exclusive": 83.05356079892954,
+          "sim": 72.06800000000248,
+          "count": 60
+        },
+        "closing": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "grip_settle": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "lift": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "hold": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "place": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "open_motion": {
+          "wall": 44.770686901087174,
+          "exclusive": 44.770686901087174,
+          "sim": 0.0,
+          "count": 4
+        },
+        "open_settle": {
+          "wall": 0.9542048929724842,
+          "exclusive": 0.9542048929724842,
+          "sim": 0.0,
+          "count": 4
+        },
+        "retreat": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        },
+        "return_observation": {
+          "wall": 10.773930002964335,
+          "exclusive": 10.773930002964335,
+          "sim": 9.565999999999804,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 10.717797765013529,
+          "exclusive": 0.0007700370042584836,
+          "sim": 9.601999999999862,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.07218223309610039,
+          "exclusive": 0.07218223309610039,
+          "sim": 0.0,
+          "count": 60
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.8677292015748391,
+        "contact": null
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2912082024467055,
+          "velocity_rad_sec": 0.0057461323366444494,
+          "effort_nm": 0.5341981592898442,
+          "movement_wall_sec": 20.23184585981653,
+          "settle_wall_sec": 0.22120632528094575,
+          "servo": true
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911912621973531,
+          "velocity_rad_sec": 0.005556580634637376,
+          "effort_nm": 0.5466254026335016,
+          "movement_wall_sec": 7.918946607009275,
+          "settle_wall_sec": 0.24380361239309423,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911426788270572,
+          "velocity_rad_sec": 0.005535416341511223,
+          "effort_nm": 0.5608826098729832,
+          "movement_wall_sec": 8.829298174212454,
+          "settle_wall_sec": 0.25752574909711257,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 20,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911886150381955,
+          "velocity_rad_sec": 0.005663407024684597,
+          "effort_nm": 0.5361493474136154,
+          "movement_wall_sec": 7.790596260048915,
+          "settle_wall_sec": 0.2316692062013317,
+          "servo": true
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [],
+        "payload_sample_count": 0,
+        "real_collision_pairs": [],
+        "position_count": 0,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 60,
+        "F_steps_with_nonzero_effect": null,
+        "maximum_policy_absolute_components": [
+          0.0006928653456270695,
+          0.00018193665891885757,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {}
+    },
+    {
+      "run": "20260923T025559_F_combined_paired_1790132159752470058",
+      "method": "F",
+      "profile": "combined",
+      "tag": "paired",
+      "window_wall_sec": 428.71493426000234,
+      "environment_steps": 12,
+      "completed_episodes": 3,
+      "success_count": 3,
+      "requested_episodes": 3,
+      "failure": null,
+      "updates": 0,
+      "weights_unchanged": true,
+      "wall_sec_per_step": 35.726244521666864,
+      "mean_episode_steps": 4.0,
+      "episode_wall_sec": [
+        83.95247724099318,
+        148.97928523400333,
+        183.10569974698592
+      ],
+      "grasp_attempts": 3,
+      "failure_reasons": [
+        "success",
+        "success",
+        "success"
+      ],
+      "scene_ids": [
+        "diagnostic_L0_0",
+        "diagnostic_L0_3",
+        "diagnostic_L0_4"
+      ],
+      "declaration": "results/20260923T025559_F_combined_paired_1790132159752470058/declaration.json",
+      "declared_budget": {
+        "max_env_steps": 60,
+        "max_episode_wall_sec": 600,
+        "training_updates": 0,
+        "preparation_episodes": 0,
+        "measured_episodes": 3
+      },
+      "stages": {
+        "startup": {
+          "wall": 2.7301101790217217,
+          "exclusive": 2.7301101790217217,
+          "sim": 0.0,
+          "count": 1
+        },
+        "reset_total": {
+          "wall": 125.52483382998616,
+          "exclusive": 4.6003920449875295,
+          "sim": 39.152000000000044,
+          "count": 3
+        },
+        "randomization_physics": {
+          "wall": 5.353530331020011,
+          "exclusive": 5.353530331020011,
+          "sim": 0.7539999999994507,
+          "count": 3
+        },
+        "randomization_perception": {
+          "wall": 0.04510639701038599,
+          "exclusive": 0.04510639701038599,
+          "sim": 0.04399999999986903,
+          "count": 3
+        },
+        "vision": {
+          "wall": 4.275528113008477,
+          "exclusive": 4.275528113008477,
+          "sim": 2.2339999999999236,
+          "count": 3
+        },
+        "ik": {
+          "wall": 14.967933845007792,
+          "exclusive": 5.076978252007393,
+          "sim": 7.2800000000002,
+          "count": 3
+        },
+        "ik_path": {
+          "wall": 15.728277944028378,
+          "exclusive": 15.728277944028378,
+          "sim": 6.904000000000451,
+          "count": 18
+        },
+        "ik_step": {
+          "wall": 0.602000180981122,
+          "exclusive": 0.602000180981122,
+          "sim": 0.2499999999990905,
+          "count": 12
+        },
+        "action_execution": {
+          "wall": 27.311105875996873,
+          "exclusive": 27.311105875996873,
+          "sim": 14.412000000000717,
+          "count": 12
+        },
+        "closing": {
+          "wall": 42.940059389016824,
+          "exclusive": 42.940059389016824,
+          "sim": 17.233999999999924,
+          "count": 3
+        },
+        "grip_settle": {
+          "wall": 19.028334348025965,
+          "exclusive": 19.028334348025965,
+          "sim": 6.2400000000002365,
+          "count": 3
+        },
+        "lift": {
+          "wall": 22.38819139901898,
+          "exclusive": 22.38819139901898,
+          "sim": 7.8960000000001855,
+          "count": 3
+        },
+        "hold": {
+          "wall": 42.502228208992165,
+          "exclusive": 42.502228208992165,
+          "sim": 15.014000000000124,
+          "count": 3
+        },
+        "place": {
+          "wall": 22.074752348999027,
+          "exclusive": 22.074752348999027,
+          "sim": 8.121999999999844,
+          "count": 3
+        },
+        "open_motion": {
+          "wall": 157.997129613359,
+          "exclusive": 157.997129613359,
+          "sim": 0.0,
+          "count": 7
+        },
+        "open_settle": {
+          "wall": 2.439512591663515,
+          "exclusive": 2.439512591663515,
+          "sim": 0.0,
+          "count": 7
+        },
+        "retreat": {
+          "wall": 10.473271190974629,
+          "exclusive": 10.473271190974629,
+          "sim": 5.768000000000029,
+          "count": 3
+        },
+        "return_observation": {
+          "wall": 15.477503481029999,
+          "exclusive": 15.477503481029999,
+          "sim": 9.598000000000411,
+          "count": 4
+        },
+        "recovery": {
+          "wall": 12.623661402991274,
+          "exclusive": 0.00023944099666550756,
+          "sim": 9.61999999999989,
+          "count": 1
+        },
+        "inference": {
+          "wall": 0.01572931100963615,
+          "exclusive": 0.01572931100963615,
+          "sim": 0.0,
+          "count": 12
+        },
+        "network_update": {
+          "wall": 0.0,
+          "exclusive": 0.0,
+          "sim": 0.0,
+          "count": 0
+        }
+      },
+      "rtf": {
+        "approach": 0.5276974160415491,
+        "contact": 0.3656348248649996
+      },
+      "open_results": [
+        {
+          "episode": 1,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2912452851583953,
+          "velocity_rad_sec": 0.0056759774300506605,
+          "effort_nm": 0.5342427491823365,
+          "movement_wall_sec": 20.017936146410648,
+          "settle_wall_sec": 0.2263158659916371,
+          "servo": true
+        },
+        {
+          "episode": 1,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.291196983941998,
+          "velocity_rad_sec": 0.0057606710360483815,
+          "effort_nm": 0.5490545612068849,
+          "movement_wall_sec": 15.260173070128076,
+          "settle_wall_sec": 0.22050136921461672,
+          "servo": true
+        },
+        {
+          "episode": 2,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911871362960965,
+          "velocity_rad_sec": 0.00551454137925389,
+          "effort_nm": 0.5556844907784416,
+          "movement_wall_sec": 7.9726076065562665,
+          "settle_wall_sec": 0.24728492053691298,
+          "servo": true
+        },
+        {
+          "episode": 2,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.2912305955258174,
+          "velocity_rad_sec": 0.005727191567925671,
+          "effort_nm": 0.5654433881265811,
+          "movement_wall_sec": 45.208336231677094,
+          "settle_wall_sec": 0.593175214191433,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 0,
+          "target_rad": 1.3,
+          "actual_rad": 1.2912042001305373,
+          "velocity_rad_sec": 0.005552725669665248,
+          "effort_nm": 0.5833211195775977,
+          "movement_wall_sec": 23.028901634475915,
+          "settle_wall_sec": 0.647302690660581,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.2911729431486378,
+          "velocity_rad_sec": 0.005750053474179895,
+          "effort_nm": 0.5450417608100484,
+          "movement_wall_sec": 36.97146971733309,
+          "settle_wall_sec": 0.23739195516100153,
+          "servo": true
+        },
+        {
+          "episode": 3,
+          "step": 4,
+          "target_rad": 1.3,
+          "actual_rad": 1.291175108002425,
+          "velocity_rad_sec": 0.005555670715736594,
+          "effort_nm": 0.527320391448617,
+          "movement_wall_sec": 9.5377052067779,
+          "settle_wall_sec": 0.2675405759073328,
+          "servo": true
+        }
+      ],
+      "contact_evidence": {
+        "geometry": [
+          {
+            "run": "20260923T025559_F_combined_paired_1790132159752470058",
+            "episode": 1,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 186583.096553789,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6260767042924157,
+              "expected_contact_angle": 0.6231015463226185,
+              "contact_gap_m": 0.029962476197354298,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02996 width=0.02982; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.06683547149677962,
+                6.484802034549195e-11
+              ],
+              "joint2": [
+                -0.44822133437167705,
+                6.098117642100442e-08
+              ],
+              "joint3": [
+                -1.4787540945667965,
+                1.0606471305407705e-07
+              ],
+              "joint4": [
+                -1.2146171904858287,
+                2.2046323933100354e-09
+              ],
+              "joint5": [
+                0.0643621737202678,
+                1.3443761403587884e-10
+              ],
+              "l_in_joint": [
+                -0.6194590621661624,
+                0.04230977560443524
+              ],
+              "l_out_joint": [
+                0.6194584151258571,
+                -0.04231791311641282
+              ],
+              "l_joint": [
+                -0.6194588439770489,
+                0.04231253105037839
+              ],
+              "r_in_joint": [
+                -0.6198352355918398,
+                0.03644098918124695
+              ],
+              "r_out_joint": [
+                0.6198345757250868,
+                -0.03644884586072422
+              ],
+              "r_joint": [
+                0.6190318154402208,
+                -0.04426414549055485
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T025559_F_combined_paired_1790132159752470058",
+            "episode": 2,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 186664.253174058,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6261329875870482,
+              "expected_contact_angle": 0.6261521690873535,
+              "contact_gap_m": 0.02996512136390526,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02997 width=0.02997; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                -0.42193259026420904,
+                5.430025908624049e-11
+              ],
+              "joint2": [
+                -0.5752265216820862,
+                6.217348128695344e-08
+              ],
+              "joint3": [
+                -1.2864427600263393,
+                1.1604883935756316e-07
+              ],
+              "joint4": [
+                -1.279923330133606,
+                8.953700003644371e-10
+              ],
+              "joint5": [
+                0.41954830489043365,
+                4.207201731096233e-11
+              ],
+              "l_in_joint": [
+                -0.6201202696234075,
+                0.037968112237270826
+              ],
+              "l_out_joint": [
+                0.6201196375749372,
+                -0.037972228397518126
+              ],
+              "l_joint": [
+                -0.62012005434582,
+                0.03796945635090278
+              ],
+              "r_in_joint": [
+                -0.6204852815832498,
+                0.036132706797058226
+              ],
+              "r_out_joint": [
+                0.6204846435593311,
+                -0.036136653642618366
+              ],
+              "r_joint": [
+                0.6197396367012051,
+                -0.038330998175806485
+              ]
+            },
+            "vectors_present": false
+          },
+          {
+            "run": "20260923T025559_F_combined_paired_1790132159752470058",
+            "episode": 3,
+            "step": 4,
+            "kind": "contact_geometry",
+            "monotonic": 186862.961895359,
+            "result": {
+              "left_contact_seen": true,
+              "right_contact_seen": true,
+              "dual_contact": false,
+              "stall_detected": false,
+              "stall_peak_stable_sim_sec": 0.0,
+              "maximum_penetration_m": 0.0,
+              "stable_hold": false,
+              "max_relative_slip_m": 0.0,
+              "contact_angle": 0.6258533113736459,
+              "expected_contact_angle": 0.6269696309981014,
+              "contact_gap_m": 0.029951976257186066,
+              "contact_geometry_valid": true,
+              "contact_geometry_detail": "contact vectors unavailable left=0 right=0; aperture geometry accepted provisionally gap=0.02995 width=0.03000; lift_and_hold_required"
+            },
+            "gazebo_joints": {
+              "base_joint": [
+                0.0,
+                0.0
+              ],
+              "joint1": [
+                0.30932366705785125,
+                5.326091512812027e-11
+              ],
+              "joint2": [
+                -0.5070425764784056,
+                1.1136182705151487e-08
+              ],
+              "joint3": [
+                -1.3916966856091264,
+                2.0139037812394456e-08
+              ],
+              "joint4": [
+                -1.2428533496159548,
+                1.5044471501912682e-09
+              ],
+              "joint5": [
+                -0.31161393602798326,
+                9.22308054582266e-11
+              ],
+              "l_in_joint": [
+                -0.6190808793122214,
+                0.029452182805137967
+              ],
+              "l_out_joint": [
+                0.6190802420007581,
+                -0.02945313998348116
+              ],
+              "l_joint": [
+                -0.6190806682806124,
+                0.02945258353023252
+              ],
+              "r_in_joint": [
+                -0.6193663509851237,
+                0.028320493927193848
+              ],
+              "r_out_joint": [
+                0.6193657163692695,
+                -0.028321882921425255
+              ],
+              "r_joint": [
+                0.6187777728863264,
+                -0.03363736439596826
+              ]
+            },
+            "vectors_present": false
+          }
+        ],
+        "payload_sample_count": 1753,
+        "real_collision_pairs": [
+          [
+            "robot::l_out_link::l_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ],
+          [
+            "robot::r_out_link::r_out_link_box_collision",
+            "wood_block::block_link::block_collision"
+          ]
+        ],
+        "position_count": 6976,
+        "normal_count": 0,
+        "depth_count": 0,
+        "absence_note": "empty normals/depths are unavailable, never measured zero or inferred true contact"
+      },
+      "safe_close": [
+        true
+      ],
+      "action_audit": {
+        "transitions": 12,
+        "F_steps_with_nonzero_effect": 12,
+        "maximum_policy_absolute_components": [
+          0.000620352104306221,
+          0.00012940587475895882,
+          0.0009538806043565273,
+          0.015258781611919403
+        ]
+      },
+      "actual_gripper_velocity_rad_sec": {
+        "CLOSE_SEARCH": {
+          "samples": 326,
+          "minimum": -0.42400350844329254,
+          "maximum": 0.00034365879626951923,
+          "samples_abs_above_model_0_10": 123
+        },
+        "WAIT_DUAL_CONTACT": {
+          "samples": 12,
+          "minimum": -0.08051567872670151,
+          "maximum": -0.008824652843867686,
+          "samples_abs_above_model_0_10": 0
+        },
+        "WAIT_STALL": {
+          "samples": 139,
+          "minimum": -0.036393337990615726,
+          "maximum": -0.002713925473902201,
+          "samples_abs_above_model_0_10": 0
+        },
+        "LIFT_80_MM": {
+          "samples": 152,
+          "minimum": -0.0033530187061517336,
+          "maximum": 0.002845544013281409,
+          "samples_abs_above_model_0_10": 0
+        },
+        "HOLD": {
+          "samples": 282,
+          "minimum": -0.0015405046359958652,
+          "maximum": 0.0006328872557447851,
+          "samples_abs_above_model_0_10": 0
+        }
+      }
+    }
+  ],
+  "units": "monotonic wall seconds",
+  "accounting": "window includes first/inter-episode resets, grasp, randomization, inference and final recovery; excludes startup and network updates; parent stage wall values overlap children, never sum both",
+  "initial_clock_note": "Ignore initial reset RTF before clock initialization in early correctness/preparation logs."
+}

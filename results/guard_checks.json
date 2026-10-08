@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "wall_sec": 12.72440062998794,
+  "results": [
+    {
+      "args": [
+        "train",
+        "--method",
+        "B",
+        "--seeds",
+        "20260911",
+        "--fresh",
+        "--wall-limit-sec",
+        "300"
+      ],
+      "returncode": 2,
+      "expected_message": "no pilot-checked frozen configuration",
+      "passed": true,
+      "stdout": "",
+      "stderr": "/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4\n  warnings.warn(f\"A NumPy version >={np_minversion} and <{np_maxversion}\"\nusage: run_day9.py [-h] {check,probe,pilot,freeze,train,benchmark} ...\nrun_day9.py: error: no pilot-checked frozen configuration; formal training unavailable\n"
+    },
+    {
+      "args": [
+        "pilot",
+        "--report-sha",
+        "unapproved",
+        "--wall-limit-sec",
+        "300"
+      ],
+      "returncode": 1,
+      "expected_message": "exact reviewed report SHA256 is required",
+      "passed": true,
+      "stdout": "",
+      "stderr": "/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4\n  warnings.warn(f\"A NumPy version >={np_minversion} and <{np_maxversion}\"\nTraceback (most recent call last):\n  File \"/home/ubuntu/ros2_ws/day9/run_day9.py\", line 435, in <module>\n    if __name__=='__main__':main()\n  File \"/home/ubuntu/ros2_ws/day9/run_day9.py\", line 403, in main\n    result=pilot(args.config,args.report_sha,args.wall_limit_sec)\n  File \"/home/ubuntu/ros2_ws/day9/day9_training.py\", line 288, in pilot\n    raise ValueError('exact reviewed report SHA256 is required')\nValueError: exact reviewed report SHA256 is required\n"
+    },
+    {
+      "args": [
+        "freeze"
+      ],
+      "returncode": 1,
+      "expected_message": "no pilot evidence",
+      "passed": true,
+      "stdout": "",
+      "stderr": "/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4\n  warnings.warn(f\"A NumPy version >={np_minversion} and <{np_maxversion}\"\nTraceback (most recent call last):\n  File \"/home/ubuntu/ros2_ws/day9/run_day9.py\", line 435, in <module>\n    if __name__=='__main__':main()\n  File \"/home/ubuntu/ros2_ws/day9/run_day9.py\", line 407, in main\n    print(freeze(args.config));return\n  File \"/home/ubuntu/ros2_ws/day9/day9_training.py\", line 368, in freeze\n    if not p.exists():raise ValueError('no pilot evidence; candidate cannot be frozen as validated')\nValueError: no pilot evidence; candidate cannot be frozen as validated\n"
+    }
+  ]
+}

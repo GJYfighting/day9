@@ -1,0 +1,7 @@
+{
+  "hold_after_day9": true,
+  "requested_by_user": true,
+  "time_utc": "2026-09-28T07:53:38Z",
+  "scope": "Complete Day9 6000 pilot steps, 100 validation slots and freeze; do not create or launch Day10 until a later explicit request",
+  "training_budget_unchanged": true
+}

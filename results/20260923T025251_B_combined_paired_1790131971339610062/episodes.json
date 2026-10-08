@@ -1,0 +1,740 @@
+[
+  {
+    "scene": {
+      "id": "diagnostic_L0_0",
+      "source": "Day8 smoke_L0 point; new Day9 seed",
+      "position_base": [
+        0.18459222659243593,
+        -0.012438901168749173
+      ],
+      "seed": 20260908,
+      "level": "L0",
+      "mode": "fixed"
+    },
+    "steps": 20,
+    "success": false,
+    "terminated": false,
+    "truncated": true,
+    "completed": true,
+    "technical_failure": false,
+    "return_": -1.9014079123735428,
+    "failure": null,
+    "grasp_attempts": 0,
+    "last_info": {
+      "success": false,
+      "stable_hold": false,
+      "max_relative_slip_m": 0.0,
+      "grasp_attempted": false,
+      "distance_m": 0.0440143346786499,
+      "yaw_error_rad": 0.30070404707693976,
+      "step_count": 20,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "max_steps",
+      "approach_reward": -0.09845532476902008,
+      "success_reward": 0.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.0010886010713875294,
+      "executed_tcp_move_m": 0.0010723275142531586,
+      "step_elapsed_sim_sec": 1.2020000000002256,
+      "step_initial_joint_error_rad": 0.013813396355097318,
+      "step_final_joint_error_rad": 0.00020709910961039246,
+      "step_arm_max_velocity": 0.0023011012178980324,
+      "reset_arm_max_velocity": 1.997744844731142e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_policy_action": [
+          -0.0006852857768535614,
+          -0.00018193665891885757,
+          0.000826035626232624,
+          -0.01525348424911499
+        ],
+        "final_action": [
+          -0.0006852857768535614,
+          -0.00018193665891885757,
+          0.000826035626232624,
+          -0.01525348424911499
+        ]
+      },
+      "is_success": false,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "elapsed_wall_sec": 65.87141703101224,
+    "parameters": {
+      "seed": 20260908,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.01540777340756408,
+        -0.012438901168749173,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 3265796664,
+      "sdf_sha256": "d6e57d64963b1cf7c3350af81ae9c0c80d5fc48ea49dd91bd65aa4a230ca1ac1",
+      "model_rebuild_acknowledged": true,
+      "physics_readback": {
+        "mass_kg": 0.03,
+        "mu": 6.0,
+        "mu2": 6.0,
+        "collision_size_m": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "visual_size_m": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "inertia_kg_m2": {
+          "ixx": 4.5e-06,
+          "iyy": 4.5e-06,
+          "izz": 4.5e-06,
+          "ixy": 0.0,
+          "ixz": 0.0,
+          "iyz": 0.0
+        }
+      }
+    },
+    "failure_events": [],
+    "timings": {
+      "startup": {
+        "wall": 0.0,
+        "exclusive": 0.0,
+        "sim": 0.0,
+        "count": 0
+      },
+      "randomization_perception": {
+        "wall": 0.02876483299769461,
+        "exclusive": 0.02876483299769461,
+        "sim": 0.0,
+        "count": 1
+      },
+      "open_motion": {
+        "wall": 20.23184585981653,
+        "exclusive": 20.23184585981653,
+        "sim": 0.0,
+        "count": 1
+      },
+      "open_settle": {
+        "wall": 0.22120632528094575,
+        "exclusive": 0.22120632528094575,
+        "sim": 0.0,
+        "count": 1
+      },
+      "open": {
+        "wall": 20.53169338099542,
+        "exclusive": 0.07864119589794427,
+        "sim": 21.771999999999935,
+        "count": 2
+      },
+      "return_observation": {
+        "wall": 2.5847067839931697,
+        "exclusive": 2.5847067839931697,
+        "sim": 2.3020000000001346,
+        "count": 1
+      },
+      "randomization_physics": {
+        "wall": 1.177521056990372,
+        "exclusive": 1.177521056990372,
+        "sim": 0.30599999999958527,
+        "count": 1
+      },
+      "vision": {
+        "wall": 0.8844178860017564,
+        "exclusive": 0.8844178860017564,
+        "sim": 0.7860000000000582,
+        "count": 1
+      },
+      "ik_path": {
+        "wall": 2.081521682004677,
+        "exclusive": 2.081521682004677,
+        "sim": 1.6880000000005566,
+        "count": 5
+      },
+      "ik": {
+        "wall": 2.6403278940124437,
+        "exclusive": 0.8546114050259348,
+        "sim": 2.1660000000001673,
+        "count": 1
+      },
+      "arm_transfer": {
+        "wall": 2.8949958469893318,
+        "exclusive": 2.8949958469893318,
+        "sim": 2.6299999999996544,
+        "count": 1
+      },
+      "arm_path": {
+        "wall": 1.824472052976489,
+        "exclusive": 1.824472052976489,
+        "sim": 1.6239999999997963,
+        "count": 1
+      },
+      "reset": {
+        "wall": 34.216515890992014,
+        "exclusive": 1.3825757960148621,
+        "sim": 33.41399999999976,
+        "count": 1
+      },
+      "reset_total": {
+        "wall": 38.332885432988405,
+        "exclusive": 4.087604708998697,
+        "sim": 0.0,
+        "count": 1
+      },
+      "inference": {
+        "wall": 0.02124896811437793,
+        "exclusive": 0.02124896811437793,
+        "sim": 0.0,
+        "count": 20
+      },
+      "ik_step": {
+        "wall": 0.48899219499435276,
+        "exclusive": 0.48899219499435276,
+        "sim": 0.3879999999994652,
+        "count": 20
+      },
+      "action_execution": {
+        "wall": 26.902948392002145,
+        "exclusive": 26.902948392002145,
+        "sim": 24.02400000000125,
+        "count": 20
+      },
+      "environment_step": {
+        "wall": 27.484563202015124,
+        "exclusive": 0.09262261501862668,
+        "sim": 24.450000000000273,
+        "count": 20
+      }
+    }
+  },
+  {
+    "scene": {
+      "id": "diagnostic_L0_3",
+      "source": "Day8 smoke_L0 point; new Day9 seed",
+      "position_base": [
+        0.1849409066683234,
+        -0.08311052621120449
+      ],
+      "seed": 20260909,
+      "level": "L0",
+      "mode": "fixed"
+    },
+    "steps": 20,
+    "success": false,
+    "terminated": false,
+    "truncated": true,
+    "completed": true,
+    "technical_failure": false,
+    "return_": -1.9947323948144913,
+    "failure": null,
+    "grasp_attempts": 0,
+    "last_info": {
+      "success": false,
+      "stable_hold": false,
+      "max_relative_slip_m": 0.0,
+      "grasp_attempted": false,
+      "distance_m": 0.044947609305381775,
+      "yaw_error_rad": 0.2896259798151768,
+      "step_count": 20,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "max_steps",
+      "approach_reward": -0.10225661098957062,
+      "success_reward": 0.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.0011208164505660534,
+      "executed_tcp_move_m": 0.0011040770057834815,
+      "step_elapsed_sim_sec": 1.2000000000002728,
+      "step_initial_joint_error_rad": 0.012476334511466819,
+      "step_final_joint_error_rad": 0.0001870730542961052,
+      "step_arm_max_velocity": 0.002078589492184012,
+      "reset_arm_max_velocity": 2.2047792589061088e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_policy_action": [
+          -0.0006928653456270695,
+          -0.00011835945770144463,
+          0.0008730166591703892,
+          -0.014677248895168304
+        ],
+        "final_action": [
+          -0.0006928653456270695,
+          -0.00011835945770144463,
+          0.0008730166591703892,
+          -0.014677248895168304
+        ]
+      },
+      "is_success": false,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "elapsed_wall_sec": 50.74612799199531,
+    "parameters": {
+      "seed": 20260909,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.015059093331676598,
+        -0.08311052621120449,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 3632583906,
+      "sdf_sha256": "5faa698f45fd68f183910df920b014cfce8414ce45523e45311cfe592f75f679",
+      "model_rebuild_acknowledged": true,
+      "physics_readback": {
+        "mass_kg": 0.03,
+        "mu": 6.0,
+        "mu2": 6.0,
+        "collision_size_m": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "visual_size_m": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "inertia_kg_m2": {
+          "ixx": 4.5e-06,
+          "iyy": 4.5e-06,
+          "izz": 4.5e-06,
+          "ixy": 0.0,
+          "ixz": 0.0,
+          "iyz": 0.0
+        }
+      }
+    },
+    "failure_events": [],
+    "timings": {
+      "startup": {
+        "wall": 0.0,
+        "exclusive": 0.0,
+        "sim": 0.0,
+        "count": 0
+      },
+      "randomization_perception": {
+        "wall": 0.0046228430001065135,
+        "exclusive": 0.0046228430001065135,
+        "sim": 0.005999999999858119,
+        "count": 1
+      },
+      "open_motion": {
+        "wall": 7.918946607009275,
+        "exclusive": 7.918946607009275,
+        "sim": 0.0,
+        "count": 1
+      },
+      "open_settle": {
+        "wall": 0.24380361239309423,
+        "exclusive": 0.24380361239309423,
+        "sim": 0.0,
+        "count": 1
+      },
+      "open": {
+        "wall": 8.193139090988552,
+        "exclusive": 0.030388871586183086,
+        "sim": 7.221999999999753,
+        "count": 2
+      },
+      "return_observation": {
+        "wall": 2.641106298979139,
+        "exclusive": 2.641106298979139,
+        "sim": 2.400000000000091,
+        "count": 1
+      },
+      "randomization_physics": {
+        "wall": 1.1882593499904033,
+        "exclusive": 1.1882593499904033,
+        "sim": 0.3380000000001928,
+        "count": 1
+      },
+      "vision": {
+        "wall": 0.8272097559820395,
+        "exclusive": 0.8272097559820395,
+        "sim": 0.7600000000002183,
+        "count": 1
+      },
+      "ik_path": {
+        "wall": 1.965914767992217,
+        "exclusive": 1.965914767992217,
+        "sim": 1.6599999999998545,
+        "count": 5
+      },
+      "ik": {
+        "wall": 2.4170767909963615,
+        "exclusive": 0.7315470940084197,
+        "sim": 2.0679999999997563,
+        "count": 1
+      },
+      "arm_transfer": {
+        "wall": 2.99390520300949,
+        "exclusive": 2.99390520300949,
+        "sim": 2.6460000000001855,
+        "count": 1
+      },
+      "arm_path": {
+        "wall": 1.8484815600095317,
+        "exclusive": 1.8484815600095317,
+        "sim": 1.6159999999999854,
+        "count": 1
+      },
+      "reset": {
+        "wall": 21.8598329689994,
+        "exclusive": 1.4702698480396066,
+        "sim": 18.85199999999986,
+        "count": 1
+      },
+      "reset_total": {
+        "wall": 21.866641214000992,
+        "exclusive": 0.002185402001487091,
+        "sim": 18.85799999999972,
+        "count": 1
+      },
+      "inference": {
+        "wall": 0.028568895941134542,
+        "exclusive": 0.028568895941134542,
+        "sim": 0.0,
+        "count": 20
+      },
+      "ik_step": {
+        "wall": 0.4772684469644446,
+        "exclusive": 0.4772684469644446,
+        "sim": 0.33999999999969077,
+        "count": 20
+      },
+      "action_execution": {
+        "wall": 28.253838847915176,
+        "exclusive": 28.253838847915176,
+        "sim": 24.02000000000089,
+        "count": 20
+      },
+      "environment_step": {
+        "wall": 28.82017485803226,
+        "exclusive": 0.0890675631526392,
+        "sim": 24.396000000000186,
+        "count": 20
+      }
+    }
+  },
+  {
+    "scene": {
+      "id": "diagnostic_L0_4",
+      "source": "Day8 smoke_L0 point; new Day9 seed",
+      "position_base": [
+        0.18424354651654845,
+        0.05823272387370615
+      ],
+      "seed": 20260910,
+      "level": "L0",
+      "mode": "fixed"
+    },
+    "steps": 20,
+    "success": false,
+    "terminated": false,
+    "truncated": true,
+    "completed": true,
+    "technical_failure": false,
+    "return_": -1.9140571355819702,
+    "failure": null,
+    "grasp_attempts": 0,
+    "last_info": {
+      "success": false,
+      "stable_hold": false,
+      "max_relative_slip_m": 0.0,
+      "grasp_attempted": false,
+      "distance_m": 0.044140856713056564,
+      "yaw_error_rad": 0.2792859251403667,
+      "step_count": 20,
+      "dropped": false,
+      "collision": false,
+      "invalid_actions": 0,
+      "termination_reason": "max_steps",
+      "approach_reward": -0.1001264899969101,
+      "success_reward": 0.0,
+      "drop_penalty": 0.0,
+      "collision_penalty": 0.0,
+      "requested_tcp_move_m": 0.001094865263439715,
+      "executed_tcp_move_m": 0.0010785130598480383,
+      "step_elapsed_sim_sec": 1.2019999999997708,
+      "step_initial_joint_error_rad": 0.014505760674861534,
+      "step_final_joint_error_rad": 0.00021726689792278542,
+      "step_arm_max_velocity": 0.0024140766435909004,
+      "reset_arm_max_velocity": 2.2058337205116407e-05,
+      "reset_block_linear_velocity": 0.0,
+      "reset_block_angular_velocity": 0.0,
+      "day9_action": {
+        "base_action": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_policy_action": [
+          -0.0006554271094501019,
+          -0.00016964739188551903,
+          0.0008604447357356548,
+          -0.01431361585855484
+        ],
+        "final_action": [
+          -0.0006554271094501019,
+          -0.00016964739188551903,
+          0.0008604447357356548,
+          -0.01431361585855484
+        ]
+      },
+      "is_success": false,
+      "curriculum": {
+        "mode": "off",
+        "level": "L0",
+        "window": [],
+        "dwell": 0,
+        "valid_total": 0
+      }
+    },
+    "elapsed_wall_sec": 53.554413209989434,
+    "parameters": {
+      "seed": 20260910,
+      "level": "L0",
+      "enabled": true,
+      "position_world_m": [
+        -0.01575645348345156,
+        0.05823272387370615,
+        0.765
+      ],
+      "position_fraction": 1.0,
+      "side_m": 0.03,
+      "yaw_rad": 0.0,
+      "mass_kg": 0.03,
+      "mu": 6.0,
+      "mu2": 6.0,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "pixel_std": 0.0,
+      "depth_std_m": 0.0,
+      "invalid_fraction": 0.0,
+      "translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delay_sec": 0.0,
+      "noise_seed": 3442894840,
+      "sdf_sha256": "7bd6c67b63a04108b9eb6336c997dab224fd824efbb2369275a4eabbb3a49532",
+      "model_rebuild_acknowledged": true,
+      "physics_readback": {
+        "mass_kg": 0.03,
+        "mu": 6.0,
+        "mu2": 6.0,
+        "collision_size_m": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "visual_size_m": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "inertia_kg_m2": {
+          "ixx": 4.5e-06,
+          "iyy": 4.5e-06,
+          "izz": 4.5e-06,
+          "ixy": 0.0,
+          "ixz": 0.0,
+          "iyz": 0.0
+        }
+      }
+    },
+    "failure_events": [],
+    "timings": {
+      "startup": {
+        "wall": 0.0,
+        "exclusive": 0.0,
+        "sim": 0.0,
+        "count": 0
+      },
+      "randomization_perception": {
+        "wall": 0.014311791979707778,
+        "exclusive": 0.014311791979707778,
+        "sim": 0.016000000000076398,
+        "count": 1
+      },
+      "open_motion": {
+        "wall": 8.829298174212454,
+        "exclusive": 8.829298174212454,
+        "sim": 0.0,
+        "count": 1
+      },
+      "open_settle": {
+        "wall": 0.25752574909711257,
+        "exclusive": 0.25752574909711257,
+        "sim": 0.0,
+        "count": 1
+      },
+      "open": {
+        "wall": 9.122568771010265,
+        "exclusive": 0.0357448477006983,
+        "sim": 7.3279999999999745,
+        "count": 2
+      },
+      "return_observation": {
+        "wall": 2.887775952985976,
+        "exclusive": 2.887775952985976,
+        "sim": 2.4299999999998363,
+        "count": 1
+      },
+      "randomization_physics": {
+        "wall": 1.2133856510045007,
+        "exclusive": 1.2133856510045007,
+        "sim": 0.2640000000001237,
+        "count": 1
+      },
+      "vision": {
+        "wall": 0.9937856280012056,
+        "exclusive": 0.9937856280012056,
+        "sim": 0.7799999999997453,
+        "count": 1
+      },
+      "ik_path": {
+        "wall": 2.940891033009393,
+        "exclusive": 2.940891033009393,
+        "sim": 2.0300000000002,
+        "count": 5
+      },
+      "ik": {
+        "wall": 3.8824911410047207,
+        "exclusive": 1.2723418579844292,
+        "sim": 2.7260000000001128,
+        "count": 1
+      },
+      "arm_transfer": {
+        "wall": 3.181001387012657,
+        "exclusive": 3.181001387012657,
+        "sim": 2.630000000000109,
+        "count": 1
+      },
+      "arm_path": {
+        "wall": 1.9347303670074325,
+        "exclusive": 1.9347303670074325,
+        "sim": 1.6579999999999018,
+        "count": 1
+      },
+      "reset": {
+        "wall": 24.969613858003868,
+        "exclusive": 1.4231332099880092,
+        "sim": 19.63799999999992,
+        "count": 1
+      },
+      "reset_total": {
+        "wall": 24.984682843001792,
+        "exclusive": 0.0007571930182166398,
+        "sim": 19.653999999999996,
+        "count": 1
+      },
+      "inference": {
+        "wall": 0.022364369040587917,
+        "exclusive": 0.022364369040587917,
+        "sim": 0.0,
+        "count": 20
+      },
+      "ik_step": {
+        "wall": 0.5367673659638967,
+        "exclusive": 0.5367673659638967,
+        "sim": 0.351999999999407,
+        "count": 20
+      },
+      "action_execution": {
+        "wall": 27.896773559012217,
+        "exclusive": 27.896773559012217,
+        "sim": 24.024000000000342,
+        "count": 20
+      },
+      "environment_step": {
+        "wall": 28.513040663994616,
+        "exclusive": 0.07949973901850171,
+        "sim": 24.409999999999854,
+        "count": 20
+      }
+    }
+  }
+]
